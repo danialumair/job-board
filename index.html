@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,25 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
     <!-- Header -->
     <header class="bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
-        <h1 class="text-3xl font-bold mb-2">🚀 Verified Job Openings</h1>
-        <p class="text-indigo-100 max-w-xl mx-auto text-sm">Dynamically loaded from JSON files, searchable, with full post details.</p>
+        <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">Fetching daily inspiration and jobs...
+        </p>
     </header>
 
     <!-- Main Container -->
     <main class="max-w-4xl mx-auto px-4 py-6">
-        
+
         <!-- Search & Filter Bar -->
         <div class="flex flex-col md:flex-row gap-3 mb-6">
-            <input type="text" id="searchInput" placeholder="Search title, skills, location, company..." 
+            <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
                 class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
-            
-            <select id="domainFilter" class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+
+            <select id="domainFilter"
+                class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
                 <option value="">All Domains</option>
                 <option value="Telecom">Telecom</option>
                 <option value="Cybersecurity">Cybersecurity</option>
@@ -60,7 +63,7 @@
                         const res = await fetch(fileName);
                         if (!res.ok) return [];
                         const data = await res.json();
-                        
+
                         // Extract date from filename if not present in job object
                         const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
                         const fileDate = dateMatch ? dateMatch[0] : 'Recently';
@@ -175,10 +178,10 @@
             const domain = document.getElementById('domainFilter').value;
 
             const filtered = allJobs.filter(job => {
-                const matchesQuery = (job.title || '').toLowerCase().includes(query) || 
-                                     (job.location || '').toLowerCase().includes(query) || 
-                                     (job.description || '').toLowerCase().includes(query) ||
-                                     (job.company || '').toLowerCase().includes(query);
+                const matchesQuery = (job.title || '').toLowerCase().includes(query) ||
+                    (job.location || '').toLowerCase().includes(query) ||
+                    (job.description || '').toLowerCase().includes(query) ||
+                    (job.company || '').toLowerCase().includes(query);
                 const matchesDomain = domain === "" || (job.domain || '').includes(domain);
                 return matchesQuery && matchesDomain;
             });
@@ -197,6 +200,30 @@
                 console.error('Failed to copy text: ', err);
             });
         }
+        async function loadHeaderConfig() {
+            try {
+                const res = await fetch('config.json');
+                if (!res.ok) return;
+                const config = await res.json();
+
+                if (config.header_title) {
+                    document.getElementById('headerTitle').textContent = config.header_title;
+                }
+
+                // Randomly select an Islamic motivational verse from Quran for headerSubtitle
+                if (config.motivational_lines && config.motivational_lines.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * config.motivational_lines.length);
+                    document.getElementById('headerSubtitle').textContent = config.motivational_lines[randomIndex];
+                }
+            } catch (err) {
+                // Fallback text if config.json is not found
+                document.getElementById('headerSubtitle').textContent = "“So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5";
+            }
+        }
+
+        // Call on page load
+        loadHeaderConfig();
     </script>
 </body>
+
 </html>
