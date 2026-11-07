@@ -40,12 +40,12 @@
         </div>
 
     </main>
-
-    <script>
+<script>
         let allJobs = [];
 
         async function loadAllJobFiles() {
             try {
+                // Fetch the auto-generated manifest of JSON files
                 const manifestResp = await fetch('manifest.json');
                 const fileList = await manifestResp.json();
 
@@ -58,9 +58,8 @@
                         const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
                         const fileDate = dateMatch ? dateMatch[0] : 'Recently';
 
-                        return data.map((job, idx) => ({
+                        return data.map(job => ({
                             ...job,
-                            unique_id: `${fileName}_${idx}`,
                             posted_date: job.posted_date || fileDate
                         }));
                     } catch (err) {
@@ -96,10 +95,11 @@
                 const domain = job.domain || 'General';
                 const location = job.location || 'Not Specified';
                 const description = job.description || job.full_post_content || '';
-                const email = job.email || 'No email provided';
+                const email = job.email || '';
                 const postedDate = job.posted_date || 'Recently';
-                const cardId = job.unique_id.replace(/[^a-zA-Z0-9]/g, '_');
 
+                const whatsappMsg = encodeURIComponent(`Hi, I am applying for the ${title} role (Posted: ${postedDate}). Here is my CV:`);
+                const whatsappLink = `https://wa.me/?text=${whatsappMsg}`;
                 const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,\n\nI would like to apply for the ' + title + ' position.\n\nBest regards,')}`;
 
                 const card = `
@@ -116,23 +116,15 @@
                         </div>
                         <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
                             <span>📍 ${location}</span>
-                            <span>✉️ ${email}</span>
                         </div>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">${description}</p>
                         
-                        <!-- Description with Read More / Read Less Toggle -->
-                        <div class="relative">
-                            <p id="desc_${cardId}" class="text-sm text-gray-600 mb-2 line-clamp-3 transition-all duration-300">
-                                ${description}
-                            </p>
-                            <button onclick="toggleReadMore('${cardId}')" id="btn_${cardId}" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 mb-4 focus:outline-none">
-                                Read More ↓
-                            </button>
-                        </div>
-                        
-                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                            <span class="text-xs text-gray-400">Direct Application</span>
-                            <a href="${emailLink}" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-6 rounded-xl transition-colors">
+                        <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100">
+                            <a href="${emailLink}" class="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
                                 Apply via Email
+                            </a>
+                            <a href="${whatsappLink}" target="_blank" class="flex-1 text-center bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
+                                Apply via WhatsApp
                             </a>
                         </div>
                     </div>
@@ -141,21 +133,6 @@
             });
         }
 
-        // Toggle Expand / Collapse Full Description
-        function toggleReadMore(cardId) {
-            const descElem = document.getElementById(`desc_${cardId}`);
-            const btnElem = document.getElementById(`btn_${cardId}`);
-
-            if (descElem.classList.contains('line-clamp-3')) {
-                descElem.classList.remove('line-clamp-3');
-                btnElem.textContent = 'Read Less ↑';
-            } else {
-                descElem.classList.add('line-clamp-3');
-                btnElem.textContent = 'Read More ↓';
-            }
-        }
-
-        // Live Search & Filter
         document.getElementById('searchInput').addEventListener('input', filterJobs);
         document.getElementById('domainFilter').addEventListener('change', filterJobs);
 
@@ -177,4 +154,4 @@
         loadAllJobFiles();
     </script>
 </body>
-</html>
+</html> 
