@@ -31,54 +31,121 @@
                 <option value="IT">IT & Tech</option>
                 <option value="Oil & Gas">Oil & Gas / Energy</option>
                 <option value="Fintech">Fintech & Banking</option>
+                <option value="Networking">Networking / IT Infrastructure</option>
             </select>
         </div>
 
         <!-- Job Cards List -->
         <div id="jobListings" class="space-y-4">
-            <p class="text-center text-gray-500 py-8">Loading job listings...</p>
+            <!-- Jobs injected dynamically -->
         </div>
 
     </main>
-<script>
-        let allJobs = [];
 
-        async function loadAllJobFiles() {
-            try {
-                // Fetch the auto-generated manifest of JSON files
-                const manifestResp = await fetch('manifest.json');
-                const fileList = await manifestResp.json();
-
-                let combinedJobs = [];
-
-                const fetchPromises = fileList.map(async (fileName) => {
-                    try {
-                        const res = await fetch(fileName);
-                        const data = await res.json();
-                        const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
-                        const fileDate = dateMatch ? dateMatch[0] : 'Recently';
-
-                        return data.map(job => ({
-                            ...job,
-                            posted_date: job.posted_date || fileDate
-                        }));
-                    } catch (err) {
-                        return [];
-                    }
-                });
-
-                const results = await Promise.all(fetchPromises);
-                results.forEach(jobArray => combinedJobs.push(...jobArray));
-
-                // Sort by Newest Date
-                combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
-
-                allJobs = combinedJobs;
-                displayJobs(allJobs);
-            } catch (error) {
-                document.getElementById('jobListings').innerHTML = `<p class="text-center text-red-500 py-8">No job files found. Upload your JSON files to get started.</p>`;
-            }
-        }
+    <script>
+        // Embedded Job Database (Fully self-contained, no external fetching required)
+        const allJobs = [
+          {
+            "id": "job_1",
+            "title": "Core Engineer (CS/PS/IMS)",
+            "company": "SIS Global",
+            "location": "Riyadh, Saudi Arabia",
+            "domain": "Telecom",
+            "email": "omniaelshamy@sis.net.sa",
+            "description": "We’re looking for an experienced Core Engineer with strong hands-on expertise in Ericsson CS/PS Core Networks and IMS to join our telecom operations team. Key Responsibilities: Monitor, troubleshoot, and maintain CS, PS, and IMS Core Networks. Handle configuration changes and troubleshooting for MSC, MGW, HLR, HSS, STP, SBC, UDM, and IMS. Perform fault management, incident resolution, and trouble ticket handling within agreed SLAs. Minimum 3 years of experience in Ericsson CS/PS Core troubleshooting.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_2",
+            "title": "Network Engineers (5 Open Positions)",
+            "company": "Cloudstakes",
+            "location": "Not Specified",
+            "domain": "Cybersecurity & Network Security",
+            "email": "kumar.unnati@cloudstakes.com",
+            "description": "Must-Have Skills: Hands-on experience with Arista, Fortinet & F5. Strong expertise in Multicast Networking & Troubleshooting. Experience in network design, implementation, migration, and production support. Understanding of low-latency trading and market data environments. Strong troubleshooting skills for connectivity, packet delivery, and latency issues.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_3",
+            "title": "RAN NOC Engineer",
+            "company": "Nokia Saudi",
+            "location": "Not Specified",
+            "domain": "Telecom",
+            "email": "recruitment@nokiasaudi.com",
+            "description": "Requirements: Bachelor’s degree in Telecommunications, Electronics, Computer Engineering, or related field. 1-5 years of relevant experience. Knowledge of 2G, 3G, 4G, and 5G technologies. Familiarity with OSS/NMS, alarm monitoring, fault management, and ticketing systems. Ability to work in a 24/7 shift environment.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_4",
+            "title": "Network Security Resource (F5 WAF)",
+            "company": "Iconic IT",
+            "location": "Abu Dhabi, UAE",
+            "domain": "Cybersecurity & Network Security",
+            "email": "recruiter@iconicit.ae",
+            "description": "Super Urgently Hiring for network security resource with experience in 'F5 WAF'. 10 years experience. Location Abu Dhabi, locally available & immediate joiners are preferred. Salary budget: 18k-20k max.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_5",
+            "title": "Project Engineer - Oil & Gas EPC",
+            "company": "Technip Energies",
+            "location": "Ras Laffan, Qatar",
+            "domain": "Oil & Gas / Energy",
+            "email": "qa.nfsw.recruitment@ten.com",
+            "description": "Hiring a Project Engineer for our project in Ras Laffan. Ideal candidate will have minimum 10 years of oil and gas EPC project experience in the role. Candidates with previous experience in Ras Laffan and those available to join at short notice will be given preference.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_6",
+            "title": "Benchmarking & Multi-Vendor Optimization Engineer (Spanish)",
+            "company": "MLR Associates",
+            "location": "Remote",
+            "domain": "Telecom",
+            "email": "dan.dillon@mlr-associates.com",
+            "description": "New Contract Role: Benchmarking & Multi-Vendor Optimization Engineer (Spanish Speaker). We are seeking a highly skilled Benchmarking & Multi-Vendor Optimization Engineer to support mobile network performance assessment and optimization activities across multiple technologies and vendors (Huawei, Nokia, Ericsson). Fluency in Spanish and English is mandatory.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_7",
+            "title": "Operations Coordinator (FM)",
+            "company": "Facilities Management",
+            "location": "Riyadh, Saudi Arabia",
+            "domain": "IT & Tech",
+            "email": "jobsfmksa@gmail.com",
+            "description": "Minimum of 3-5 years of experience in Facilities Management field is required. Please share CV at jobsfmksa@gmail.com.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_8",
+            "title": "DevOps Engineer Azure",
+            "company": "Asian Global Infotech",
+            "location": "UAE",
+            "domain": "Cybersecurity & Network Security",
+            "email": "jesna@asianglobalinfotech.com",
+            "description": "We are looking for an experienced DevOps Engineer with strong hands-on experience in Azure infrastructure, Infrastructure as Code (IaC), Kubernetes/AKS, and CI/CD automation. 6-10+ years of DevOps / Platform Engineering experience.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_9",
+            "title": "Network Security Engineer (Fortinet)",
+            "company": "Cyfortix",
+            "location": "India – Remote",
+            "domain": "Cybersecurity & Network Security",
+            "email": "arif@cyfortix.com",
+            "description": "Looking for a Network Security Engineer with 2-3 years of hands-on experience in FortiGate Firewall (FortiOS), FortiManager, and FortiAnalyzer. All three technologies are mandatory. Immediate joiners only.",
+            "posted_date": "2026-11-07"
+          },
+          {
+            "id": "job_10",
+            "title": "Project Controls Leader",
+            "company": "Basecamp Digital",
+            "location": "Bangkok, Thailand",
+            "domain": "Networking / IT Infrastructure",
+            "email": "Chuleeporn@basecampdigital.co.th",
+            "description": "Looking for someone with strong technical depth in Project Controls—someone who understands how to control project performance through schedule, cost, budget, forecasting, risks, changes, and financial information.",
+            "posted_date": "2026-11-07"
+          }
+        ];
 
         function displayJobs(jobArray) {
             const container = document.getElementById('jobListings');
@@ -89,17 +156,16 @@
                 return;
             }
 
-            jobArray.forEach(job => {
+            jobArray.forEach((job, index) => {
                 const title = job.title || 'Job Opportunity';
                 const company = job.company || 'Direct Hiring';
                 const domain = job.domain || 'General';
                 const location = job.location || 'Not Specified';
-                const description = job.description || job.full_post_content || '';
-                const email = job.email || '';
+                const description = job.description || '';
+                const email = job.email || 'No email provided';
                 const postedDate = job.posted_date || 'Recently';
+                const cardId = `job_card_${index}`;
 
-                const whatsappMsg = encodeURIComponent(`Hi, I am applying for the ${title} role (Posted: ${postedDate}). Here is my CV:`);
-                const whatsappLink = `https://wa.me/?text=${whatsappMsg}`;
                 const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,\n\nI would like to apply for the ' + title + ' position.\n\nBest regards,')}`;
 
                 const card = `
@@ -116,15 +182,23 @@
                         </div>
                         <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
                             <span>📍 ${location}</span>
+                            <span>✉️ ${email}</span>
                         </div>
-                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">${description}</p>
                         
-                        <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100">
-                            <a href="${emailLink}" class="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
+                        <!-- Description with Read More / Read Less Toggle -->
+                        <div class="relative">
+                            <p id="desc_${cardId}" class="text-sm text-gray-600 mb-2 line-clamp-3 transition-all duration-300">
+                                ${description}
+                            </p>
+                            <button onclick="toggleReadMore('${cardId}')" id="btn_${cardId}" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 mb-4 focus:outline-none">
+                                Read More ↓
+                            </button>
+                        </div>
+                        
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-xs text-gray-400">Direct Application</span>
+                            <a href="${emailLink}" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-6 rounded-xl transition-colors">
                                 Apply via Email
-                            </a>
-                            <a href="${whatsappLink}" target="_blank" class="flex-1 text-center bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
-                                Apply via WhatsApp
                             </a>
                         </div>
                     </div>
@@ -133,6 +207,21 @@
             });
         }
 
+        // Toggle Expand / Collapse Full Description
+        function toggleReadMore(cardId) {
+            const descElem = document.getElementById(`desc_${cardId}`);
+            const btnElem = document.getElementById(`btn_${cardId}`);
+
+            if (descElem.classList.contains('line-clamp-3')) {
+                descElem.classList.remove('line-clamp-3');
+                btnElem.textContent = 'Read Less ↑';
+            } else {
+                descElem.classList.add('line-clamp-3');
+                btnElem.textContent = 'Read More ↓';
+            }
+        }
+
+        // Live Search & Filter Logic
         document.getElementById('searchInput').addEventListener('input', filterJobs);
         document.getElementById('domainFilter').addEventListener('change', filterJobs);
 
@@ -143,7 +232,8 @@
             const filtered = allJobs.filter(job => {
                 const matchesQuery = (job.title || '').toLowerCase().includes(query) || 
                                      (job.location || '').toLowerCase().includes(query) || 
-                                     (job.description || '').toLowerCase().includes(query);
+                                     (job.description || '').toLowerCase().includes(query) ||
+                                     (job.company || '').toLowerCase().includes(query);
                 const matchesDomain = domain === "" || (job.domain || '').includes(domain);
                 return matchesQuery && matchesDomain;
             });
@@ -151,7 +241,8 @@
             displayJobs(filtered);
         }
 
-        loadAllJobFiles();
+        // Initial render on page load
+        displayJobs(allJobs);
     </script>
 </body>
-</html> 
+</html>
