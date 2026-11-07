@@ -242,15 +242,16 @@
         }
         // Copy all job titles and locations with website URL
         function copyAllJobs() {
+            
+            const currentUrl = window.location.href;
             if (!allJobs || allJobs.length === 0) {
                 alert('No jobs loaded yet!');
                 return;
             }
-            // Get only the last 15 jobs (or all if there are fewer than 15)
+            // Get only the last 20 jobs (or all if there are fewer than 20)
             const recentJobs = allJobs.slice(-20);
-            let textToCopy = "Recently jobs\n";
-
-            recentJobs.forEach((job, index) => {
+            let textToCopy = `Recently jobs : @ ${currentUrl}\n\n`;
+             recentJobs.forEach((job, index) => {
                 const title = job.title || 'Job Opportunity';
                 const location = job.location || 'Not Specified';
                 if (location && location.toLowerCase() !== 'not specified') {
@@ -261,7 +262,6 @@
             });
 
             // Append current website URL at the end
-            const currentUrl = window.location.href;
             textToCopy += `\n🔗 Apply & Browse More: ${currentUrl}`;
 
             navigator.clipboard.writeText(textToCopy).then(() => {
