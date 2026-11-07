@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Job Portal | Verified Listings</title>
+    <title>Global Job Portal | External Fetch</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -12,7 +12,7 @@
     <!-- Header -->
     <header class="bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
         <h1 class="text-3xl font-bold mb-2">🚀 Verified Job Openings</h1>
-        <p class="text-indigo-100 max-w-xl mx-auto text-sm">Browse latest roles, filter by domain, and apply via email.</p>
+        <p class="text-indigo-100 max-w-xl mx-auto text-sm">Dynamically loaded from JSON files, searchable, with full post details.</p>
     </header>
 
     <!-- Main Container -->
@@ -20,7 +20,7 @@
         
         <!-- Search & Filter Bar -->
         <div class="flex flex-col md:flex-row gap-3 mb-6">
-            <input type="text" id="searchInput" placeholder="Search title, skills, location..." 
+            <input type="text" id="searchInput" placeholder="Search title, skills, location, company..." 
                 class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
             
             <select id="domainFilter" class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
@@ -37,115 +37,63 @@
 
         <!-- Job Cards List -->
         <div id="jobListings" class="space-y-4">
-            <!-- Jobs injected dynamically -->
+            <p class="text-center text-gray-500 py-8">Loading job listings from server...</p>
         </div>
 
     </main>
 
     <script>
-        // Embedded Job Database (Fully self-contained, no external fetching required)
-        const allJobs = [
-          {
-            "id": "job_1",
-            "title": "Core Engineer (CS/PS/IMS)",
-            "company": "SIS Global",
-            "location": "Riyadh, Saudi Arabia",
-            "domain": "Telecom",
-            "email": "omniaelshamy@sis.net.sa",
-            "description": "We’re looking for an experienced Core Engineer with strong hands-on expertise in Ericsson CS/PS Core Networks and IMS to join our telecom operations team. Key Responsibilities: Monitor, troubleshoot, and maintain CS, PS, and IMS Core Networks. Handle configuration changes and troubleshooting for MSC, MGW, HLR, HSS, STP, SBC, UDM, and IMS. Perform fault management, incident resolution, and trouble ticket handling within agreed SLAs. Minimum 3 years of experience in Ericsson CS/PS Core troubleshooting.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_2",
-            "title": "Network Engineers (5 Open Positions)",
-            "company": "Cloudstakes",
-            "location": "Not Specified",
-            "domain": "Cybersecurity & Network Security",
-            "email": "kumar.unnati@cloudstakes.com",
-            "description": "Must-Have Skills: Hands-on experience with Arista, Fortinet & F5. Strong expertise in Multicast Networking & Troubleshooting. Experience in network design, implementation, migration, and production support. Understanding of low-latency trading and market data environments. Strong troubleshooting skills for connectivity, packet delivery, and latency issues.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_3",
-            "title": "RAN NOC Engineer",
-            "company": "Nokia Saudi",
-            "location": "Not Specified",
-            "domain": "Telecom",
-            "email": "recruitment@nokiasaudi.com",
-            "description": "Requirements: Bachelor’s degree in Telecommunications, Electronics, Computer Engineering, or related field. 1-5 years of relevant experience. Knowledge of 2G, 3G, 4G, and 5G technologies. Familiarity with OSS/NMS, alarm monitoring, fault management, and ticketing systems. Ability to work in a 24/7 shift environment.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_4",
-            "title": "Network Security Resource (F5 WAF)",
-            "company": "Iconic IT",
-            "location": "Abu Dhabi, UAE",
-            "domain": "Cybersecurity & Network Security",
-            "email": "recruiter@iconicit.ae",
-            "description": "Super Urgently Hiring for network security resource with experience in 'F5 WAF'. 10 years experience. Location Abu Dhabi, locally available & immediate joiners are preferred. Salary budget: 18k-20k max.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_5",
-            "title": "Project Engineer - Oil & Gas EPC",
-            "company": "Technip Energies",
-            "location": "Ras Laffan, Qatar",
-            "domain": "Oil & Gas / Energy",
-            "email": "qa.nfsw.recruitment@ten.com",
-            "description": "Hiring a Project Engineer for our project in Ras Laffan. Ideal candidate will have minimum 10 years of oil and gas EPC project experience in the role. Candidates with previous experience in Ras Laffan and those available to join at short notice will be given preference.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_6",
-            "title": "Benchmarking & Multi-Vendor Optimization Engineer (Spanish)",
-            "company": "MLR Associates",
-            "location": "Remote",
-            "domain": "Telecom",
-            "email": "dan.dillon@mlr-associates.com",
-            "description": "New Contract Role: Benchmarking & Multi-Vendor Optimization Engineer (Spanish Speaker). We are seeking a highly skilled Benchmarking & Multi-Vendor Optimization Engineer to support mobile network performance assessment and optimization activities across multiple technologies and vendors (Huawei, Nokia, Ericsson). Fluency in Spanish and English is mandatory.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_7",
-            "title": "Operations Coordinator (FM)",
-            "company": "Facilities Management",
-            "location": "Riyadh, Saudi Arabia",
-            "domain": "IT & Tech",
-            "email": "jobsfmksa@gmail.com",
-            "description": "Minimum of 3-5 years of experience in Facilities Management field is required. Please share CV at jobsfmksa@gmail.com.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_8",
-            "title": "DevOps Engineer Azure",
-            "company": "Asian Global Infotech",
-            "location": "UAE",
-            "domain": "Cybersecurity & Network Security",
-            "email": "jesna@asianglobalinfotech.com",
-            "description": "We are looking for an experienced DevOps Engineer with strong hands-on experience in Azure infrastructure, Infrastructure as Code (IaC), Kubernetes/AKS, and CI/CD automation. 6-10+ years of DevOps / Platform Engineering experience.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_9",
-            "title": "Network Security Engineer (Fortinet)",
-            "company": "Cyfortix",
-            "location": "India – Remote",
-            "domain": "Cybersecurity & Network Security",
-            "email": "arif@cyfortix.com",
-            "description": "Looking for a Network Security Engineer with 2-3 years of hands-on experience in FortiGate Firewall (FortiOS), FortiManager, and FortiAnalyzer. All three technologies are mandatory. Immediate joiners only.",
-            "posted_date": "2026-11-07"
-          },
-          {
-            "id": "job_10",
-            "title": "Project Controls Leader",
-            "company": "Basecamp Digital",
-            "location": "Bangkok, Thailand",
-            "domain": "Networking / IT Infrastructure",
-            "email": "Chuleeporn@basecampdigital.co.th",
-            "description": "Looking for someone with strong technical depth in Project Controls—someone who understands how to control project performance through schedule, cost, budget, forecasting, risks, changes, and financial information.",
-            "posted_date": "2026-11-07"
-          }
-        ];
+        let allJobs = [];
+
+        async function loadJobsFromFiles() {
+            try {
+                // 1. Fetch manifest file
+                const manifestRes = await fetch('manifest.json');
+                if (!manifestRes.ok) throw new Error('Could not load manifest.json');
+                const fileList = await manifestRes.json();
+
+                let combinedJobs = [];
+
+                // 2. Fetch each JSON file listed in the manifest concurrently
+                const fetchPromises = fileList.map(async (fileName) => {
+                    try {
+                        const res = await fetch(fileName);
+                        if (!res.ok) return [];
+                        const data = await res.json();
+                        
+                        // Extract date from filename if not present in job object
+                        const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
+                        const fileDate = dateMatch ? dateMatch[0] : 'Recently';
+
+                        return data.map((job, idx) => ({
+                            ...job,
+                            unique_id: `${fileName}_${idx}`,
+                            posted_date: job.posted_date || fileDate
+                        }));
+                    } catch (err) {
+                        console.error(`Error loading ${fileName}:`, err);
+                        return [];
+                    }
+                });
+
+                const results = await Promise.all(fetchPromises);
+                results.forEach(jobArray => combinedJobs.push(...jobArray));
+
+                // Sort by Newest Posted Date
+                combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
+
+                allJobs = combinedJobs;
+                displayJobs(allJobs);
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                document.getElementById('jobListings').innerHTML = `
+                    <div class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl text-center text-sm">
+                        <p class="font-bold mb-1">Failed to fetch job files.</p>
+                        <p>Make sure you are running this via a local server (like VS Code Live Server) or hosted on GitHub Pages so browser CORS permits external fetching.</p>
+                    </div>`;
+            }
+        }
 
         function displayJobs(jobArray) {
             const container = document.getElementById('jobListings');
@@ -156,15 +104,15 @@
                 return;
             }
 
-            jobArray.forEach((job, index) => {
+            jobArray.forEach((job) => {
                 const title = job.title || 'Job Opportunity';
                 const company = job.company || 'Direct Hiring';
                 const domain = job.domain || 'General';
                 const location = job.location || 'Not Specified';
-                const description = job.description || '';
+                const description = job.description || job.full_post_content || '';
                 const email = job.email || 'No email provided';
                 const postedDate = job.posted_date || 'Recently';
-                const cardId = `job_card_${index}`;
+                const cardId = job.unique_id.replace(/[^a-zA-Z0-9]/g, '_');
 
                 const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,\n\nI would like to apply for the ' + title + ' position.\n\nBest regards,')}`;
 
@@ -241,8 +189,8 @@
             displayJobs(filtered);
         }
 
-        // Initial render on page load
-        displayJobs(allJobs);
+        // Run fetch on load
+        loadJobsFromFiles();
     </script>
 </body>
 </html>
