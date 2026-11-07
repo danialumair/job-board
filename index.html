@@ -124,7 +124,7 @@
                             </div>
                             <div class="flex flex-col items-end gap-1">
                                 <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${domain}</span>
-                                <span class="text-[11px] text-gray-400 font-medium">📅 ${postedDate}</span>
+                                <span class="text-[11px] text-gray-400 font-medium" onclick="copyJobPost('${title.replace(/'/g, "\\'")}', '${company.replace(/'/g, "\\'")}', '${location.replace(/'/g, "\\'")}', '${domain}', '${email}', '${description.replace(/'/g, "\\'").replace(/\n/g, ' ')}')" >📅 ${postedDate}</span>
                             </div>
                         </div>
                         <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
@@ -134,22 +134,17 @@
                         
                         <!-- Description with Read More / Read Less Toggle -->
                         <div class="relative">
-                            <p id="desc_${cardId}" class="text-sm text-gray-600 mb-2 line-clamp-3 transition-all duration-300">
+                            <p id="desc_${cardId}" class="text-sm text-gray-600 mb-2 line-clamp-3 transition-all duration-300" flex items-center justify-between gap-2">
                                 ${description}
                             </p>
                             <button onclick="toggleReadMore('${cardId}')" id="btn_${cardId}" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 mb-4 focus:outline-none">
                                 Read More ↓
                             </button>
-                        </div>
-                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between gap-2">
-                            <button onclick="copyJobPost('${title.replace(/'/g, "\\'")}', '${company.replace(/'/g, "\\'")}', '${location.replace(/'/g, "\\'")}', '${domain}', '${email}', '${description.replace(/'/g, "\\'").replace(/\n/g, ' ')}')" 
-                                class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
-                                📋 Copy Post
-                            </button>
+                          
                             <a href="${emailLink}" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-6 rounded-xl transition-colors">
                                 Apply via Email
                             </a>
-                        </div>
+                        </div> 
                        
                     </div>
                 `;
@@ -195,7 +190,7 @@
         loadJobsFromFiles();
         // Copy Job Post to Clipboard
         function copyJobPost(title, company, location, domain, email, description) {
-            const textToCopy = `Role: ${title}\nCompany: ${company}\nLocation: ${location}\nDomain: ${domain}\nEmail: ${email}\n\nDescription:\n${description}`;
+            const textToCopy = `Location: ${location}\nDomain: ${domain}\nEmail: ${email}\n\nDescription:\n${description}`;
             navigator.clipboard.writeText(textToCopy).then(() => {
                 alert('Job post copied to clipboard!');
             }).catch(err => {
