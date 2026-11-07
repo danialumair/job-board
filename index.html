@@ -121,7 +121,6 @@
                         <div class="flex justify-between items-start gap-2 mb-2">
                             <div>
                                 <h2 class="text-lg font-bold text-gray-900">${title}</h2>
-                                <p class="text-sm font-medium text-indigo-600">${company}</p>
                             </div>
                             <div class="flex flex-col items-end gap-1">
                                 <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${domain}</span>
@@ -142,13 +141,16 @@
                                 Read More ↓
                             </button>
                         </div>
-                        
-                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                            <span class="text-xs text-gray-400">Direct Application</span>
+                        <div class="pt-3 border-t border-gray-100 flex items-center justify-between gap-2">
+                            <button onclick="copyJobPost('${title.replace(/'/g, "\\'")}', '${company.replace(/'/g, "\\'")}', '${location.replace(/'/g, "\\'")}', '${domain}', '${email}', '${description.replace(/'/g, "\\'").replace(/\n/g, ' ')}')" 
+                                class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
+                                📋 Copy Post
+                            </button>
                             <a href="${emailLink}" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-6 rounded-xl transition-colors">
                                 Apply via Email
                             </a>
                         </div>
+                       
                     </div>
                 `;
                 container.innerHTML += card;
@@ -191,6 +193,15 @@
 
         // Run fetch on load
         loadJobsFromFiles();
+        // Copy Job Post to Clipboard
+        function copyJobPost(title, company, location, domain, email, description) {
+            const textToCopy = `Role: ${title}\nCompany: ${company}\nLocation: ${location}\nDomain: ${domain}\nEmail: ${email}\n\nDescription:\n${description}`;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('Job post copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
     </script>
 </body>
 </html>
