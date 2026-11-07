@@ -243,10 +243,11 @@
                 alert('No jobs loaded yet!');
                 return;
             }
-
-            let textToCopy = "";
+            // Get only the last 15 jobs (or all if there are fewer than 15)
+            const recentJobs = allJobs.slice(-20);
+            let textToCopy = "Recently jobs\n";
             
-            allJobs.forEach((job, index) => {
+            recentJobs.forEach((job, index) => {
                 const title = job.title || 'Job Opportunity';
                 const location = job.location || 'Not Specified';
                 if (location && location.toLowerCase() !== 'not specified') {
