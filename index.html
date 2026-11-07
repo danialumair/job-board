@@ -13,6 +13,14 @@
 
     <!-- Header -->
     <header class="bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
+        <!-- Top Right Action Button with Icon -->
+        <div class="absolute top-4 right-4">
+            <button onclick="copyAllJobs()" title="Copy All Job Titles & Locations" class="bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-xl backdrop-blur-sm transition-colors border border-white/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                </svg>
+            </button>
+        </div>
         <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">Fetching daily inspiration and jobs...
         </p>
     </header>
@@ -191,6 +199,8 @@
 
         // Run fetch on load
         loadJobsFromFiles();
+        // Call on page load
+        loadHeaderConfig();
         // Copy Job Post to Clipboard
         function copyJobPost(title, company, location, domain, email, description) {
             const textToCopy = `Location: ${location}\nDomain: ${domain}\nEmail: ${email}\n\nDescription:\n${description}`;
@@ -202,27 +212,60 @@
         }
         async function loadHeaderConfig() {
             try {
-                const res = await fetch('config.json');
+                // Add timestamp query parameter to prevent browser caching
+                const res = await fetch('config.json?v=' + Date.now());
                 if (!res.ok) return;
                 const config = await res.json();
 
-                if (config.header_title) {
-                    document.getElementById('headerTitle').textContent = config.header_title;
+                const titleElem = document.getElementById('headerTitle');
+                const subtitleElem = document.getElementById('headerSubtitle');
+
+                if (config.header_title && titleElem) {
+                    titleElem.textContent = config.header_title;
                 }
 
-                // Randomly select an Islamic motivational verse from Quran for headerSubtitle
-                if (config.motivational_lines && config.motivational_lines.length > 0) {
+                // Randomly select a fresh line from the array on each load
+                if (config.motivational_lines && config.motivational_lines.length > 0 && subtitleElem) {
                     const randomIndex = Math.floor(Math.random() * config.motivational_lines.length);
-                    document.getElementById('headerSubtitle').textContent = config.motivational_lines[randomIndex];
+                    subtitleElem.textContent = config.motivational_lines[randomIndex];
                 }
             } catch (err) {
                 // Fallback text if config.json is not found
-                document.getElementById('headerSubtitle').textContent = "“So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5";
+                const subtitleElem = document.getElementById('headerSubtitle');
+                if (subtitleElem) {
+                    subtitleElem.textContent = "“So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5";
+                }
             }
         }
+// Copy all job titles and locations with website URL
+        function copyAllJobs() {
+            if (!allJobs || allJobs.length === 0) {
+                alert('No jobs loaded yet!');
+                return;
+            }
 
-        // Call on page load
-        loadHeaderConfig();
+            let textToCopy = "";
+            
+            allJobs.forEach((job, index) => {
+                const title = job.title || 'Job Opportunity';
+                const location = job.location || 'Not Specified';
+                if (location && location.toLowerCase() !== 'not specified') {
+                    textToCopy += `${index + 1}. ${title} — ${location}\n`;
+                } else {
+                    textToCopy += `${index + 1}. ${title}\n`;
+                }
+            });
+
+            // Append current website URL at the end
+            const currentUrl = window.location.href;
+            textToCopy += `\n🔗 Apply & Browse More: ${currentUrl}`;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('All job titles and locations copied to clipboard with website URL!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
     </script>
 </body>
 
