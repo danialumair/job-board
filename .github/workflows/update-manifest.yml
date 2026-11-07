@@ -16,7 +16,12 @@ jobs:
 
       - name: Generate manifest.json
         run: |
-          jq -n '[inputs | select(test("jobs_.*\\.json$"))]' < <(ls jobs_*.json) > manifest.json
+          python3 -c "
+          import glob, json
+          files = sorted(glob.glob('jobs_*.json'))
+          with open('manifest.json', 'w') as f:
+              json.dump(files, f, indent=2)
+          "
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add manifest.json
