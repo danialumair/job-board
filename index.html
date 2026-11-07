@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Job Board | Instant WhatsApp Apply</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Global Job Portal | Instant WhatsApp Apply</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
     <!-- Header -->
     <header class="bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
-        <h1 class="text-3xl font-bold mb-2">🚀 Latest Verified Tech & Telecom Jobs</h1>
-        <p class="text-indigo-100 max-w-xl mx-auto text-sm">Search roles, filter by domain/location, and apply instantly.</p>
+        <h1 class="text-3xl font-bold mb-2">🚀 Verified Job Openings</h1>
+        <p class="text-indigo-100 max-w-xl mx-auto text-sm">Browse latest roles, filter by domain, and apply instantly.</p>
     </header>
 
     <!-- Main Container -->
@@ -21,7 +20,7 @@
         
         <!-- Search & Filter Bar -->
         <div class="flex flex-col md:flex-row gap-3 mb-6">
-            <input type="text" id="searchInput" placeholder="Search by title, skill, or company..." 
+            <input type="text" id="searchInput" placeholder="Search title, skills, location..." 
                 class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
             
             <select id="domainFilter" class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
@@ -30,27 +29,55 @@
                 <option value="Cybersecurity">Cybersecurity</option>
                 <option value="Cloud">Cloud & DevOps</option>
                 <option value="IT">IT & Tech</option>
+                <option value="Oil & Gas">Oil & Gas / Energy</option>
+                <option value="Fintech">Fintech & Banking</option>
             </select>
         </div>
 
-        <!-- Job Cards Grid -->
+        <!-- Job Cards List -->
         <div id="jobListings" class="space-y-4">
-            <!-- Dynamic Jobs Injected Here -->
+            <p class="text-center text-gray-500 py-8">Loading job listings...</p>
         </div>
 
     </main>
 
-    <!-- JavaScript to Load Data & Handle Search -->
     <script>
-        let jobs = [];
+        let allJobs = [];
 
-        async function loadJobs() {
+        async function loadAllJobFiles() {
             try {
-                const response = await fetch('jobs.json');
-                jobs = await response.json();
-                displayJobs(jobs);
+                // Fetch the auto-generated manifest of JSON files
+                const manifestResp = await fetch('manifest.json');
+                const fileList = await manifestResp.json();
+
+                let combinedJobs = [];
+
+                const fetchPromises = fileList.map(async (fileName) => {
+                    try {
+                        const res = await fetch(fileName);
+                        const data = await res.json();
+                        const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
+                        const fileDate = dateMatch ? dateMatch[0] : 'Recently';
+
+                        return data.map(job => ({
+                            ...job,
+                            posted_date: job.posted_date || fileDate
+                        }));
+                    } catch (err) {
+                        return [];
+                    }
+                });
+
+                const results = await Promise.all(fetchPromises);
+                results.forEach(jobArray => combinedJobs.push(...jobArray));
+
+                // Sort by Newest Date
+                combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
+
+                allJobs = combinedJobs;
+                displayJobs(allJobs);
             } catch (error) {
-                console.error('Error loading jobs:', error);
+                document.getElementById('jobListings').innerHTML = `<p class="text-center text-red-500 py-8">No job files found. Upload your JSON files to get started.</p>`;
             }
         }
 
@@ -58,30 +85,40 @@
             const container = document.getElementById('jobListings');
             container.innerHTML = '';
 
-            if (jobArray.length === 0) {
+            if (!jobArray || jobArray.length === 0) {
                 container.innerHTML = `<p class="text-center text-gray-500 py-8">No matching jobs found.</p>`;
                 return;
             }
 
             jobArray.forEach(job => {
-                // WhatsApp direct apply link generator
-                const whatsappMsg = encodeURIComponent(`Hi, I am interested in applying for the ${job>title} position at ${job.company}. Here is my CV:`);
-                const whatsappLink = `https://wa.me/?text=${whatsappMsg}`; // Or replace with your recruiter WhatsApp number like https://wa.me/968XXXXXXXX
-                const emailLink = `mailto:${job.email}?subject=Application for ${job.title}&body=Hi,%0D%0A%0D%0AI would like to apply for the ${job.title} position.%0D%0A%0D%0ABest regards,`;
+                const title = job.title || 'Job Opportunity';
+                const company = job.company || 'Direct Hiring';
+                const domain = job.domain || 'General';
+                const location = job.location || 'Not Specified';
+                const description = job.description || job.full_post_content || '';
+                const email = job.email || '';
+                const postedDate = job.posted_date || 'Recently';
+
+                const whatsappMsg = encodeURIComponent(`Hi, I am applying for the ${title} role (Posted: ${postedDate}). Here is my CV:`);
+                const whatsappLink = `https://wa.me/?text=${whatsappMsg}`;
+                const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,\n\nI would like to apply for the ' + title + ' position.\n\nBest regards,')}`;
 
                 const card = `
                     <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                         <div class="flex justify-between items-start gap-2 mb-2">
                             <div>
-                                <h2 class="text-lg font-bold text-gray-900">${job.title}</h2>
-                                <p class="text-sm font-medium text-indigo-600">${job.company}</p>
+                                <h2 class="text-lg font-bold text-gray-900">${title}</h2>
+                                <p class="text-sm font-medium text-indigo-600">${company}</p>
                             </div>
-                            <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${job.domain}</span>
+                            <div class="flex flex-col items-end gap-1">
+                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${domain}</span>
+                                <span class="text-[11px] text-gray-400 font-medium">📅 ${postedDate}</span>
+                            </div>
                         </div>
                         <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
-                            <span class="flex items-center gap-1">📍 ${job.location}</span>
+                            <span>📍 ${location}</span>
                         </div>
-                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">${job.description}</p>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">${description}</p>
                         
                         <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-gray-100">
                             <a href="${emailLink}" class="flex-1 text-center bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
@@ -97,7 +134,6 @@
             });
         }
 
-        // Search & Filter Logic
         document.getElementById('searchInput').addEventListener('input', filterJobs);
         document.getElementById('domainFilter').addEventListener('change', filterJobs);
 
@@ -105,18 +141,18 @@
             const query = document.getElementById('searchInput').value.toLowerCase();
             const domain = document.getElementById('domainFilter').value;
 
-            const filtered = jobs.filter(job => {
-                const matchesQuery = job.title.toLowerCase().includes(query) || 
-                                     job.company.toLowerCase().includes(query) || 
-                                     job.location.toLowerCase().includes(query);
-                const matchesDomain = domain === "" || job.domain.includes(domain);
+            const filtered = allJobs.filter(job => {
+                const matchesQuery = (job.title || '').toLowerCase().includes(query) || 
+                                     (job.location || '').toLowerCase().includes(query) || 
+                                     (job.description || '').toLowerCase().includes(query);
+                const matchesDomain = domain === "" || (job.domain || '').includes(domain);
                 return matchesQuery && matchesDomain;
             });
 
             displayJobs(filtered);
         }
 
-        loadJobs();
+        loadAllJobFiles();
     </script>
 </body>
 </html>
