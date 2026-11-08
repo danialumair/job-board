@@ -1,0 +1,512 @@
+[
+  {
+    "id": "job_1",
+    "title": "IMS QA Engineer",
+    "company": "Robert Walters",
+    "location": "Tokyo, Japan",
+    "domain": "Telecom",
+    "email": "Jade.Li@robertwalters.co.jp",
+    "description": "🚀 We’re hiring: IMS QA Engineer| Tokyo, Japan We are looking for an experienced VoLTE / IMS Engineer to support the design, deployment, integration, testing, and troubleshooting of IMS and VoLTE network infrastructure. The ideal candidate should have strong knowledge of IMS architecture, SIP/Diameter protocols, and end-to-end VoLTE services, along with hands-on experience in cloud-native technologies.  What you’ll do: -Design, deploy, integrate, and upgrade VoLTE / IMS network nodes and infrastructure. -Perform VoLTE feature testing, verification, and end-to-end call flow validation. -Troubleshoot network connectivity, call failures, and signaling issues across SIP, Diameter, and SS7 protocols. -Support IMS architecture and configuration, including P-CSCF, I-CSCF, S-CSCF, AS, MRF, and HSS. -Ensure end-to-end QoS enforcement and service quality for VoLTE services. -Analyze and troubleshoot IMS interfaces, including Sh, Rf, Ro, ISC, Ma, Mr, and Cx. -Validate IMS registration and supplementary services such as call hold, call forwarding, and conference calling. -Support IMS deployment and upgrades in cloud environments.  Details: Visa sponsorship is available.   📩 If you are interested or know someone suitable, please kindly email me your resume: Jade.Li@robertwalters.co.jp  #telecom #telecominJapan #hiringinJapan",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_2",
+    "title": "NOC Officer",
+    "company": "Tamas Projects",
+    "location": "Abu Dhabi, UAE",
+    "domain": "Telecom",
+    "email": "career@tamaspro.com",
+    "description": "Hiring – NOC Officer (Immediate Joiners Preferred) Contact- career@tamaspro.com Location- Abu Dhabi, UAE Tamas Projects is looking for an experienced NOC Officer to join our team in Abu Dhabi.  Requirements: Minimum 5 years of relevant experience in the UAE. Indian candidates preferred. Good knowledge of NOC procedures and authority approvals. Strong coordination and communication skills. Ability to join immediately is an advantage. #EGYPT #JORDAN #ARAB #ARABIC",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_3",
+    "title": "RAN NOC Engineer",
+    "company": "Nokia Saudi",
+    "location": "Saudi Arabia",
+    "domain": "Telecom",
+    "email": "recruitment@nokiasaudi.com",
+    "description": "Job Opportunity | RAN NOC Engineer | Telecommunications  An exciting career opportunity is available for a RAN NOC Engineer (Radio Access Network – Network Operations Center) to join a telecommunications network operations team. This opportunity is suitable for engineering professionals with 1–5 years of relevant experience who possess strong technical knowledge of mobile network technologies, network monitoring, incident management, and troubleshooting.  ◾ Position: RAN NOC Engineer ◾ Industry: Telecommunications / Network Operations ◾ Work Schedule: 24/7 Rotational Shifts  🌟 Qualifications & Requirements ◾ Bachelor's degree in Telecommunications, Electronics, Computer Engineering, or a related discipline. ◾ 1–5 years of relevant professional experience in telecommunications or network operations. ◾ Good technical understanding of 2G, 3G, 4G LTE, and 5G mobile network technologies. ◾ Familiarity with Operations Support Systems (OSS) and Network Management Systems (NMS). ◾ Knowledge of network alarm monitoring, fault management, and incident ticketing systems. ◾ Strong troubleshooting, analytical, and problem-solving skills. ◾ Effective communication skills and the ability to coordinate with cross-functional technical teams. ◾ Willingness and ability to work in a 24/7 rotational shift environment.  📩 How to Apply Interested and qualified candidates are invited to submit their updated CV to: recruitment@nokiasaudi.com  ⚠️ Email Subject: Application – RAN NOC Enginee",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_4",
+    "title": "iSBC Expert / IMS Voice Core Specialist",
+    "company": "MLR Associates",
+    "location": "Remote (Europe)",
+    "domain": "Telecom",
+    "email": "dan.dillon@mlr-associates.com",
+    "description": "New Contract Role: iSBC Expert / IMS Voice Core  Long term remote contract  MUST be based in Europe  Please contact me at: dan.dillon@mlr-associates.com  Profile Summary Senior Telecom Expert with strong expertise in iSBC/SBC, SIP, IMS and VoLTE, able to design and integrate complex voice solutions, troubleshoot critical issues and act as a technical leader across Engineering, Operations, Validation and vendor teams.  Mission The iSBC Expert is responsible for the design, engineering, integration, validation and Level 3 support of Session Border Controller solutions within IMS / VoLTE environments. The expert acts as a technical reference for iSBC and SIP topics, supporting Engineering, Integration, Validation and Operations teams and coordinating with Nokia vendors and third-party operators. Key Responsibilities • Design and maintain iSBC architectures and voice interconnections. • Define SIP routing, peering, media and security configurations. • Configure and optimize SBC environments, preferably Nokia Oracle / Acme • Define and implement complex SIP message manipulation and routing rules. • Install & Integrate iSBC with IMS Core, operators, MVNO/MVNA and service platforms. • Perform end-to-end troubleshooting using SIP/SDP and network traces. • Lead Root Cause Analysis for complex voice incidents. • Define and execute integration, acceptance, redundancy and failover tests. • Support Operations teams on Level 3 incidents and production changes. • Monitor capacity, performance, traffic distribution and service quality. • Produce technical documentation, procedures and knowledge-transfer material. These activities are consistent with the internal iSBC scope covering peer integration, redundancy testing, interfaces, test calls and VoLTE/iSBC acceptance testing described in SCD SBC.docx. [SCD SBC | Word] Technical Skills Expert level • SBC / iSBC • SIP / SDP • IMS / VoLTE • SIP call-flow and trace analysis • Troubleshooting / Root Cause Analysis • Nokia / Acme Oracle Packet SBC preferred",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_5",
+    "title": "Manager - Network Infrastructure & Operations",
+    "company": "AIQU Solutions",
+    "location": "Dubai, UAE",
+    "domain": "Networking / IT Infrastructure",
+    "email": "Email-Ryan@aiqusolutions.com",
+    "description": "Hiring | Manager – Network Infrastructure & Operations Location- Dubai, UAE Email-Ryan@aiqusolutions.com  Key requirements: - Networking: Cisco Core/Access Switching, Routing, Wireless LAN, Controllers and Network Services. - Network Security: FortiGate Firewalls, Network Segmentation, VPNs and Secure Remote Access. - Virtualisation & Storage: Proxmox VE, Synology NAS, Server Infrastructure and Storage Management. - Monitoring & Observability: LibreNMS, ManageEngine, Prometheus, Grafana and Elastic Stack. - Security & Hardening: OpenVAS, OpenSCAP, CrowdStrike, Vulnerability Management and Configuration Compliance. - DevOps & Infrastructure: GitLab, Plastic SCM, Containers and Infrastructure Automation. - Resilience: Backup, Disaster Recovery, High Availability, Failover and Business Continuity. - Experience: 8–10 years in Network & Infrastructure Engineering, including at least 3 years in a senior or management position.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_6",
+    "title": "Senior IT Engineer - Network & Security",
+    "company": "Talent Arabia",
+    "location": "Oman",
+    "domain": "Cybersecurity & Network Security",
+    "email": "ifra@talentarabia.com",
+    "description": "We're Hiring | Senior IT Engineer – Network & Security Location: Oman Candidates currently based in Oman will be given preference.  We are looking for an experienced Senior IT Engineer – Network & Security with strong hands-on expertise in Fortinet security solutions and enterprise networking.  Requirements: -Experience: Minimum 10+ years in Networking & Cyber Security -Education: Bachelor's Degree in IT, Computer Science, Cyber Security, or related field -Strong hands-on experience with Fortinet Firewalls and Security Solutions -Expertise in Firewall, VPN, LAN/WAN, SD-WAN, Network Security, and Troubleshooting -Knowledge of SIEM, SOC, WAF, EDR, XDR, and other security technologies -Experience in network implementation, configuration, troubleshooting, and technical documentation -Strong client communication and project coordination skills  Certifications: -Fortinet NSE Certification – Mandatory -CCNA / CCNP – Preferred -Palo Alto / Cisco Security Certifications – Added Advantage  Interested candidates can share their updated CV  Apply- ifra@talentarabia.com Subject line: Senior IT Engineer – Network & Security",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_7",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Ecovis Qatar",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "doha@ecovis.qa",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_8",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Qatar Hiring",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "info@qatarhiring.com",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_9",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Alftek",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "hr@alftek.com",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_10",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Accel HRC",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "jobs@accelhrc.com",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_11",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Agile Consultants",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "info@agileconsultants.ae",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_12",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "BAC Middle East",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "recruit@bacme.com",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_13",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Pact Employment",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "cv@pactemployment.ae",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_14",
+    "title": "Recruitment Contacts - UAE & Qatar",
+    "company": "Innovation UAE",
+    "location": "UAE & Qatar",
+    "domain": "IT & Tech",
+    "email": "recruitment@innovationuae.com",
+    "description": "UAE & QATAR – RECRUITMENT CONTACTS  Explore recruitment opportunities across the UAE and Qatar by contacting leading agencies and HR teams directly.  Apply: doha@ecovis.qa | info@qatarhiring.com | hr@alftek.com | jobs@accelhrc.com | info@agileconsultants.ae | recruit@bacme.com | cv@pactemployment.ae | recruitment@innovationuae.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_15",
+    "title": "L2 Support Engineer (M365 & Cloud)",
+    "company": "Consult STM",
+    "location": "Abu Dhabi, UAE",
+    "domain": "Cloud & IT Support",
+    "email": "mohd.anas@consultstm.co",
+    "description": "hiring: L2 Support Engineer Location- Abu Dhabi, UAE. Domain: IT Infrastructure & End-User Computing (EUC) / Microsoft 365 Cloud Support.     CV to mohd.anas@consultstm.co  Key Requirements: - Mandatory: 5+ years of hands-on experience in Microsoft 365 support, deployment, or migration projects.                                 - Proven knowledge: Exchange Online, OneDrive for Business, SharePoint Online, and Microsoft Teams troubleshooting and configuration.                                            - Hands-on experience: Windows device builds, resets, domain joins, and Microsoft Entra ID device join/rejoin processes.                       -Practical experience: Microsoft Entra ID authentication, MFA registration, and Conditional Access troubleshooting.           -Required knowledge: Microsoft Intune device enrollment, compliance checks, and endpoint management.                        -Technical exposure: Windows 365 Cloud PC provisioning, Microsoft Defender for Endpoint, Defender for Office 365, and Microsoft Purview.         -Mandatory delivery capability: Onsite L2 floor-walking support during Microsoft 365 migration, cutover, and hypercare phases, including incident resolution and escalation.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_16",
+    "title": "L1 / L2 IT Monitoring Specialist",
+    "company": "Direct Hiring",
+    "location": "Remote",
+    "domain": "IT & Tech",
+    "email": "your.recruitment.consultant00@gmail.com",
+    "description": "🚀 We're Hiring: L1 & L2 IT Monitoring Specialists | Remote We are looking for IT professionals to join our team and work with a 𝐔𝐒-𝐛𝐚𝐬𝐞𝐝 𝐡𝐞𝐚𝐥𝐭𝐡𝐜𝐚𝐫𝐞 client.  📌 Open Positions: 🔹 L1 IT Monitoring Specialist 🔹 L2 IT Monitoring Specialist  💰 Compensation: Up to USD 10/hour 🌍 Work Mode: Fully Remote 🕒 Shift: 6:00 AM – 6:00 PM (Pakistan Time) ⏳ Duration: 12-hour shifts | Full-time 📅 Engagement: Minimum 1 year  What We're Looking For: ▪️ Basic understanding of IT infrastructure, networks, servers, and operating systems. ▪️ Experience in NOC, IT Support, System Monitoring, or IT Operations. ▪️ Familiarity with tools like Zabbix, Nagios, PRTG, Grafana, or Datadog is a plus. ▪️ Good English communication and incident documentation skills. ▪️ Ability to follow SOPs, monitor alerts, and escalate technical issues.  Experience Requirements: ▪️ L1: Fresh to 2 years of relevant experience. ▪️ L2: 2–4 years of experience in NOC, IT Operations, or Infrastructure Support, with Windows/Linux server knowledge.  Important: This is an IT monitoring and escalation role, not a software development position. No coding required.  📩 Interested? Share your updated CV via 𝐃𝐌 or email at your.recruitment.consultant00@gmail.com Know someone suitable? 𝐓𝐚𝐠 or 𝐫𝐞𝐟𝐞𝐫 them!  #Hiring #ITJobs #NOC #ITMonitoring #RemoteJobs #PakistanJobs #RemoteJobs #L1 #L2 #SupportEngineer #ITOps #ITOperations #ServerDiagnosis #Query #ITSupport #LahoreJobs #HiringAlerts #JobAlerts",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_17",
+    "title": "IT Desktop Support Engineer",
+    "company": "Sky Systems",
+    "location": "Singapore",
+    "domain": "IT & Tech",
+    "email": "zainab.shah@myskysys.com",
+    "description": "Sky Systems, Inc. (SkySys) is hiring for a Full Time IT Desktop Support Engineer in Singapore.  Apply now or share your resumes at zainab.shah@myskysys.com  Mandatory Requirements: Fluency in Mandarin (spoken and written communication). Must be a non-smoker Willing to work 5 days a week onsite in Singapore Full Time.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_18",
+    "title": "SD-WAN Technical Support Specialist",
+    "company": "TForce",
+    "location": "Saudi Arabia",
+    "domain": "Networking / IT Infrastructure",
+    "email": "shahazeer@tforce.sa",
+    "description": "🚀 Looking for Expert SD-WAN Support in Saudi Arabia?  We are here to support you!  Already running an SD-WAN environment but facing challenges with technical support, integration, configuration, or ongoing operations?  Our team is ready to help businesses across KSA with:  ✅ SD-WAN Technical Support & Troubleshooting ✅ Network Integration & Configuration ✅ Performance Optimization ✅ SD-WAN Migration & Deployment ✅ Ongoing Managed Support Services  Whether you need expert technical assistance or a reliable SD-WAN support partner, TForce is ready to help you keep your network running smoothly.  📩 Connect with us: shahazeer@tforce.sa  #TForce #SDWAN #SDWANSupport #NetworkIntegration #ManagedServices #EnterpriseNetworking #SaudiArabia #KSA",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_19",
+    "title": "Senior Site Reliability Engineer (SRE - AI & Banking)",
+    "company": "Salt Recruitment",
+    "location": "Abu Dhabi, UAE",
+    "domain": "Cloud & DevOps",
+    "email": "rward@welovesalt.com",
+    "description": "🚀 EUROPE-BASED SRE ENGINEERS… HOW DOES A TAX-FREE SALARY & A FULLY FUNDED RELOCATION TO THE UAE SOUND? 💰  I'm working with a major financial institution in Abu Dhabi that's investing heavily in AI, and we're looking for an exceptional Senior Site Reliability Engineer (SRE) to join its AI engineering team.  🔥 This isn't your average SRE role. We're talking next-generation AI platforms, enterprise-scale cloud infrastructure and the opportunity to work on some seriously exciting technology within one of the region's most ambitious digital transformation environments.  💰 What's on offer? ● Generous TAX-FREE salary ● Full relocation package to the UAE – including candidates relocating from Europe ● Opportunity to work on cutting-edge AI initiatives ● Long-term career opportunities within a major financial institution ● Sunshine, lifestyle and the opportunity to build your career in one of the world's most exciting technology markets ☀️ ● IMPORTANT – BANKING EXPERIENCE IS ESSENTIAL.  I'm ONLY considering candidates who have previously worked within the banking sector. This is a firm requirement, so unfortunately, candidates without banking experience won't be considered. You'll also need 8+ years of engineering experience, including at least 5 years in SRE, platform engineering or reliability-focused DevOps.  🌍 International applications welcome – particularly from Europe.  If you're a senior SRE engineer with a banking background who's ready for a career move that offers both an incredible technical challenge and an exciting lifestyle change, I want to hear from you! - rward@welovesalt.com  #Hiring #SiteReliabilityEngineering #SRE #BankingTechnology #AIEngineering #DevOps #Azure #AWS #Kubernetes #DubaiJobs #UAECareers #Relocation #TechJobs #srehiring #aiengineering #aihiring #jobsinabudhabi",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_20",
+    "title": "Cybersecurity Engineer (SOC / SIEM)",
+    "company": "Direct Hiring",
+    "location": "Riyadh, Saudi Arabia",
+    "domain": "Cybersecurity & Network Security",
+    "email": "email-tamara_alsaad@hotmail.com",
+    "description": "Hiring: Cybersecurity Engineer Location: Riyadh, Saudi Arabia Banking Sector | On-site Resident Engineer email-tamara_alsaad@hotmail.com  Im seeking a hands-on Cybersecurity Engineer to support security operations, threat detection, incident investigation, and response.  Key Requirements: - 7+ years of experience in cybersecurity, SOC operations, SIEM, or incident response - Hands-on experience with Splunk, IBM QRadar, Microsoft Sentinel, or a similar SIEM platform - Understanding of EDR/XDR, threat hunting, and MITRE ATT&CK - Bachelor’s degree in a relevant field  Cortex XSIAM or Cortex XDR experience is highly preferred. Banking experience, SOAR knowledge, and relevant certifications are a plus.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_21",
+    "title": "Head of NOC (Telco Industry)",
+    "company": "Sokka Fiber",
+    "location": "Indonesia",
+    "domain": "Telecom",
+    "email": "Ivan.kurniawan@sokkafiber.com",
+    "description": "Hi Profesionals, We are looking for Head of NOC (Telco Industry). Feel free to contact me. Email   : Ivan.kurniawan@sokkafiber.com www.sokkafiber.com Best regards,  #NOC #telcoindustry #Vacancy #headofNOC",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_22",
+    "title": "Civil Engineering & Construction Team",
+    "company": "Nitigya Buildcon",
+    "location": "Gurugram / Pan India",
+    "domain": "Engineering & Construction",
+    "email": "recruit@nitigyabuildcon.com",
+    "description": "Nitigya Buildcon Pvt. Ltd. hiring:  Project 1: High-Rise Building Project 📍 Location: Gurugram (Gurgaon)  •\tSenior Civil Engineer •\tStore Assistant •\tPlanning Engineer •\tForeman •\tSupervisor  Project 2: Industrial Projects (Warehouses & Factories) 📍 Location: Pan India  •\tBilling Manager •\tCivil Engineer •\tSupervisor •\tForeman  📌 Experience Required Candidates with 4+ years of relevant experience, particularly in high-rise building and industrial projects, will be given preference.   Benefits & Important Information •\tAccommodation: Free accommodation for site staff •\tFood Chargeable: Approximately ₹3,000 per month •\tPF Deduction: ₹3,000 per month  📧 Email: recruit@nitigyabuildcon.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_23",
+    "title": "Microwave Rigger (MW Alignment)",
+    "company": "Access Telecom",
+    "location": "Algeria",
+    "domain": "Telecom",
+    "email": "jobs@accesstelecom.dz",
+    "description": "Im Hiring – Riggers (MW Alignment)  This opportunity is open to local candidates in Algeria only.  We are looking for experienced Riggers with proven experience and strong knowledge in Microwave (MW) alignment.  Please send your CV to jobs@accesstelecom.dz for review and further assessment.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_24",
+    "title": "Systems Analyst",
+    "company": "Talent Arabia",
+    "location": "Oman",
+    "domain": "IT & Tech",
+    "email": "huda@talentarabia.com",
+    "description": "𝗪𝗲’𝗿𝗲 𝗛𝗶𝗿𝗶𝗻𝗴 – 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗔𝗻𝗮𝗹𝘆𝘀𝘁 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: Oman 𝗡𝗮𝘁𝗶𝗼𝗻𝗮𝗹𝗶𝘁𝘆: Omani Only 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲: Freshers are welcome to apply  𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗺𝗲𝗻𝘁𝘀: - Bachelor's degree in IT, Computer Science, Information Systems, Computer Engineering, or equivalent. - Knowledge of Python, Java, C#, .NET, or PHP. - Good understanding of SQL, databases, and SDLC. - Familiarity with system analysis, Visio, UML, and technical documentation. - Good analytical, problem-solving, and communication skills.  Interested candidates can share their updated CV at huda@talentarabia.com via DM.  #Hiring #SystemsAnalyst #OmanJobs #OmaniNationals #Freshers #ITHiring",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_25",
+    "title": "Call Center & BPO Partnership Opportunity",
+    "company": "VertexM Technology",
+    "location": "Worldwide / Remote",
+    "domain": "IT & Business Solutions",
+    "email": "vertexmtechnology@gmail.com",
+    "description": "🚀 PARTNERSHIP OPPORTUNITY – CALL CENTER & BPO  VertexM Technology is inviting Call Center Owners, BPO Companies, Outsourcing Partners and Business Owners to collaborate with us for domestic and international projects.  We are looking to connect with partners who have:  ✅ Their own call center / BPO office infrastructure ✅ Available seating capacity and trained calling agents ✅ Existing domestic or international clients ✅ Experience in Inbound & Outbound Processes ✅ USA, UK, Australia and India project experience ✅ Customer Support, Telemarketing, Lead Generation or Healthcare BPO capabilities  What We Offer:  - Long-term business collaboration - Domestic and international project opportunities - Flexible partnership models - Mutual business growth and revenue-sharing opportunities  Our Target Markets: India | USA | UK | Australia | Worldwide  If you own a call center, have available infrastructure, or have direct client requirements and are interested in working together, let's connect!  📩 Interested partners can DM us or share their company profile, infrastructure details and current project availability.  VERTEXM TECHNOLOGY Innovation • Talent • Global Reach  📞 WhatsApp: +91 8780576966 📧 vertexmtechnology@gmail.com  #BPOPartnership #CallCenterBusiness #Outsourcing #InternationalBPO #DomesticBPO #USAProjects #UKProjects #AustraliaBPO #BusinessPartnership #VertexMTechnology",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_26",
+    "title": "Aramco Approved QC Inspector (Welding / Piping / E&I / Coating)",
+    "company": "Direct Hiring",
+    "location": "Jubail, Saudi Arabia",
+    "domain": "Engineering & Construction",
+    "email": "superzzy1991@gmail.com",
+    "description": "Hiring! Long-term effective recruitment  Saudi/Jubail, Riyas NGL project  What We Need： Welding QC/QCS with aramco approval  Piping QC/QCS with aramco approval  E&I QC/QCS with aramco approval Coating QC with aramco approval    What we provide: Transfer IQAMA Annual leave with flight ticket Food accommodation transportation   If you are interested in the above positions, pls share your CV to the mail: superzzy1991@gmail.com huangxinyu615@gmail.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_27",
+    "title": "Aramco Approved QC Inspector (Welding / Piping / E&I / Coating)",
+    "company": "Direct Hiring",
+    "location": "Jubail, Saudi Arabia",
+    "domain": "Engineering & Construction",
+    "email": "huangxinyu615@gmail.com",
+    "description": "Hiring! Long-term effective recruitment  Saudi/Jubail, Riyas NGL project  What We Need： Welding QC/QCS with aramco approval  Piping QC/QCS with aramco approval  E&I QC/QCS with aramco approval Coating QC with aramco approval    What we provide: Transfer IQAMA Annual leave with flight ticket Food accommodation transportation   If you are interested in the above positions, pls share your CV to the mail: superzzy1991@gmail.com huangxinyu615@gmail.com",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_28",
+    "title": "ELV Engineer",
+    "company": "V3 Middle East",
+    "location": "Riyadh, Saudi Arabia",
+    "domain": "Engineering & Construction",
+    "email": "careers@v3international.com",
+    "description": "📢 WE’RE HIRING | ELV ENGINEER 🏢 Company: V3 Middle East 📍 Location: Riyadh, Saudi Arabia V3 Middle East is seeking an experienced ELV Engineer to join its team in Riyadh. KEY REQUIREMENTS Bachelor’s degree in Electrical Engineering, Electronics Engineering, or a related field. 10–20 years of relevant experience in ELV systems within construction and engineering projects. Strong knowledge of: CCTV Systems Access Control Systems Structured Cabling Data Networks Communication Systems Experience reviewing shop drawings, material submittals, technical specifications, and method statements. Experience in site supervision, inspections, testing, and commissioning of ELV systems. Familiarity with applicable engineering standards and project specifications. Previous experience with Engineering Consultancy or PMC firms is highly preferred. Good English communication skills. 📩 HOW TO APPLY Interested candidates are invited to send their updated CVs to: careers@v3international.com a.alsuket@v3international.com 📌 Email Subject: ELV Engineer #Hiring #ELVEngineer #ELVSystems #CCTV #AccessControl #EngineeringJobs #PMC #ConsultancyJobs #RiyadhJobs #SaudiArabiaJobs",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_29",
+    "title": "ELV Engineer",
+    "company": "V3 Middle East",
+    "location": "Riyadh, Saudi Arabia",
+    "domain": "Engineering & Construction",
+    "email": "a.alsuket@v3international.com",
+    "description": "📢 WE’RE HIRING | ELV ENGINEER 🏢 Company: V3 Middle East 📍 Location: Riyadh, Saudi Arabia V3 Middle East is seeking an experienced ELV Engineer to join its team in Riyadh. KEY REQUIREMENTS Bachelor’s degree in Electrical Engineering, Electronics Engineering, or a related field. 10–20 years of relevant experience in ELV systems within construction and engineering projects. Strong knowledge of: CCTV Systems Access Control Systems Structured Cabling Data Networks Communication Systems Experience reviewing shop drawings, material submittals, technical specifications, and method statements. Experience in site supervision, inspections, testing, and commissioning of ELV systems. Familiarity with applicable engineering standards and project specifications. Previous experience with Engineering Consultancy or PMC firms is highly preferred. Good English communication skills. 📩 HOW TO APPLY Interested candidates are invited to send their updated CVs to: careers@v3international.com a.alsuket@v3international.com 📌 Email Subject: ELV Engineer #Hiring #ELVEngineer #ELVSystems #CCTV #AccessControl #EngineeringJobs #PMC #ConsultancyJobs #RiyadhJobs #SaudiArabiaJobs",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_30",
+    "title": "Head of IT Security",
+    "company": "Reach Group",
+    "location": "Abu Dhabi, UAE",
+    "domain": "Cybersecurity & Network Security",
+    "email": "mohammed.alam@reachgroup.ae",
+    "description": "HIRING | Head of IT Security  Location: Abu Dhabi, UAE Experience: 15+ Years Mandatory Certification: CISSP / CISM  We are looking for an experienced Head of IT Security to lead our cybersecurity strategy, security operations, risk management, and compliance initiatives.  🔹 Key Responsibilities Develop and implement enterprise-wide IT security strategies, policies, and frameworks. Oversee threat detection, vulnerability management, and security incident response. Ensure compliance with industry standards and frameworks, including ISO 27001, NIST, and applicable data protection regulations. Lead security risk assessments, audits, and mitigation initiatives. Oversee business continuity and disaster recovery planning from a security perspective. Lead, mentor, and develop security teams while promoting a strong security-conscious culture.  🔹 Required Qualifications Bachelor's degree in Computer Science, Cybersecurity, Information Security, or a related field. Minimum 15 years of experience in senior security management roles. CISSP, CISM, or equivalent security certification is mandatory. Strong expertise in cybersecurity strategy, governance, risk management, regulatory compliance, and incident response. Proven leadership and stakeholder management skills.  Interested candidates: Please share your updated CV at mohammed.alam@reachgroup.ae  #Hiring #CyberSecurity #ITSecurity #InformationSecurity #CISO #CyberSecurityJobs #AbuDhabiJobs #UAEJobs",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_31",
+    "title": "Senior SAP SD LE-TRA Consultant",
+    "company": "SAP Index",
+    "location": "LATAM / Remote",
+    "domain": "IT & Business Solutions",
+    "email": "barbara.nieto@sapindex.es",
+    "description": "📢 WE´RE HIRING 🌍 Senior SAP SD LE-TRA Consultant | Advanced English | US Visa Required  🚀 Join an international SAP S/4HANA rollout program in the automotive industry. We’re looking for a seasoned consultant to collaborate with global teams and support SD + LE-TRA activities.  📍 Location: LATAM  🏢 Work Model: 80% Remote / 20% Travel to USA  💼 Contract: Freelance | Full Time  📅 Duration: 6–12 months  🗣️ Language: Advanced English  🌎 Requirement: Valid US Visa  🔎 Key Requirements: - Senior experience in SAP SD with LE-TRA - Rollout project background - Automotive industry expertise - Immediate availability + travel flexibility  ⭐ Nice to Have: Aftermarket experience, SAP S/4HANA projects, international program exposure  🎁 We Offer: - Long-term international SAP project - Remote LATAM model + US travel opportunities - Full-time assignment  ✨ Interested? Apply now and be part of a global SAP journey!  📩 barbara.nieto@sapindex.es",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_32",
+    "title": "Senior Network & Security Engineer",
+    "company": "Tech ECS Limited",
+    "location": "Dubai, UAE",
+    "domain": "Cybersecurity & Network Security",
+    "email": "Maham.Qasim@techecs.com",
+    "description": "🚨 Hiring | Senior Network & Security Engineer – Dubai  Tech ECS Limited is looking for a Senior Network & Security Engineer with strong hands-on experience across enterprise networking, network security, WAF and Cisco Voice.  📍 Location: Dubai, UAE 💼 Experience: 8+ years  Mandatory Requirements — All are required: ▪️ Cisco SD-WAN / Viptela: vManage, vSmart and vBond ▪️ Cisco Routing & Switching: BGP, OSPF, VLAN, STP and HSRP/VRRP ▪️ FortiGate: Firewall configuration, VPN, NAT, UTM and HA ▪️ F5 WAF / ASM: Policy configuration, management and tuning ▪️ Cisco CUCM: Call routing, dial plans, gateways and troubleshooting ▪️ Networking Fundamentals: TCP/IP, DNS, DHCP and VPN Preferred Skills: Palo Alto, AWS Networking, FortiManager/FortiAnalyzer, Python/Ansible and Splunk.  📩 Interested candidates can share their CV via DM or send their CV to Maham.Qasim@techecs.com   #Hiring #SeniorNetworkEngineer #NetworkSecurity #NetworkSecurityEngineer #NetworkEngineer #Cisco #CiscoSDWAN #Viptela #RoutingAndSwitching #BGP #OSPF #FortiGate #Fortinet #F5WAF #WAF #CiscoCUCM #UnifiedCommunications #EnterpriseNetworking #NetworkInfrastructure #CyberSecurity #DubaiJobs #UAEJobs #ITJobs #TechJobs #TechECS",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_33",
+    "title": "Core Network Engineer (BGP / MPLS / FTTH)",
+    "company": "Ilitha Telecommunications",
+    "location": "Rosebank, South Africa",
+    "domain": "Telecom",
+    "email": "Kagiso@ilitha.com",
+    "description": "We’re hiring: Core Network Engineer at Ilitha Telecommunications!  Ilitha is on a mission to bridge South Africa’s digital divide by bringing high-speed, affordable fibre (FTTH) and fixed-wireless (WTTX) internet to underserved townships, peri-urban and rural communities. With landmark investment secured to connect over 500,000 low-income homes, we’re scaling fast across the Eastern Cape and beyond, and we need a network engineer to help us build the backbone that makes it happen.  As our Core Network Engineer, you’ll be the person who: - Plans capacity before it becomes a problem, not after - Designs the backhaul routes and PoPs that carry every FTTH and WTTX connection - Owns BGP, OSPF and MPLS, and keeps the backbone fast and secure - Takes the call when the NOC hits something the runbook can’t solve (yes, there’s an on-call rotation)  What we are looking for: 5+ years in an ISP, FTTH operator or telco, a CCNP (or HCIP, MTCRE or JNCIS), and real hands-on time with GPON, DWDM, PPPoE/RADIUS and firewalls. MikroTik and Ubiquiti experience is a bonus. A valid SA driver’s licence is a must, because some of this work happens on site.  This isn’t a role where you maintain what already exists. You’ll help build a network at the moment it’s scaling fastest, for people who really need it.  📍 Rosebank, Gauteng (with site travel) | Permanent, full-time  🗓️ Applications close 20 November 2026  Full job spec on our website: https://lnkd.in/dum97_JS  To apply, email your CV and application letter to Kagiso@ilitha.com with “Core Network Engineer” in the subject line.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_34",
+    "title": "Bid & Proposals Writer Specialist",
+    "company": "Skills Bank",
+    "location": "Middle East / Remote",
+    "domain": "IT & Business Solutions",
+    "email": "Talent@skillsbankme.com",
+    "description": "A great opportunity for professionals with international NGOs  📢 We’re Hiring | Bid & Proposals Writer Specialist   🔹 Requirements: Experience with NGOs, non-profits, or donor-funded projects Strong knowledge of RFPs, RFIs, RFQs & tenders Excellent writing, research & analytical skills Bachelor’s degree in a relevant field  📩 if you are interested share your cv at \"Talent@skillsbankme.com\"  and mention job title on mail subject",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_35",
+    "title": "SaaS Partnership & Technology Provider",
+    "company": "Direct Hiring",
+    "location": "Iraq",
+    "domain": "IT & Business Solutions",
+    "email": "Mustafamuafaq782@outlook.com",
+    "description": "Looking for SaaS Companies & Technology Providers  We are looking to connect with experienced SaaS (Software as a Service) companies and technology providers offering scalable software solutions for the Iraqi market.  We are interested in companies with proven experience in developing, implementing, and managing SaaS platforms across different industries, including:  Target Sectors & Industries:  1. Banking, Financial Services & FinTech 2. Healthcare, Hospitals & Medical Centers 3. Education, Schools & Universities (EdTech) 4. Human Resources & Recruitment (HRTech) 5. Retail, E-commerce & POS Solutions 6. Real Estate & Property Management 7. Construction & Engineering 8. Manufacturing & Industrial Operations 9. Oil, Gas & Energy 10. Transportation, Logistics & Supply Chain 11. Hospitality, Hotels & Restaurants 12. Telecommunications & Internet Service Providers 13. Government & Public Sector (GovTech) 14. Legal Services & Law Firms 15. Accounting, Auditing & ERP Solutions 16. Customer Relationship Management (CRM) 17. Sales, Marketing & Business Automation 18. Agriculture & Agritech 19. Insurance & InsurTech 20. Security & Cybersecurity 21. Document Management & Workflow Automation 22. Fleet Management & GPS Tracking 23. E-learning & Learning Management Systems (LMS) 24. AI Solutions, AI Agents & Business Intelligence 25. Enterprise Resource Planning (ERP) 26. Facility Management & Maintenance 27. NGO & Non-Profit Management 28. Events & Ticketing Management  Application Requirements  Interested companies are requested to send:  * Detailed description of their SaaS products and services * Company profile and business portfolio * Previous projects and successful implementations * Industries and sectors they have experience serving * Client references or case studies, where available * Pricing models and partnership opportunities * Technical capabilities and support services  To Apply:  Please send your company profile and detailed service portfolio to: The only method of communication  Mustafamuafaq782@outlook.com  Subject: SaaS Partnership   We are interested in building long-term business relationships with qualified technology providers who can bring innovative, scalable, and practical solutions to the Iraqi and mena market.  Mustafa Muafaq",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_36",
+    "title": "Cyber Security Specialist",
+    "company": "Hyundai Nishat Motor",
+    "location": "Lahore, Pakistan",
+    "domain": "Cybersecurity & Network Security",
+    "email": "hr@hyundai-nishat.com",
+    "description": "Hyundai Nishat Motor is hiring Cyber Security Specialist! . Looking for a highly professional candidate for a position based at our Head Office, Lahore!  Requirements: •5 to 7 years of experience in cybersecurity or information security. •Relevant certifications preferred (CISSP, CISM, ISO 27001, SIEM). •Excellent analytical & Interpersonal skills. •End user trainings  How to Apply: Send your CV to hr@hyundai-nishat.com and mention the position in the subject line.  #Hiring #AutomotiveJobs #HyundaiNishat #LahoreJobs #Careers #cybersecurity",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_37",
+    "title": "Electrical Engineer - Solar PV Project",
+    "company": "Direct Hiring",
+    "location": "Saudi Arabia",
+    "domain": "Engineering & Construction",
+    "email": "2020cbmjobs@gmail.com",
+    "description": "Looking For Solar Project Engineer Electrical Engineer – Solar PV Project Saudi Arabia   We are looking for an experienced Electrical Engineer to support a solar PV project from construction through testing, commissioning, and energization. The candidate will coordinate electrical works, ensure compliance with designs and safety requirements, and support grid connection and plant startup activities.  Key Responsibilities - Supervise electrical installation works for solar PV arrays, inverters, transformers, MV/LV switchgear, cabling, earthing, and protection systems. - Review electrical drawings, single-line diagrams, cable schedules, technical submittals, and method statements. - Coordinate with EPC contractors, subcontractors, suppliers, consultants, and the utility/company electrical team. - Monitor site quality, progress, safety compliance, and closure of electrical punch-list items. - Support pre-commissioning and commissioning tests, including insulation resistance, continuity, voltage, grounding, relay, protection, and inverter/transformer/switchgear testing.  interested may contact : 2020cbmjobs@gmail.com Phone:0531034160",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_38",
+    "title": "International Contract & Recruitment Opportunities",
+    "company": "LA International",
+    "location": "International / Remote",
+    "domain": "IT & Tech",
+    "email": "igd@lainternational.com",
+    "description": "Morning LinkedIn network. My team have a busy period coming up with contract renewals, but things are not slowing down on new opportunities.  Please apply by sending your CV to igd@lainternational.com OR we have a new webpage where we will be advertising all our International Jobs: https://lnkd.in/ebAkUg46",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_39",
+    "title": "Assistant Manager - Finance & Accounts",
+    "company": "Mercurial Minds",
+    "location": "Islamabad, Pakistan",
+    "domain": "IT & Business Solutions",
+    "email": "Arslan.Hameed@mercurialminds.com",
+    "description": "📢 We’re Hiring | Assistant Manager – Finance & Accounts  Mercurial Minds (Pvt.) Ltd. is looking for a detail-oriented and experienced professional to join our team in Islamabad.  If you have a strong background in accounting operations, hands-on bookkeeping, and financial reporting, we would love to hear from you!  Key Requirements: CA Qualified or CA Finalist. Minimum 5 years of relevant experience in Finance & Accounts. Strong hands-on experience in bookkeeping, general ledger management, and account reconciliations. Practical experience in preparing financial reports and supporting monthly and annual closing activities. Good understanding of accounting principles, financial controls, and ERP/accounting systems.  Strong analytical skills and attention to detail. 📍 Location: Islamabad 💼 Position: Assistant Manager – Finance & Accounts ⏳ Experience: 5+ Years ⭐ Preference: Immediate joiners will be preferred.  📩 Interested candidates can share their updated CVs at: Arslan.Hameed@mercurialminds.com careers@mercurialminds.com  Please mention \"Assistant Manager – Finance & Accounts\" in the email subject line.   Feel free to share this opportunity with relevant professionals in your network. #Hiring #FinanceJobs #AccountsJobs #AssistantManager #FinanceAndAccounts #CAFinalist #CharteredAccountant #IslamabadJobs #MercurialMinds",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_40",
+    "title": "Assistant Manager - Finance & Accounts",
+    "company": "Mercurial Minds",
+    "location": "Islamabad, Pakistan",
+    "domain": "IT & Business Solutions",
+    "email": "careers@mercurialminds.com",
+    "description": "📢 We’re Hiring | Assistant Manager – Finance & Accounts  Mercurial Minds (Pvt.) Ltd. is looking for a detail-oriented and experienced professional to join our team in Islamabad.  If you have a strong background in accounting operations, hands-on bookkeeping, and financial reporting, we would love to hear from you!  Key Requirements: CA Qualified or CA Finalist. Minimum 5 years of relevant experience in Finance & Accounts. Strong hands-on experience in bookkeeping, general ledger management, and account reconciliations. Practical experience in preparing financial reports and supporting monthly and annual closing activities. Good understanding of accounting principles, financial controls, and ERP/accounting systems.  Strong analytical skills and attention to detail. 📍 Location: Islamabad 💼 Position: Assistant Manager – Finance & Accounts ⏳ Experience: 5+ Years ⭐ Preference: Immediate joiners will be preferred.  📩 Interested candidates can share their updated CVs at: Arslan.Hameed@mercurialminds.com careers@mercurialminds.com  Please mention \"Assistant Manager – Finance & Accounts\" in the email subject line.   Feel free to share this opportunity with relevant professionals in your network. #Hiring #FinanceJobs #AccountsJobs #AssistantManager #FinanceAndAccounts #CAFinalist #CharteredAccountant #IslamabadJobs #MercurialMinds",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_41",
+    "title": "Offshore Oil & Gas Engineering Team",
+    "company": "Aker Solutions",
+    "location": "Malaysia",
+    "domain": "Engineering & Construction",
+    "email": "pui.ling.tang@akersolutions.com",
+    "description": "We are seeking experienced professionals with proven hands-on experience in large-scale offshore Oil & Gas projects across Front-End Engineering, FEED, and Detailed Design phases.  Successful candidates should possess: *Extensive experience in offshore Oil & Gas projects *Strong technical expertise within their discipline, applied in complex project environments *Ability to thrive in a fast-paced, delivery-driven project setting *Strong problem-solving, collaboration, and project execution capabilities  Current Open Positions: 1. Engineering Manager 2. Lead Piping Engineer 2. Engineer – Structural (Topside) 3. Engineer – Structural (Jacket) 4. E3D Structural Designer   How to Apply Please submit your CV to pui.ling.tang@akersolutions.com and indicate the position title in the subject line of your email. Important Notes  📍 Only candidates who are legally eligible to live and work in Malaysia without visa sponsorship or work permit restrictions will be considered. 📍 Due to the high volume of applications, only shortlisted candidates will be contacted.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_42",
+    "title": "QA Lead (Manufacturing / MES)",
+    "company": "R Systems",
+    "location": "India / Remote",
+    "domain": "IT & Tech",
+    "email": "Vikrant.badgujjar@rsystems.com",
+    "description": "Hiring: QA Lead (Manufacturing / MES) 📍 Experience: 8-12 Years 🎯 Role: QA Lead 🏭 Domain: Manufacturing / MES / Industrial Software We are looking for an experienced QA Lead to drive end-to-end quality assurance for enterprise MES platforms and manufacturing applications. Key Skills: ✅ Manual & Automation Testing (Playwright/Selenium) ✅ API Testing (Postman, REST APIs) ✅ SQL & Database Validation ✅ STLC, SDLC, Agile/Scrum ✅ CI/CD & Test Automation ✅ JIRA, Confluence ✅ Defect Management, RCA & Release Governance ✅ QA Team Leadership & Stakeholder Management Preferred Domain Experience: ✔ MES / Manufacturing Applications ✔ Shop-floor & Production Workflows ✔ Industrial System Integrations ✔ Manufacturing Data Validation ✔ IIoT / Smart Manufacturing If you're passionate about building high-quality industrial software and have led QA initiatives in manufacturing environments, we'd love to connect. 📩 Interested candidates can share their profiles or reach out directly. Vikrant.badgujjar@rsystems.com  Nishant Kumar Kapil Jain  #Hiring #QALead #MES #Manufacturing #AutomationTesting #Playwright #Selenium #IndustrialSoftware #QualityAssurance #Jobs #TechHiring",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_43",
+    "title": "Sales Representative - E-Wallets",
+    "company": "SIS Global",
+    "location": "Amman, Jordan",
+    "domain": "IT & Business Solutions",
+    "email": "omniaelshamy@sis.net.sa",
+    "description": "📢 We’re Hiring: Sales Representative – E-Wallets 📍 Location: Amman, Jordan 💼 Experience: 1–2 Years We’re looking for motivated Sales Representatives to join our team in Amman, with experience in field sales, customer acquisition, and merchant relationship management. Key Responsibilities: Identify and onboard new agents and merchants for e-wallet services. Conduct field visits to promote electronic payment solutions. Guide clients through registration and activation processes. Achieve assigned sales targets and monitor performance. Build and maintain strong relationships with merchants and agents. Coordinate with Operations and Customer Service teams. Prepare regular sales activity and performance reports. Key Requirements: 1–2 years of experience in field sales or customer acquisition. Diploma or bachelor's degree in Business Administration, Marketing, or a related field. Experience in e-wallets, fintech, or electronic payment services is an advantage. Strong communication, negotiation, and customer relationship skills. Ability to work independently in the field and achieve sales targets. Good knowledge of Microsoft Office and reporting. Must own a private vehicle and hold a valid driver's license. 📩 Interested candidates can send their CVs to: omniaelshamy@sis.net.sa #SISGlobal #Hiring #SalesRepresentative #FieldSales #EWallets #DigitalPayments #Fintech #ElectronicPayments #MerchantAcquisition #CustomerAcquisition #SalesJobs #AmmanJobs #JordanJobs #LocalTalent",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_44",
+    "title": "RF Drive Tester Engineer",
+    "company": "Kelly Services",
+    "location": "Nationwide, USA",
+    "domain": "Telecom",
+    "email": "zohaib.sarfraz@kellyservices.com",
+    "description": "🚨 URGENT HIRING: RF Drive Testers Across the USA!  We are looking for RF Drive Testers who are ready to travel nationwide and can start ASAP.   What were looking for:  ✅ 1–2+ years of RF Drive Testing experience  ✅ XCAL experience is required ✅ RF drive testing and network performance data collection experience  ✅ Experience setting up and configuring testing equipment  ✅ Strong knowledge of wireless/network testing  ✅ Willingness to travel frequently across the USA  ✅ Engineering or Telecommunications background preferred   📍 Location: Nationwide, USA  ✈️ Travel: Must be flexible to travel anywhere ⏱️ Start: ASAP   Interested and qualified candidates can send their resumes to:  📩 zohaib.sarfraz@kellyservices.com  #RFDriveTester #RFTesting #DriveTesting #WirelessTelecommunications #Telecommunications #WirelessNetwork #NetworkOptimization #RFEngineering #TelecomJobs #EngineeringJobs #XCAL #FieldEngineering #HiringNow #UrgentHiring #NowHiring #USJobs #NationwideHiring #TravelJobs #KellyServices #KellyDigitalInfrastructure",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_45",
+    "title": "Oracle Database Administrator (Mid-Level)",
+    "company": "Khwarizm Consulting",
+    "location": "Cairo, Egypt",
+    "domain": "Cloud & IT Support",
+    "email": "Nourhan.Saed@khwarizm.com",
+    "description": "🚀 We’re Hiring! Position: Oracle Database Administrator (Mid-Level) 📍 Location: Cairo, Egypt Khwarizm Consulting is looking for a skilled Oracle Database Administrator (Mid-Level) to join our team. If you have hands-on experience managing Oracle databases and ensuring high availability, performance, and security, we’d love to hear from you! Requirements: * 3-5 years of experience as an Oracle Database Administrator * Strong knowledge of Oracle Database Architecture * Experience with RAC, Grid Infrastructure, ASM & Data Guard * Good Linux knowledge and basic Shell Scripting skills * Strong troubleshooting and performance tuning experience * Familiar with RMAN, OEM 13c, Database Security & Auditing 📩 Send your CV to Nourhan.Saed@khwarizm.com #Hiring #OracleDBA #DatabaseAdministrator #Oracle #ITJobs #Cairo #KhwarizmConsulting",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_46",
+    "title": "Technicien de Maintenance & Responsable Magasin PDR",
+    "company": "Lilas",
+    "location": "Tunisia",
+    "domain": "Engineering & Construction",
+    "email": "yazidi.m@lilas.com.tn",
+    "description": "Dans le cadre de notre nouvelle extension industrielle, nous renforçons nos équipes et sommes à la recherche de plusieurs profils techniques et managériaux pour accompagner notre développement. 1. Profils techniques – Production & Maintenance Nous recherchons des techniciens, avec ou sans expérience, dans les spécialités suivantes : Maintenance mécanique Maintenance électrique Automatisme industriel Production industrielle 2. Responsable Magasin PDR (Pièces de Rechange) Profil recherché : Bac+3 ou plus. Minimum 3 ans d'expérience dans un poste similaire. Bonne maîtrise de la gestion des stocks et des pièces de rechange industrielles. Sens de l'organisation, rigueur et capacité à coordonner les activités du magasin. Ce que nous proposons : Des conditions de rémunération attractives. Des perspectives d'évolution de carrière. L'opportunité de rejoindre un environnement industriel en pleine expansion. Des opportunités de développement des compétences. Intéressé(e) ou connaissez-vous quelqu'un qui pourrait correspondre à ces profils ? Envoyez votre CV à : yazidi.m@lilas.com.tn N'hésitez pas à partager cette publication avec votre réseau professionnel ! #Recrutement #MaintenanceIndustrielle #Production #Automatisme #MaintenanceElectrique #MaintenanceMécanique #MagasinPDR #Industrie #OpportunitéProfessionnelle #CareerOpportunities",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_47",
+    "title": "Senior Oracle Database Administrator (Exadata / ExaCC)",
+    "company": "Harp Technologies",
+    "location": "Pune / Noida, India",
+    "domain": "Cloud & IT Support",
+    "email": "tashvita.ingale@harp-india.com",
+    "description": "🚀 WE ARE HIRING | Senior Oracle Database Administrator (Oracle Exadata / ExaCC) We are looking for experienced Senior Oracle Database Administrators with strong expertise in Oracle Exadata, ExaCC and enterprise database administration. 📌 Position: Senior Oracle Database Administrator – Exadata / ExaCC 📍 Location: Pune / Noida 💼 Experience: 5–12 Years 🏢 Work Mode: Hybrid 🔹 Mandatory Skill: Oracle Exadata (Exadata / ExaCC) Key Technical Skills: Oracle Database Administration – 19c / 21c Oracle Exadata and ExaCC Administration Oracle RAC, ASM, Data Guard and RMAN GoldenGate and Oracle Enterprise Manager (OEM) Database Patching, Upgrades and Migration Red Hat Linux / Oracle Linux / IBM AIX Ansible / Red Hat Ansible Automation Platform (AAP) Python and Shell Scripting Oracle Cloud Infrastructure (OCI) Database Automation and Performance Tuning 🔹 Key Responsibilities: Manage and administer Oracle Exadata and ExaCC environments. Perform database patching, upgrades and lifecycle management. Manage Oracle RAC, ASM, Data Guard and backup/recovery. Develop automated database provisioning and patching solutions. Implement automation using Ansible, Python and Shell scripting. Ensure database performance, security, compliance and high availability. Support enterprise production databases and disaster recovery activities. 🎯 Preferred Experience: Automated Exadata / ExaCC patching. Large-scale enterprise database environments. OCI and Infrastructure Automation. Oracle OCP / Exadata certifications. 📩 Interested candidates can share their updated CV. tashvita.ingale@harp-india.com We are Hiring Partners for Leading IT MNCs! #Hiring #OracleDBA #OracleExadata #ExaCC #OracleDatabaseAdministrator #OracleRAC #Oracle19c #Oracle21c #Ansible #OCI #DatabaseAdministrator #PuneJobs #NoidaJobs #ITJobs #HybridJobs #HarpTechnologies",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_48",
+    "title": "Manager, Projects & Facilities",
+    "company": "Elabram",
+    "location": "Kuala Lumpur, Malaysia",
+    "domain": "Engineering & Construction",
+    "email": "syazwani.roslan@elabram.com",
+    "description": "Hi Connections,  We’re Hiring: Manager, Projects & Facilities 👋 📍 Kuala Lumpur 🗓 1-year contract ⏱ Notice period: below 2 months 🇲🇾 MALAYSIAN applicants only 💰 RM10,000 - RM12,500  What You’ll Do Facility maintenance: Run PPM programmes for UPS, air-con/VRV, gensets and external signage. Support TOCs and regional branches on structural, mechanical, electrical and general maintenance, repairs and troubleshooting. Soft services: Work with Corporate Administration on pest control and hygiene, and occasionally oversee minor logistics (room arrangements, heavy lifting). Projects & fit-out: Lead space planning, renovations and fit-outs from concept to handover. Manage DLP and rectification works with consultants and contractors. Budget, vendors & procurement: Manage OPEX/CAPEX forecasting, cost-saving reports and service request tickets. Track and enforce SLAs with technicians and contractors, ensure procurement compliance, and manage spare parts and asset inventories. Coordination: Work with HR/FM, Sales, Retail Operations, Legal and Finance, and liaise with landlords, mall leasing departments, legal teams and government agencies. Handle other ad hoc project and FM matters.  What We’re Looking For Experience in facilities management (M&E/compliance) and project execution (office fit-outs/relocations), ideally in commercial corporate environments Diploma or Degree in Civil, Electrical or Mechanical Engineering, Facilities Management or a related technical field 5-10 years in Facilities Management, Technical Operations or Property Engineering, including 2-4 years as a manager or assistant manager overseeing multi-site portfolios Strong knowledge of electrical systems, HVAC/VRV, business continuity and structural defect management Good analytical and interpersonal skills, able to work with colleagues at all levels   Interested or know someone? Send your CV to syazwani.roslan@elabram.com / 017-2753589 #Hiring #FacilitiesManagement #ProjectManagement #KualaLumpur #Engineering #FMJobs",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_49",
+    "title": "Mechanical / Electrical Engineer (AI CAD Project)",
+    "company": "Randstad USA",
+    "location": "Remote (USA)",
+    "domain": "Engineering & Construction",
+    "email": "Amy.Joyner@randstadusa.com",
+    "description": "‼️ HOT HALLOWEEN JOB ALERT‼️ - Fully remote, 1099 contract, immediate starts, make your own hours!  🥳    🎃 Looking for Mechanical or Electrical Engineering graduates with 0-10 years experience to work with a very cool AI project. (Entry level and experienced welcome).    🤖 CAD heavy profiles are highly preferred.   👻 Must be able to commit to 10 hours per week, with the option to work many more if preferred. This is fully remote and you can work the hours around your schedule.   🪄 $40 an hour with opportunity to pass additional module tests and bump that pay to $125 an hour.   🐈‍⬛ 12 week contract with opportunity to extend.  🍭 Interview with me, pass an assessment test and start immediately.   🧛 Contact me with your resume at Amy.Joyner@randstadusa.com for immediate interview scheduling.",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_50",
+    "title": "HR Manager (BPO / Call Center)",
+    "company": "Direct Hiring",
+    "location": "Rawalpindi, Pakistan",
+    "domain": "IT & Business Solutions",
+    "email": "saniya.recruitment@gmail.com",
+    "description": "🚀 𝗢𝗻𝗲 𝗼𝗳 𝗺𝘆 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻 Saniya Malik 𝗶𝘀 𝗵𝗶𝗿𝗶𝗻𝗴!  📌 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻: HR Manager (Female) 📍 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: Saddar, Rawalpindi 🌙 𝗦𝗵𝗶𝗳𝘁: Night Shift 👩 𝗚𝗲𝗻𝗱𝗲𝗿: Female Only 💼 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲: 2–3 Years  📌 𝗝𝗼𝗯 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗺𝗲𝗻𝘁𝘀: ▪️ 2–3 years of experience in HR Management. ▪️ Mandatory experience in BPO / Call Center operations. ▪️ Strong communication and interpersonal skills. ▪️ Ability to manage recruitment, employee relations, and daily HR operations. ▪️ Strong leadership and problem-solving skills.  📩 𝗛𝗼𝘄 𝘁𝗼 𝗔𝗽𝗽𝗹𝘆:  Interested candidates can share their CVs at: saniya.recruitment@gmail.com  #Hiring #HRManager #HRJobs #RawalpindiJobs #BPOJobs #NightShift",
+    "posted_date": "2026-11-08"
+  },
+  {
+    "id": "job_51",
+    "title": "Drive Test (DT) Engineer",
+    "company": "SC Tech Global",
+    "location": "Nationwide, Pakistan",
+    "domain": "Telecom",
+    "email": "hr@sctechglobal.com",
+    "description": "WE'RE HIRING | DT ENGINEERS  We are looking for skilled and motivated Drive Test (DT) Engineers to join our team.  📍 Location: Nationwide, Pakistan 📩 Apply: hr@sctechglobal.com  Know someone who’s a great fit? Tag them or share this opportunity!  #Hiring #DTEngineer #TelecomJobs #DriveTest #Telecommunications #PakistanJobs #PostProcessor #TelecomEngineering #NetworkAnalysis #RNOEngineer #RadioNetworkOptimization #5G #4G",
+    "posted_date": "2026-11-08"
+  }
+]
