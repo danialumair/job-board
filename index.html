@@ -42,18 +42,13 @@
             <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
                 class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
 
+         
             <select id="domainFilter"
-                class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
-                <option value="">All Domains</option>
-                <option value="Telecom">Telecom</option>
-                <option value="Cybersecurity">Cybersecurity</option>
-                <option value="Cloud">Cloud & DevOps</option>
-                <option value="IT">IT & Tech</option>
-                <option value="Oil & Gas">Oil & Gas / Energy</option>
-                <option value="Fintech">Fintech & Banking</option>
-                <option value="Networking">Networking / IT Infrastructure</option>
-            </select>
+    class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+    <option value="">All Domains</option>
+</select>
         </div>
+        
 
         <!-- Job Cards List -->
         <div id="jobListings" class="space-y-4">
@@ -103,6 +98,7 @@
                 combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
 
                 allJobs = combinedJobs;
+                populateDomainFilter(allJobs); // <-- Populate dropdown dynamically
                 displayJobs(allJobs);
 
             } catch (error) {
@@ -191,20 +187,20 @@
         document.getElementById('domainFilter').addEventListener('change', filterJobs);
 
         function filterJobs() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const domain = document.getElementById('domainFilter').value;
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const domain = document.getElementById('domainFilter').value;
 
-            const filtered = allJobs.filter(job => {
-                const matchesQuery = (job.title || '').toLowerCase().includes(query) ||
-                    (job.location || '').toLowerCase().includes(query) ||
-                    (job.description || '').toLowerCase().includes(query) ||
-                    (job.company || '').toLowerCase().includes(query);
-                const matchesDomain = domain === "" || (job.domain || '').includes(domain);
-                return matchesQuery && matchesDomain;
-            });
+    const filtered = allJobs.filter(job => {
+        const matchesQuery = (job.title || '').toLowerCase().includes(query) ||
+            (job.location || '').toLowerCase().includes(query) ||
+            (job.description || '').toLowerCase().includes(query) ||
+            (job.company || '').toLowerCase().includes(query);
+        const matchesDomain = domain === "" || (job.domain || '').trim() === domain;
+        return matchesQuery && matchesDomain;
+    });
 
-            displayJobs(filtered);
-        }
+    displayJobs(filtered);
+}
 
         // Run fetch on load
         loadJobsFromFiles();
@@ -281,6 +277,28 @@ function copyAllJobs() {
     }).catch(err => {
         console.error('Failed to copy text: ', err);
         alert('Failed to copy jobs. Check console for details.');
+    });
+}
+        // Dynamically populate the domain dropdown from loaded jobs
+function populateDomainFilter(jobs) {
+    const domainSelect = document.getElementById('domainFilter');
+    
+    // Reset to default option
+    domainSelect.innerHTML = '<option value="">All Domains</option>';
+
+    // Extract unique, non-empty domains and sort alphabetically
+    const uniqueDomains = [...new Set(
+        jobs
+            .map(job => (job.domain || '').trim())
+            .filter(domain => domain !== '')
+    )].sort((a, b) => a.localeCompare(b));
+
+    // Create and append <option> elements
+    uniqueDomains.forEach(domain => {
+        const option = document.createElement('option');
+        option.value = domain;
+        option.textContent = domain;
+        domainSelect.appendChild(option);
     });
 }
     </script>
