@@ -246,36 +246,7 @@
                 }
             }
         }
-        // Copy all job titles and locations with website URL
-       /* function copyAllJobs() {
-            
-            const currentUrl = window.location.href;
-            if (!allJobs || allJobs.length === 0) {
-                alert('No jobs loaded yet!');
-                return;
-            }
-            // Get only the last 20 jobs (or all if there are fewer than 20)
-            const recentJobs = allJobs.slice(-20);
-            let textToCopy = `Recently jobs : @ ${currentUrl}\n\n`;
-             recentJobs.forEach((job, index) => {
-                const title = job.title || 'Job Opportunity';
-                const location = job.location || 'Not Specified';
-                if (location && location.toLowerCase() !== 'not specified') {
-                    textToCopy += `${index + 1}. ${title} — ${location}\n`;
-                } else {
-                    textToCopy += `${index + 1}. ${title}\n`;
-                }
-            });
-
-            // Append current website URL at the end
-            textToCopy += `\n🔗 Apply & Browse More: ${currentUrl}`;
-
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                alert('All job titles and locations copied to clipboard with website URL!');
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-            });
-        }*/
+        
         // Copy all job titles and locations from the latest JSON file with website URL
 // Copy all job titles and locations from the already loaded jobs (top to bottom)
 function copyAllJobs() {
