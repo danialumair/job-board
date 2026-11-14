@@ -247,7 +247,7 @@
             }
         }
         // Copy all job titles and locations with website URL
-        function copyAllJobs() {
+       /* function copyAllJobs() {
             
             const currentUrl = window.location.href;
             if (!allJobs || allJobs.length === 0) {
@@ -275,7 +275,59 @@
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
             });
+        }*/
+        // Copy all job titles and locations from the latest JSON file with website URL
+async function copyAllJobs() {
+    const currentUrl = window.location.href;
+    
+    try {
+        // 1. Fetch the list of available JSON files
+        const response = await fetch('jobs_list.json'); // Replace with your actual file listing endpoint if different
+        const fileList = await response.json();
+        
+        if (!fileList || fileList.length === 0) {
+            alert('No job files found!');
+            return;
         }
+
+        // 2. Automatically get the last/newest file name from the array
+        const latestFile = fileList[fileList.length - 1];
+        
+        // 3. Fetch the content of the latest JSON file
+        const jobResponse = await fetch(latestFile);
+        const allJobs = await jobResponse.json();
+
+        if (!allJobs || allJobs.length === 0) {
+            alert(`No jobs loaded yet from ${latestFile}!`);
+            return;
+        }
+
+        // 4. Get only the last 20 jobs (or all if fewer than 20)
+        const recentJobs = allJobs.slice(-20);
+        let textToCopy = `Recently jobs (${latestFile}) : @ ${currentUrl}\n\n`;
+        
+        recentJobs.forEach((job, index) => {
+            const title = job.title || 'Job Opportunity';
+            const location = job.location || 'Not Specified';
+            if (location && location.toLowerCase() !== 'not specified') {
+                textToCopy += `${index + 1}. ${title} — ${location}\n`;
+            } else {
+                textToCopy += `${index + 1}. ${title}\n`;
+            }
+        });
+
+        // Append current website URL at the end
+        textToCopy += `\n🔗 Apply & Browse More: ${currentUrl}`;
+
+        // 5. Copy to clipboard
+        await navigator.clipboard.writeText(textToCopy);
+        alert(`Job titles and locations from ${latestFile} copied to clipboard successfully!`);
+        
+    } catch (err) {
+        console.error('Failed to load or copy jobs: ', err);
+        alert('Failed to copy jobs. Check console for details.');
+    }
+}
     </script>
 </body>
 
