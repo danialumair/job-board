@@ -1,0 +1,612 @@
+[
+  {
+    "id": "job_1",
+    "title": "Network Engineer – Fresher",
+    "company": "CloudUnicorn Private Limited",
+    "location": "Bengaluru, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "harshitha@cloudunicorn.services",
+    "description": "🚀 HIRING ALERT | NETWORK ENGINEER – FRESHERS Looking to kick-start your career in Networking and IT Infrastructure? Company: CloudUnicorn Private Limited | Location: Bangalore | Experience: 0–1 Year | Employment Type: Full-Time.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_2",
+    "title": "Network Engineer (OPT / STEM OPT / CPT)",
+    "company": "CogniTek",
+    "location": "USA (Onsite)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "shailaja.b@cognitek.io",
+    "description": "🚨 NETWORK ENGINEERS | USA IT OPPORTUNITIES WITH COGNITECH! Are you a Network Engineer or MS graduate looking to explore IT project opportunities in the USA? Location: USA — Onsite | Employment: W2 Contract | Visa Types: OPT, STEM OPT, CPT | Experience: 2–5+ Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_3",
+    "title": "Azure Network Engineer",
+    "company": "Synchrony Corp",
+    "location": "Burlington, MA, USA",
+    "domain": "Cloud & Networking",
+    "email": "rajakumari.m@synchronycorp.com",
+    "description": "#Hiring #Title: Azure Network Engineer #Location: Burlington, MA (Onsite) #Type: Contract #Experience: 10+ years. Relevant certifications such as CCNA, routing and switching, Azure Network or administrator certification.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_4",
+    "title": "Senior Azure Network Engineer",
+    "company": "Square Hiring",
+    "location": "Burlington, MA, USA",
+    "domain": "Cloud & Networking",
+    "email": "Shubhashree@squarehiring.com",
+    "description": "🚨 WE ARE HIRING – AZURE NETWORK ENGINEER 🚨 Location: Burlington, MA | Work Mode: 100% Onsite – Day 1 | Role: Senior Azure Network Engineer. Strong expertise in Azure networking, ExpressRoute, VPN, and firewalls.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_5",
+    "title": "Senior Network Engineer",
+    "company": "Uktha Global",
+    "location": "Santa Clara, CA, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "mary.b@ukthaglobal.com",
+    "description": "IMMEDIATE HIRING | Senior Network Engineer | Location: Santa Clara, CA (Onsite) | Duration: Long-Term Contract | Requirement: Santa Clara Locals Only – F2F Interview Mandatory | Experience: 10–12+ Years. Cisco Enterprise Infrastructure.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_6",
+    "title": "Azure Network Engineer",
+    "company": "Diverse Lynx",
+    "location": "Burlington, MA, USA",
+    "domain": "Cloud & Networking",
+    "email": "nitin.raj@diverselynx.com",
+    "description": "🚨 We’re Hiring: Azure Network Engineer 🚨 Location: Burlington, MA (Onsite) | Duration: Long-Term Contract | Pay Rate: $55–$60/hr. Required Skills: CCNA, Azure Network, or Azure Administrator.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_7",
+    "title": "Azure Network Engineer",
+    "company": "Qualis1 Inc",
+    "location": "Burlington, MA, USA",
+    "domain": "Cloud & Networking",
+    "email": "geeta@qualis1inc.com",
+    "description": "Role: Azure Network Engineer | Location: Burlington, MA - 100% onsite from Day 1 | Type of Hire: Long Term Contract. Relevant certifications such as CCNA, routing and switching, Azure Network or administrator certification.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_8",
+    "title": "SATCOM Network Engineer (Cleared)",
+    "company": "Signal Jobs",
+    "location": "Fort Meade, MD, USA",
+    "domain": "Telecom & Satellite Networking",
+    "email": "jobs@signaljobs.org",
+    "description": "🚨 NOW HIRING: SATCOM NETWORK ENGINEER – CLEARED OPPORTUNITY | Location: Fort Meade, MD (100% On-Site) | Salary: $115,000–$130,000 | Clearance: Active Secret Clearance (Must be able to obtain/hold TS/SCI) | Certifications: Sec+.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_9",
+    "title": "IT Network & Infrastructure Administrator",
+    "company": "Maxking (India) Footwear Pvt. Ltd",
+    "location": "Tirupati, Andhra Pradesh, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "Manojkumar-u@in.apachefootwear.com",
+    "description": "Hiring Alert | Maxking (India) Footwear Pvt. Ltd | Location: Mambattu Village, Tada Mandal, Tirupathi District, Andhra Pradesh | Role: IT Network & Infrastructure Administrator | Qualification & Experience: B.Tech / Degree with 0–1 year of relevant experience.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_10",
+    "title": "Network / SD-WAN Engineer (L1)",
+    "company": "Ishan Technologies",
+    "location": "Trivandrum, Kerala, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "goswami.vijay@ishantechnologies.com",
+    "description": "🚨 WE ARE HIRING | NETWORK / SD-WAN ENGINEER (L1) | Location: Trivandrum, Kerala | Employment Type: Full-Time | Onsite | Experience: Minimum 3 Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_11",
+    "title": "Network Engineer",
+    "company": "IT Connect",
+    "location": "Billawar, Jammu & Kashmir, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "skumar@itconnectt.com",
+    "description": "🚨 WE ARE HIRING | NETWORK ENGINEER | Location: Billawar, Jammu & Kashmir | Experience: 8–15 Years | Budget: ₹15–22 LPA | Work Mode: Strictly Work From Office | Interview Mode: Virtual.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_12",
+    "title": "IT Network Engineer",
+    "company": "Jachoos",
+    "location": "Dubai, UAE",
+    "domain": "Networking / IT Infrastructure",
+    "email": "hr@jachoos.com",
+    "description": "Immediate joiners preferred | Job Title: IT Network Engineer | Salary: 3000 AED - 3500 AED | Location: Dubai (Onsite) | Job Type: Full-Time | Experience Required: 2 to 4 years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_13",
+    "title": "Network Engineer (Enterprise & Datacenter)",
+    "company": "IT Connect",
+    "location": "India (To Be Confirmed)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "skumar@itconnectt.com",
+    "description": "🚨 WE ARE HIRING | NETWORK ENGINEER | Role: Network Engineer | Work Environment: Enterprise & Datacenter Infrastructure | Client Exposure: International Clients.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_14",
+    "title": "Multi-Cloud Solutions Architect (Azure / OCI / AWS)",
+    "company": "Direct Hiring",
+    "location": "Remote",
+    "domain": "Cloud & DevOps",
+    "email": "mohamedibrahim.msc@outlook.com",
+    "description": "WE ARE HIRING | Multi-Cloud Solutions Architect | Azure | Oracle Cloud (OCI) | AWS. Design, implement, and optimize multi-cloud architectures across Azure, OCI, and AWS.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_15",
+    "title": "Multi-Cloud Administrator / Cloud Infrastructure Support Engineer",
+    "company": "Direct Hiring",
+    "location": "Remote",
+    "domain": "Cloud & DevOps",
+    "email": "mohamedibrahim.msc@outlook.com",
+    "description": "WE ARE HIRING | Multi-Cloud Administrator / Cloud Infrastructure Support Engineer | Azure | Oracle Cloud (OCI) | AWS. Manage and support multi-cloud infrastructure operations.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_16",
+    "title": "Azure Network Engineer",
+    "company": "Square Hiring",
+    "location": "Burlington, MA, USA",
+    "domain": "Cloud & Networking",
+    "email": "arun@squarehiring.com",
+    "description": "Job Title: Azure Network Engineer | 10+ Years Experience | Location: Burlington, MA. Deep expertise in Azure networking, VPN, ExpressRoute & firewalls to manage daily BAU tasks.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_17",
+    "title": "Azure Network Engineer",
+    "company": "Diverse Lynx",
+    "location": "Burlington, MA, USA",
+    "domain": "Cloud & Networking",
+    "email": "shivani.kapoor@diverselynx.com",
+    "description": "Job Position: Azure Network Engineer | Job Location: Burlington, MA (Onsite) | Job Duration: Contract. Urgent requirement for experienced Azure Network Engineer.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_18",
+    "title": "Multiple IT Opportunities (Java / .NET / PM / BA)",
+    "company": "Direct Hiring",
+    "location": "USA",
+    "domain": "IT & Tech",
+    "email": "vijay.benchsalesrecruiter@gmail.com",
+    "description": "WE ARE HIRING & HELPING IT PROFESSIONALS FIND JOB OPPORTUNITIES across the USA. Open Positions: Java Developer, .NET Developer, Project Manager, Business Analyst.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_19",
+    "title": "IT Infrastructure Manager",
+    "company": "FutureX Solutions",
+    "location": "Bengaluru, Karnataka, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "anushka.bhatia@futurexsolutions.com",
+    "description": "🚀 WE'RE HIRING | IT INFRASTRUCTURE MANAGER | Location: Bengaluru, Karnataka | Experience: 8+ Years | Employment Type: Full-Time | Work from Office.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_20",
+    "title": "Network Administrator",
+    "company": "QMCC",
+    "location": "Remote (Pakistan)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "recruitment@qmcc.ca",
+    "description": "We're Hiring: Network Administrator | Location: Remote – Pakistan | Working Hours: 7:00 PM – 3:30 AM (PKT) | Employment Type: Full-Time.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_21",
+    "title": "Network Engineer (L2)",
+    "company": "Indiabulls",
+    "location": "Mumbai, Maharashtra, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "Shivam.y11@indiabulls.com",
+    "description": "📢 WE ARE HIRING – Network Engineer (L2) | Experience: 3–6 Years | Location: Prabhadevi West, Mumbai | Employment Type: Full-Time.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_22",
+    "title": "Network Engineer",
+    "company": "Nibav Lifts Pvt Ltd / Elite Elevators",
+    "location": "Chennai, Tamil Nadu, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "jeedigunta.christina@nibavlifts.com",
+    "description": "🚀 We're Hiring | Network Engineer - Chennai | Nibav Lifts Pvt Ltd / Elite Elevators is looking for a Network Engineer to join our IT Services team in Chennai.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_23",
+    "title": "Technical Support Engineer (NOC & Support)",
+    "company": "Onnet Systems Pvt. Ltd.",
+    "location": "India",
+    "domain": "Telecom & NOC",
+    "email": "keerthana@onnetsystems.ai",
+    "description": "🚀 WE ARE HIRING | TECHNICAL SUPPORT ENGINEER | Onnet Systems Pvt. Ltd. is looking for candidates to join our NOC & Support Team! Experience: 0–2 Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_24",
+    "title": "Technical Support Lead (NOC & Support)",
+    "company": "Onnet Systems Pvt. Ltd.",
+    "location": "India",
+    "domain": "Telecom & NOC",
+    "email": "keerthana@onnetsystems.ai",
+    "description": "🚀 WE ARE HIRING | TECHNICAL SUPPORT LEAD | Onnet Systems Pvt. Ltd. is looking for an experienced Technical Support Lead to join our NOC & Support team! Experience: 4–6 Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_25",
+    "title": "Lead Associate – Network Operations (L2)",
+    "company": "Element Skill",
+    "location": "Pune, Maharashtra, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "rakhi@elementskill.com",
+    "description": "WE'RE HIRING | NETWORK ENGINEERING & NETWORK SECURITY PROFESSIONALS | Location: Pune, Maharashtra | Lead Associate – Network Operations (L2) | Experience: 5–9 Years | Cisco Meraki MX & Wireless AP.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_26",
+    "title": "Senior IT Infrastructure & Cybersecurity Engineer – Network Security",
+    "company": "Ramtech Corp",
+    "location": "Al Ain, UAE",
+    "domain": "Cybersecurity & Network Security",
+    "email": "jranjith@ramtech-corp.com",
+    "description": "Immediate opportunity in UAE, Al Ain | Senior IT Infrastructure & Cybersecurity Engineer – Network Security.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_27",
+    "title": "Network Engineer",
+    "company": "Capgemini",
+    "location": "USA (Hybrid)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "nehtakrishna@gmail.com",
+    "description": "Immediate Hiring – Network Engineer | Client: Capgemini | Location: Multiple Locations (Hybrid) | Job Type: C2C / W2 Contract | Duration: 12+ Months | Experience: 10+ Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_28",
+    "title": "Network Security Engineer",
+    "company": "IIC",
+    "location": "Remote (EST - USA)",
+    "domain": "Cybersecurity & Network Security",
+    "email": "Shashi@iic.com",
+    "description": "HIRING – Network Security Engineer | Work Arrangement: Remote EST (Preferred: Pittsburgh, PA | Strongsville, OH | Birmingham, AL | Dallas, TX | Phoenix, AZ) | Employment Type: W2 Contract-to-Hire.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_29",
+    "title": "OT Network Engineer (IDMZ)",
+    "company": "SK Technologies",
+    "location": "Liberty, NC / Princeton, IN / Georgetown, KY, USA",
+    "domain": "Operational Technology & Industrial Networking",
+    "email": "yash@sktechnologies.io",
+    "description": "WE'RE HIRING: OT Network Engineer (IDMZ) | Locations: Liberty, NC | Princeton, IN | Georgetown, KY | Pay Rate: $50/Hour C2C | USC/GCEAD Only | Experience: 10+ Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_30",
+    "title": "Onsite Network Engineer",
+    "company": "LiveMindz",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "munisowmya@livemindz.com",
+    "description": "WE ARE HIRING – Onsite Network Engineer | Location: Draper, UT – Onsite | Duration: 6 Months | Job Type: Contract (C2C) | Experience: 8–10 Years | Cisco Networking & Palo Alto Firewalls.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_31",
+    "title": "Senior Network Engineer",
+    "company": "Conov8",
+    "location": "Richmond, VA, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "mohit.kumar@conov8.com",
+    "description": "#C2C | HIRING: Senior Network Engineer | Richmond, VA | 6+ Months Contract | Cisco Routing & Switching (IOS/NX-OS), Cisco SD-WAN, Meraki, Cisco ISE, Duo MFA.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_32",
+    "title": "Network Lead / Architect",
+    "company": "Mergen Corp",
+    "location": "Hyderabad, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "madhavi.nalla@mergencorp.com",
+    "description": "We’re Hiring! Join Our Tech Team in Hyderabad | Network Lead / Architect (10–12+ Yrs) | Lead end-to-end network architecture, mentor engineering teams, and oversee global infrastructure design.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_33",
+    "title": "Linux Administrator",
+    "company": "Anameta IoT",
+    "location": "Bengaluru, India",
+    "domain": "Cloud & Infrastructure",
+    "email": "hima@anametaiot.com",
+    "description": "WE ARE HIRING || Linux Administrator || Location: Bangalore | Experience: 2–7 Years | Hands-on experience in Linux Administration, Networking, SIP/VoIP and Data Centre Operations.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_34",
+    "title": "Network Security Engineer",
+    "company": "Epiq India",
+    "location": "Coimbatore, Tamil Nadu, India",
+    "domain": "Cybersecurity & Network Security",
+    "email": "angel@epiqindia.com",
+    "description": "We’re Hiring | Network Security Engineer | Position: Network Security Engineer | Experience: 3–5 Years | Location: Coimbatore, Tamil Nadu | Job Type: Full-Time.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_35",
+    "title": "IT Support Executive / System Administrator",
+    "company": "Harmony United Medsolutions",
+    "location": "Hyderabad, India",
+    "domain": "IT & Tech",
+    "email": "recruitment@hupcfl.com",
+    "description": "We’re Hiring: IT Support Executive / System Administrator For Harmony United Medsolutions (Hyderabad) | Server administration, enterprise networking, and 4-day work-week flexibility.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_36",
+    "title": "IT Officer",
+    "company": "MOSTAQBAL",
+    "location": "Amman, Jordan",
+    "domain": "IT & Tech",
+    "email": "Careers@mostaqbal.jo",
+    "description": "MOSTAQBAL IS HIRING | IT Officer | Location: Amman | Bachelor's degree in Computer Science/IT | 2–3 years of relevant IT experience.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_37",
+    "title": "Cybersecurity Engineer",
+    "company": "Direct Hiring",
+    "location": "USA",
+    "domain": "Cybersecurity & Network Security",
+    "email": "jaismeenkaur0907@gmail.com",
+    "description": "WE'RE HIRING | Cybersecurity Engineer | USA-Based Candidates Only | Protect, monitor, and secure scalable, reliable, and high-quality systems and applications.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_38",
+    "title": "Onsite Network Engineer – Intermediate Level",
+    "company": "Qualis1 Inc",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "shreeya.v@qualis1inc.com",
+    "description": "Hiring: Onsite Network Engineer – Intermediate Level | Location: Draper, UT | Duration: 6 Months | Work Mode: 100% Onsite | Experience: 8–10 Years | Cisco & Palo Alto Firewall.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_39",
+    "title": "Network Security Engineer",
+    "company": "Fusion GTS",
+    "location": "Sunnyvale, CA / Plano, TX, USA (Hybrid)",
+    "domain": "Cybersecurity & Network Security",
+    "email": "sunil@fusiongts.com",
+    "description": "Job openings for Network Security Engineer | Type: Contract | Location: Sunnyvale, CA / Plano, TX (Hybrid - Locals Only) | Experience: 8+ Years | Palo Alto Firewall Administration.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_40",
+    "title": "Senior Data Center Engineer",
+    "company": "BCG NJ",
+    "location": "USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "Meghana@bcgnj.com",
+    "description": "Immediate Hiring: Senior Data Center Engineers (8+ Years Experience) — USA Opportunities | Employment Type: W2.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_41",
+    "title": "Senior Network Engineer",
+    "company": "Netoyed",
+    "location": "Noida, India (Hybrid)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "ashendra.singh@netoyed.com",
+    "description": "Job: Senior Network Engineer | Location: Noida (Hybrid) | Experience: 8+ Years | Certifications: CCNA / CCNP / CCIE | Cisco Routing & Switching, MPLS, L2VPN/L3VPN, BGP, OSPF.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_42",
+    "title": "Network Engineer – L2",
+    "company": "SBase Technologies (Client: Wipro)",
+    "location": "Andheri, Mumbai, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "shreya.p@sbasetech.net",
+    "description": "Hiring: Network Engineer – L2 | Mumbai | SBase Technologies Pvt. Ltd. is looking for an experienced Network Engineer – L2 for an opportunity with our client, Wipro. Experience: 5–7 Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_43",
+    "title": "Network Engineer – Intermediate Level",
+    "company": "Cynosure Technologies",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "kirti@cynosuretechnologies.com",
+    "description": "Hiring: Network Engineer – Intermediate Level | Location: Draper, UT (Onsite) | Experience: 8–12 Years | Cisco Networking, Palo Alto Firewalls, Enterprise Wi-Fi.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_44",
+    "title": "Onsite Network Engineer (Intermediate Level)",
+    "company": "Trilyon Services",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "aakashs@trilyonservices.com",
+    "description": "We're Hiring: Onsite Network Engineer (Intermediate Level) | Location: Draper, UT (Onsite) | Duration: 6 Months | Experience: 8–10 Years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_45",
+    "title": "Network Engineer",
+    "company": "iFlow Global",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "sandeepg@iflowglobal.com",
+    "description": "Hiring: Network Engineer | Location: Draper, UT (Onsite) | Duration: 6 Months | Experience: 8–10 Years | Cisco networking, Palo Alto firewalls, and enterprise Wi-Fi.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_46",
+    "title": "Onsite Network Engineer",
+    "company": "HG Tech Inc",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "khizer@hgtechinc.net",
+    "description": "Hiring Now: Onsite Network Engineer | Draper, UT | Cisco Networking, Palo Alto Firewalls, Enterprise Wi-Fi, and infrastructure troubleshooting.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_47",
+    "title": "Onsite Network Engineer (Intermediate Level)",
+    "company": "Element Technologies",
+    "location": "Draper, UT, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "ravikumar@elementtechnologies.com",
+    "description": "WE ARE HIRING – ONSITE NETWORK ENGINEER (INTERMEDIATE LEVEL) | Location: Draper, UT (100% Onsite) | Duration: 6 Months | Experience: 8–10 Years | Engagement: C2C.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_48",
+    "title": "Network Engineer L3 (USC/GC Only)",
+    "company": "Logistic Solutions",
+    "location": "Tempe, AZ, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "akshitha.bandaru@logistic-solutions.com",
+    "description": "Network Engineer L3 (USC/GC only) | Location: 2010 E Centennial Cir, Tempe, AZ 85284 | Certified in Networking CCNA, CCNP (A MUST) | Cisco, Aruba wireless, Palo Alto, Arista.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_49",
+    "title": "Project Delivery Lead – Network Project Delivery",
+    "company": "Precision Tech Corp",
+    "location": "Plano, TX, USA (Hybrid)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "Rajat.v@precisiontechcorp.com",
+    "description": "WE ARE HIRING | PROJECT DELIVERY LEAD – NETWORK PROJECT DELIVERY | Location: Plano, TX (Hybrid – 3 Days Onsite) | Duration: 6–12 Months | Contract-to-Hire.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_50",
+    "title": "IT Infrastructure & Network Security Engineer",
+    "company": "Zerozilla",
+    "location": "India",
+    "domain": "Cybersecurity & Network Security",
+    "email": "careers@jsrworkforcesolutions.com",
+    "description": "WE ARE HIRING FOR INDIA LOCATION | IT INFRASTRUCTURE & NETWORK SECURITY ENGINEER | Zerozilla is looking for an experienced IT Infrastructure & Network Security Engineer.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_51",
+    "title": "IT Network Engineer",
+    "company": "Kapstone",
+    "location": "Navi Mumbai, Maharashtra, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "fatima@kapstone.co.in",
+    "description": "Job Description: IT Network Engineer | Job Location: Mahape, Navi Mumbai, Maharashtra | Experience: 2 Years | Employment Type: Full-Time | Salary Budget: 25k - 35k.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_52",
+    "title": "IT Specialist",
+    "company": "TII India Pvt Ltd",
+    "location": "Bawal, Rewari, Haryana, India",
+    "domain": "IT & Tech",
+    "email": "hr.india@tii-group.com",
+    "description": "Hiring for IT Specialist at TII India Pvt Ltd (German MNC) | Location: Bawal, Distt Rewari Haryana | Exp: 6 to 10 years | Qualification: B.Tech (IT) / BCA / MCA.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_53",
+    "title": "Network Administrator",
+    "company": "Exlathena Technologies",
+    "location": "Chennai, Tamil Nadu, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "info@exlathena.com",
+    "description": "We're Hiring | Network Administrator | Job Location: Chennai, Tamil Nadu | Experience: 5 Years | Company: Exlathena Technologies | Employment Type: Full-Time.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_54",
+    "title": "Network Engineer L2",
+    "company": "Altraize",
+    "location": "Chennai, Tamil Nadu, India",
+    "domain": "Networking / IT Infrastructure",
+    "email": "jobs@altraize.com",
+    "description": "We’re Hiring: Network Engineer L2 | Location: Chennai | Experience: 4–6 Years | Manage, monitor, and troubleshoot enterprise network infrastructure.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_55",
+    "title": "Network Administrator",
+    "company": "Bahria Town (Pvt) Ltd.",
+    "location": "Lahore, Pakistan",
+    "domain": "Networking / IT Infrastructure",
+    "email": "hrd.btl@bahriatown.com.pk",
+    "description": "Career Opportunity! Bahria Town (Pvt) Ltd. Lahore | Position: Network Administrator | Qualification: BS Computer Science | Experience: Minimum 3 years.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_56",
+    "title": "IT Technician",
+    "company": "EB International",
+    "location": "Hays, KS, USA",
+    "domain": "IT & Tech",
+    "email": "knagaraj@ebintl.com",
+    "description": "IMMEDIATE HIRING | IT Technician | Location: Hays, Kansas | Job Type: Full-Time | Work Arrangement: Onsite | U.S. Citizens and Green Card Holders only.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_57",
+    "title": "Senior Network Engineer (Banking Client)",
+    "company": "Eminence IT Solutions Inc.",
+    "location": "Remote (USA)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "sam@eitsinc.com",
+    "description": "We Are Hiring – Senior Network Engineer | 100% Remote (USA) | Eminence IT Solutions Inc. is looking for an experienced Network Engineer supporting a major banking client.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_58",
+    "title": "Cloud Infrastructure & Virtualization Engineer",
+    "company": "Xevyte",
+    "location": "On-site",
+    "domain": "Cloud & Infrastructure",
+    "email": "reshma@xevyte.com",
+    "description": "HIRING! Position: Cloud Infrastructure & Virtualization Engineer | Location: On-site | Experience: 2–4 Years | Employment Type: Full-time | Linux, KVM, and Cloud Infrastructure.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_59",
+    "title": "Information Technology (IT) Officer",
+    "company": "Ethioder Plc",
+    "location": "Addis Ababa, Ethiopia",
+    "domain": "IT & Tech",
+    "email": "info@ethider.com",
+    "description": "JOB OPPORTUNITY! Information Technology (IT) Officer | Company: Ethioder Plc | Location: Addis Ababa, Ethiopia | Employment: Full-time | On-site | Experience: 3–5+ years | Deadline: 5 December 2026.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_60",
+    "title": "Infrastructure Engineer 2",
+    "company": "DP World",
+    "location": "Global / UAE",
+    "domain": "Cloud & Infrastructure",
+    "email": "sudha.rangavajhula@dpworld.com",
+    "description": "We’re Hiring | Infrastructure Engineer 2 | DP World | Building, managing, and supporting scalable cloud and enterprise infrastructure.",
+    "posted_date": "2026-11-14"
+  },
+  {
+    "id": "job_61",
+    "title": "NOC Engineer",
+    "company": "Capgemini",
+    "location": "Gurgaon, Haryana, India",
+    "domain": "Telecom & NOC",
+    "email": "Inbox7069@gmail.com",
+    "description": "Hiring for NOC engineer in Capgemini | Minimum experience needed: 2 years | 5 Days work from office | Work location: Gurgaon | Immediate joiners within 30 days.",
+    "posted_date": "2026-11-14"
+  }
+]
