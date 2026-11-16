@@ -210,13 +210,9 @@
                 `📍 Location: ${location}`,
                 `🏷️ Domain: ${domain}`,
                 email ? `✉️ Apply Email: ${email}` : '',
-                shortDesc ? `
-📝 ${shortDesc}` : '',
-                `
-🔗 View full job details:
-${shareUrl}`
-            ].filter(Boolean).join('
-');
+                shortDesc ? `\n📝 ${shortDesc}` : '',
+                `\n🔗 View full job details:\n${shareUrl}`
+            ].filter(Boolean).join('\n');
         }
 
         // Open Job Details Popup Modal (No Page Refresh)
@@ -254,13 +250,7 @@ ${shareUrl}`
                 emailLink.textContent = email;
                 emailLink.href = `mailto:${email}`;
                 const subject = encodeURIComponent(`Application for ${title}${jobCode ? ' (' + jobCode + ')' : ''}`);
-                const body = encodeURIComponent(`Hi,
-
-I would like to apply for the ${title} position at ${company} (${location}).
-
-Please find my resume attached.
-
-Best regards,`);
+                const body = encodeURIComponent(`Hi,\n\nI would like to apply for the ${title} position at ${company} (${location}).\n\nPlease find my resume attached.\n\nBest regards,`);
                 applyBtn.href = `mailto:${email}?subject=${subject}&body=${body}`;
                 applyBtn.style.display = 'block';
             } else {
@@ -488,11 +478,7 @@ Best regards,`);
                 const postedDate = job.posted_date || 'Recently';
                 const safeUniqueId = escapeHtml(job.unique_id);
 
-                const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,
-
-I would like to apply for the ' + title + ' position.
-
-Best regards,')}`;
+                const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,\n\nI would like to apply for the ' + title + ' position.\n\nBest regards,')}`;
 
                 const card = `
                     <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -619,25 +605,20 @@ Best regards,')}`;
             }
 
             const recentJobs = allJobs.slice(0, 20);
-            let textToCopy = `Recent Jobs : @ ${currentUrl}
-
-`;
+            let textToCopy = `Recent Jobs : @ ${currentUrl}\n\n`;
 
             recentJobs.forEach((job, index) => {
                 const title = job.title || 'Job Opportunity';
                 const location = job.location || 'Not Specified';
 
                 if (location && location.toLowerCase() !== 'not specified') {
-                    textToCopy += `${index + 1}. ${title} — ${location}
-`;
+                    textToCopy += `${index + 1}. ${title} — ${location}\n`;
                 } else {
-                    textToCopy += `${index + 1}. ${title}
-`;
+                    textToCopy += `${index + 1}. ${title}\n`;
                 }
             });
 
-            textToCopy += `
-🔗 Apply & Browse More: ${currentUrl}`;
+            textToCopy += `\n🔗 Apply & Browse More: ${currentUrl}`;
 
             navigator.clipboard.writeText(textToCopy).then(() => {
                 showToast('Top job titles and locations copied!');
