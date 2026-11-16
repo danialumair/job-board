@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Job Portal | External Fetch</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-54TCD9X2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+    </script>
+    <style>
+        @keyframes slideUp {
+            from {
+                transform: translateY(24px);
+                opacity: 0.7;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .animate-slide-up {
+            animation: slideUp 0.22s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="relative bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
+        <!-- Top Right Action Button with Icon -->
+        <div class="absolute top-4 right-4">
+            <button onclick="copyAllJobs()" title="Copy All Job Titles & Locations"
+                class="bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-xl backdrop-blur-sm transition-colors border border-white/20 flex items-center justify-center cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                </svg>
+            </button>
+        </div>
+        <h1 id="headerTitle" class="text-xl sm:text-2xl font-bold tracking-tight mb-1">Global Job Portal</h1>
+        <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">Fetching daily inspiration and jobs...</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 py-6">
+
+        <!-- Search & Filter Bar -->
+        <div class="flex flex-col md:flex-row gap-3 mb-6">
+            <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
+                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+
+            <select id="domainFilter"
+                class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                <option value="">All Domains</option>
+            </select>
+        </div>
+
+        <!-- Job Cards List -->
+        <div id="jobListings" class="space-y-4">
+            <p class="text-center text-gray-500 py-8">Loading job listings from server...</p>
+        </div>
+
+    </main>
+
+    <!-- JOB DETAILS POPUP MODAL (No Page Refresh) -->
+    <div id="jobModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-xs p-3 sm:p-4">
+        <div class="animate-slide-up relative flex flex-col w-full max-w-lg max-h-[90vh] bg-white rounded-[26px] shadow-2xl overflow-hidden border border-gray-100">
+
+            <!-- Top Bar: Circular Close/Back Button (Left) & Circular Share Button (Right) -->
+            <div class="flex items-center justify-between px-5 pt-4 pb-2 bg-white shrink-0">
+                <button type="button" id="modalCloseBtn" title="Close" aria-label="Close job details"
+                    class="w-10 h-10 rounded-full border border-gray-200 bg-white text-gray-800 hover:bg-gray-100 active:scale-95 transition flex items-center justify-center shadow-xs cursor-pointer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <button type="button" id="modalShareBtn" title="Share job" aria-label="Share job"
+                    class="w-10 h-10 rounded-full border border-gray-200 bg-white text-gray-800 hover:bg-gray-100 active:scale-95 transition flex items-center justify-center shadow-xs cursor-pointer">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Share Dropdown Menu -->
+            <div id="shareMenu"
+                class="hidden flex-col gap-1 absolute top-16 right-5 w-56 bg-white border border-gray-200 rounded-2xl shadow-xl p-2 z-30">
+                <a href="#" target="_blank" rel="noopener" id="shareWhatsApp"
+                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-emerald-700 hover:bg-emerald-50 transition">
+                    <span>💬</span> Share via WhatsApp
+                </a>
+                <a href="#" target="_blank" rel="noopener" id="shareLinkedIn"
+                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-100 transition">
+                    <span>💼</span> Share on LinkedIn
+                </a>
+                <a href="#" id="shareEmail"
+                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-100 transition">
+                    <span>✉️</span> Share via Email
+                </a>
+                <button type="button" id="shareCopyBtn"
+                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-100 transition text-left w-full cursor-pointer">
+                    <span>📋</span> Copy Details &amp; Link
+                </button>
+                <button type="button" id="shareNativeBtn" style="display:none;"
+                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-100 transition text-left w-full cursor-pointer">
+                    <span>📤</span> More Share Options...
+                </button>
+            </div>
+
+            <!-- Scrollable Modal Content -->
+            <div class="px-6 pt-2 pb-24 overflow-y-auto flex-1">
+                <!-- Company Avatar + Role Title + Location -->
+                <div class="flex items-start gap-3.5 mb-3.5">
+                    <div id="modalAvatar"
+                        class="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-100 font-bold text-lg flex items-center justify-center shrink-0">
+                        J
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h2 id="modalTitle" class="text-lg sm:text-xl font-bold text-gray-900 leading-snug mb-1">Job Title</h2>
+                        <p id="modalSubtitle" class="text-sm text-gray-500">Company • Location</p>
+                    </div>
+                </div>
+
+                <!-- Pills Row -->
+                <div id="modalPills" class="flex flex-wrap gap-2 pb-4 mb-5 border-b border-gray-100"></div>
+
+                <!-- About This Role -->
+                <h3 class="text-base font-bold text-gray-900 mb-2">About this role</h3>
+                <div id="modalDescription" class="text-sm text-gray-600 leading-relaxed whitespace-pre-line mb-5"></div>
+
+                <!-- Recruiter Email Box -->
+                <div class="bg-gray-50 border border-gray-200/80 rounded-xl px-4 py-3 flex items-center justify-between gap-2 text-xs sm:text-sm">
+                    <span class="text-gray-500 shrink-0">Recruiter Email:</span>
+                    <a href="#" id="modalEmailLink" class="text-indigo-600 font-semibold hover:underline break-all text-right">email@company.com</a>
+                </div>
+            </div>
+
+            <!-- Sticky Bottom Pill CTA -->
+            <div class="absolute bottom-0 inset-x-0 px-5 pt-4 pb-5 bg-gradient-to-t from-white via-white to-white/0 flex items-center">
+                <a href="#" id="modalApplyBtn"
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center py-3.5 px-6 rounded-full shadow-lg shadow-blue-600/30 transition text-sm sm:text-base">
+                    Apply this job
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Toast Notification -->
+    <div id="toast"
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 translate-y-20 opacity-0 pointer-events-none bg-gray-900 text-white text-xs sm:text-sm font-medium px-5 py-2.5 rounded-full shadow-lg transition-all duration-300 z-[60]">
+        Copied to clipboard!
+    </div>
+
+    <script>
+        let allJobs = [];
+        let activeJob = null;
+
+        const jobModal = document.getElementById('jobModal');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+        const modalShareBtn = document.getElementById('modalShareBtn');
+        const shareMenu = document.getElementById('shareMenu');
+        const toast = document.getElementById('toast');
+
+        function showToast(message) {
+            toast.textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 2500);
+        }
+
+        // Build clean shareable URL (?job=JOB-ID) without page refresh
+        function getJobShareUrl(job) {
+            const url = new URL(window.location.href);
+            const shareKey = job.id || job.unique_id;
+            url.searchParams.set('job', shareKey);
+            return url.toString();
+        }
+
+        // Build formatted message with job details + direct clickable link
+        function buildShareText(job) {
+            const title = job.title || 'Job Opportunity';
+            const company = job.company || 'Direct Hiring';
+            const location = job.location || 'Not Specified';
+            const domain = job.domain || 'General';
+            const email = job.email && job.email !== 'No email provided' ? job.email : '';
+            const rawDesc = (job.description || job.full_post_content || '').replace(/\s+/g, ' ').trim();
+            const shortDesc = rawDesc.length > 180 ? rawDesc.slice(0, 180) + '...' : rawDesc;
+            const shareUrl = getJobShareUrl(job);
+
+            return [
+                `🚀 *${title}*`,
+                `🏢 Company: ${company}`,
+                `📍 Location: ${location}`,
+                `🏷️ Domain: ${domain}`,
+                email ? `✉️ Apply Email: ${email}` : '',
+                shortDesc ? `
+📝 ${shortDesc}` : '',
+                `
+🔗 View full job details:
+${shareUrl}`
+            ].filter(Boolean).join('
+');
+        }
+
+        // Open Job Details Popup Modal (No Page Refresh)
+        function openJobModal(job, updateUrl = true) {
+            if (!job) return;
+            activeJob = job;
+
+            const title = job.title || 'Job Opportunity';
+            const company = job.company || 'Direct Hiring';
+            const domain = job.domain || 'General';
+            const location = job.location || 'Not Specified';
+            const description = job.description || job.full_post_content || 'No description provided.';
+            const email = job.email || '';
+            const postedDate = job.posted_date || 'Recently';
+            const jobCode = job.id || '';
+
+            document.getElementById('modalAvatar').textContent = company.charAt(0).toUpperCase();
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalSubtitle').textContent = `${company} • ${location}`;
+            document.getElementById('modalDescription').textContent = description;
+
+            // Render metadata pills
+            const pillsContainer = document.getElementById('modalPills');
+            pillsContainer.innerHTML = `
+                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${escapeHtml(domain)}</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">📍 ${escapeHtml(location)}</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">📅 ${escapeHtml(postedDate)}</span>
+                ${jobCode ? `<span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">${escapeHtml(jobCode)}</span>` : ''}
+            `;
+
+            // Configure email & Apply button
+            const emailLink = document.getElementById('modalEmailLink');
+            const applyBtn = document.getElementById('modalApplyBtn');
+            if (email && email.includes('@')) {
+                emailLink.textContent = email;
+                emailLink.href = `mailto:${email}`;
+                const subject = encodeURIComponent(`Application for ${title}${jobCode ? ' (' + jobCode + ')' : ''}`);
+                const body = encodeURIComponent(`Hi,
+
+I would like to apply for the ${title} position at ${company} (${location}).
+
+Please find my resume attached.
+
+Best regards,`);
+                applyBtn.href = `mailto:${email}?subject=${subject}&body=${body}`;
+                applyBtn.style.display = 'block';
+            } else {
+                emailLink.textContent = email || 'No email provided';
+                emailLink.removeAttribute('href');
+                applyBtn.style.display = 'none';
+            }
+
+            // Configure Share Menu links (WhatsApp, LinkedIn, Email)
+            const shareText = buildShareText(job);
+            const shareUrl = getJobShareUrl(job);
+            document.getElementById('shareWhatsApp').href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+            document.getElementById('shareLinkedIn').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+            document.getElementById('shareEmail').href = `mailto:?subject=${encodeURIComponent(`Job Opportunity: ${title} - ${company}`)}&body=${encodeURIComponent(shareText)}`;
+
+            if (navigator.share) {
+                document.getElementById('shareNativeBtn').style.display = 'flex';
+            }
+
+            // Update URL without reloading page
+            if (updateUrl) {
+                const nextUrl = new URL(window.location.href);
+                nextUrl.searchParams.set('job', job.id || job.unique_id);
+                window.history.pushState({ jobKey: job.id || job.unique_id }, '', nextUrl);
+            }
+
+            shareMenu.classList.add('hidden');
+            shareMenu.classList.remove('flex');
+            jobModal.classList.remove('hidden');
+            jobModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close Job Details Popup Modal (No Page Refresh)
+        function closeJobModal(updateUrl = true) {
+            jobModal.classList.add('hidden');
+            jobModal.classList.remove('flex');
+            shareMenu.classList.add('hidden');
+            shareMenu.classList.remove('flex');
+            document.body.style.overflow = '';
+            activeJob = null;
+
+            if (updateUrl) {
+                const cleanUrl = new URL(window.location.href);
+                cleanUrl.searchParams.delete('job');
+                window.history.pushState({}, '', cleanUrl);
+            }
+        }
+
+        // Modal Event Listeners
+        modalCloseBtn.addEventListener('click', () => closeJobModal(true));
+
+        jobModal.addEventListener('click', (e) => {
+            if (e.target === jobModal) closeJobModal(true);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !jobModal.classList.contains('hidden')) {
+                closeJobModal(true);
+            }
+        });
+
+        modalShareBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isHidden = shareMenu.classList.contains('hidden');
+            if (isHidden) {
+                shareMenu.classList.remove('hidden');
+                shareMenu.classList.add('flex');
+            } else {
+                shareMenu.classList.add('hidden');
+                shareMenu.classList.remove('flex');
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!shareMenu.contains(e.target) && e.target !== modalShareBtn) {
+                shareMenu.classList.add('hidden');
+                shareMenu.classList.remove('flex');
+            }
+        });
+
+        // Copy job details + URL button inside Share Menu
+        document.getElementById('shareCopyBtn').addEventListener('click', async () => {
+            if (!activeJob) return;
+            const textToCopy = buildShareText(activeJob);
+            try {
+                await navigator.clipboard.writeText(textToCopy);
+                showToast('Job details & direct URL copied!');
+            } catch {
+                const ta = document.createElement('textarea');
+                ta.value = textToCopy;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast('Job details & direct URL copied!');
+            }
+            shareMenu.classList.add('hidden');
+            shareMenu.classList.remove('flex');
+        });
+
+        // Native Web Share API (for mobile share sheet)
+        document.getElementById('shareNativeBtn').addEventListener('click', async () => {
+            if (!activeJob || !navigator.share) return;
+            try {
+                await navigator.share({
+                    title: `${activeJob.title || 'Job Opportunity'} - ${activeJob.company || ''}`,
+                    text: buildShareText(activeJob),
+                    url: getJobShareUrl(activeJob)
+                });
+            } catch (err) {
+                // Share cancelled
+            }
+            shareMenu.classList.add('hidden');
+            shareMenu.classList.remove('flex');
+        });
+
+        // Handle browser Back/Forward buttons smoothly
+        window.addEventListener('popstate', () => {
+            const params = new URLSearchParams(window.location.search);
+            const jobKey = params.get('job');
+            if (jobKey) {
+                const target = findJobByKey(jobKey);
+                if (target) openJobModal(target, false);
+            } else {
+                closeJobModal(false);
+            }
+        });
+
+        function findJobByKey(jobKey) {
+            if (!jobKey) return null;
+            const lowerKey = jobKey.toLowerCase();
+            return allJobs.find(j =>
+                (j.id && j.id.toLowerCase() === lowerKey) ||
+                (j.unique_id && j.unique_id.toLowerCase() === lowerKey)
+            );
+        }
+
+        function escapeHtml(str) {
+            return String(str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        async function loadJobsFromFiles() {
+            try {
+                // 1. Fetch manifest file
+                const manifestRes = await fetch('manifest.json');
+                if (!manifestRes.ok) throw new Error('Could not load manifest.json');
+                const fileList = await manifestRes.json();
+
+                let combinedJobs = [];
+
+                // 2. Fetch each JSON file listed in the manifest concurrently
+                const fetchPromises = fileList.map(async (fileName) => {
+                    try {
+                        const res = await fetch(fileName);
+                        if (!res.ok) return [];
+                        const data = await res.json();
+
+                        // Extract date from filename if not present in job object
+                        const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
+                        const fileDate = dateMatch ? dateMatch[0] : 'Recently';
+
+                        return data.map((job, idx) => ({
+                            ...job,
+                            unique_id: `${fileName}_${idx}`,
+                            posted_date: job.posted_date || fileDate
+                        }));
+                    } catch (err) {
+                        console.error(`Error loading ${fileName}:`, err);
+                        return [];
+                    }
+                });
+
+                const results = await Promise.all(fetchPromises);
+                results.forEach(jobArray => combinedJobs.push(...jobArray));
+
+                // Sort by Newest Posted Date
+                combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
+
+                allJobs = combinedJobs;
+                populateDomainFilter(allJobs);
+                displayJobs(allJobs);
+
+                // Check if URL has ?job=... parameter and open popup automatically
+                const params = new URLSearchParams(window.location.search);
+                const sharedJobKey = params.get('job');
+                if (sharedJobKey) {
+                    const targetJob = findJobByKey(sharedJobKey);
+                    if (targetJob) {
+                        openJobModal(targetJob, false);
+                    }
+                }
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                document.getElementById('jobListings').innerHTML = `
+                    <div class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl text-center text-sm">
+                        <p class="font-bold mb-1">Failed to fetch job files.</p>
+                        <p>Make sure you are running this via a local server (like VS Code Live Server) or hosted on GitHub Pages so browser CORS permits external fetching.</p>
+                    </div>`;
+            }
+        }
+
+        function displayJobs(jobArray) {
+            const container = document.getElementById('jobListings');
+            container.innerHTML = '';
+
+            if (!jobArray || jobArray.length === 0) {
+                container.innerHTML = `<p class="text-center text-gray-500 py-8">No matching jobs found.</p>`;
+                return;
+            }
+
+            jobArray.forEach((job) => {
+                const title = job.title || 'Job Opportunity';
+                const company = job.company || 'Direct Hiring';
+                const domain = job.domain || 'General';
+                const location = job.location || 'Not Specified';
+                const description = job.description || job.full_post_content || '';
+                const email = job.email || 'No email provided';
+                const postedDate = job.posted_date || 'Recently';
+                const safeUniqueId = escapeHtml(job.unique_id);
+
+                const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,
+
+I would like to apply for the ' + title + ' position.
+
+Best regards,')}`;
+
+                const card = `
+                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start gap-2 mb-2">
+                            <div>
+                                <h2 class="text-lg font-bold text-gray-900">${escapeHtml(title)}</h2>
+                                <p class="text-xs font-medium text-gray-500 mt-0.5">${escapeHtml(company)}</p>
+                            </div>
+                            <div class="flex flex-col items-end gap-1 shrink-0">
+                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${escapeHtml(domain)}</span>
+                                <span class="text-[11px] text-gray-400 font-medium">📅 ${escapeHtml(postedDate)}</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-4 text-xs text-gray-500 mb-3">
+                            <span>📍 ${escapeHtml(location)}</span>
+                            <span>✉️ ${escapeHtml(email)}</span>
+                        </div>
+
+                        <!-- Truncated Preview -->
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            ${escapeHtml(description)}
+                        </p>
+
+                        <!-- Card Action Buttons -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <button type="button" onclick="openJobByUniqueId('${safeUniqueId}')"
+                                    class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-5 rounded-xl transition-colors cursor-pointer">
+                                    View Details
+                                </button>
+                                <a href="${emailLink}"
+                                    class="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors">
+                                    Apply via Email
+                                </a>
+                            </div>
+
+                            <button type="button" onclick="quickShareJob('${safeUniqueId}')" title="Share Job & Link"
+                                class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-600 hover:text-indigo-600 bg-gray-100 hover:bg-indigo-50 py-2.5 px-3.5 rounded-xl transition-colors cursor-pointer">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx="6" cy="12" r="3"></circle>
+                                    <circle cx="18" cy="19" r="3"></circle>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                </svg>
+                                Share
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        window.openJobByUniqueId = function(uniqueId) {
+            const job = allJobs.find(j => j.unique_id === uniqueId);
+            if (job) openJobModal(job, true);
+        };
+
+        window.quickShareJob = function(uniqueId) {
+            const job = allJobs.find(j => j.unique_id === uniqueId);
+            if (!job) return;
+            openJobModal(job, true);
+            shareMenu.classList.remove('hidden');
+            shareMenu.classList.add('flex');
+        };
+
+        // Live Search & Filter Logic
+        document.getElementById('searchInput').addEventListener('input', filterJobs);
+        document.getElementById('domainFilter').addEventListener('change', filterJobs);
+
+        function filterJobs() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const domain = document.getElementById('domainFilter').value;
+
+            const filtered = allJobs.filter(job => {
+                const matchesQuery = (job.title || '').toLowerCase().includes(query) ||
+                    (job.location || '').toLowerCase().includes(query) ||
+                    (job.description || '').toLowerCase().includes(query) ||
+                    (job.company || '').toLowerCase().includes(query);
+                const matchesDomain = domain === "" || (job.domain || '').trim() === domain;
+                return matchesQuery && matchesDomain;
+            });
+
+            displayJobs(filtered);
+        }
+
+        // Run fetch on load
+        loadJobsFromFiles();
+        loadHeaderConfig();
+
+        async function loadHeaderConfig() {
+            try {
+                const res = await fetch('config.json?v=' + Date.now());
+                if (!res.ok) return;
+                const config = await res.json();
+
+                const titleElem = document.getElementById('headerTitle');
+                const subtitleElem = document.getElementById('headerSubtitle');
+
+                if (config.header_title && titleElem) {
+                    titleElem.textContent = config.header_title;
+                }
+
+                if (config.motivational_lines && config.motivational_lines.length > 0 && subtitleElem) {
+                    const randomIndex = Math.floor(Math.random() * config.motivational_lines.length);
+                    subtitleElem.textContent = config.motivational_lines[randomIndex];
+                }
+            } catch (err) {
+                const subtitleElem = document.getElementById('headerSubtitle');
+                if (subtitleElem) {
+                    subtitleElem.textContent = "“So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5";
+                }
+            }
+        }
+
+        // Copy all job titles and locations from the already loaded jobs (top to bottom)
+        function copyAllJobs() {
+            const currentUrl = window.location.origin + window.location.pathname;
+
+            if (!allJobs || allJobs.length === 0) {
+                showToast('No jobs loaded yet!');
+                return;
+            }
+
+            const recentJobs = allJobs.slice(0, 20);
+            let textToCopy = `Recent Jobs : @ ${currentUrl}
+
+`;
+
+            recentJobs.forEach((job, index) => {
+                const title = job.title || 'Job Opportunity';
+                const location = job.location || 'Not Specified';
+
+                if (location && location.toLowerCase() !== 'not specified') {
+                    textToCopy += `${index + 1}. ${title} — ${location}
+`;
+                } else {
+                    textToCopy += `${index + 1}. ${title}
+`;
+                }
+            });
+
+            textToCopy += `
+🔗 Apply & Browse More: ${currentUrl}`;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast('Top job titles and locations copied!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                showToast('Failed to copy jobs.');
+            });
+        }
+
+        // Dynamically populate the domain dropdown from loaded jobs
+        function populateDomainFilter(jobs) {
+            const domainSelect = document.getElementById('domainFilter');
+            domainSelect.innerHTML = '<option value="">All Domains</option>';
+
+            const uniqueDomains = [...new Set(
+                jobs
+                    .map(job => (job.domain || '').trim())
+                    .filter(domain => domain !== '')
+            )].sort((a, b) => a.localeCompare(b));
+
+            uniqueDomains.forEach(domain => {
+                const option = document.createElement('option');
+                option.value = domain;
+                option.textContent = domain;
+                domainSelect.appendChild(option);
+            });
+        }
+    </script>
+</body>
+
+</html>
