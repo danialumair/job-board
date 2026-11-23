@@ -1,0 +1,432 @@
+[
+  {
+    "id": "job_1",
+    "title": "Engineer – IP/MPLS",
+    "company": "IDC Technologies",
+    "location": "Abu Dhabi, UAE",
+    "domain": "Telecom",
+    "email": "career@idctechnologies.com",
+    "description": "Hiring | Engineer – IP/MPLS Email- career@idctechnologies.com Location: Abu Dhabi, UAE Experience: 3–8 Years  Required Technical Skills: Strong knowledge of IPv4, IPv6, Ethernet and L2/L3 networking. Hands-on experience with MPLS, LDP, RSVP, BGP, MP-BGP, OSPF and IS-IS. Experience with L2VPN, L3VPN, EVPN, Route Leaking and MPLS Traffic Engineering. Knowledge of GRE, MACsec, QoS, Internet Peering and Inter-AS Peering. Understanding of TCP/IP, UDP, IPSec, DNS, HTTP/HTTPS and multicast. Experience with network monitoring tools such as Zabbix and Graylog. Python scripting and Linux (RHEL/CentOS) experience are highly desirable.  Key Responsibilities: Design and implement scalable, resilient WAN/LAN and IP/MPLS network solutions. Work on routing and switching technologies, including MPLS, BGP, OSPF, IS-IS and EVPN. Implement L2/L3 VPNs, MPLS Traffic Engineering and Inter-AS connectivity. Coordinate with vendors on network implementation and HLD/LLD compliance. Prepare network configurations, BOQs, UAT documents and security hardening guidelines. Monitor network performance, troubleshoot issues and provide L2 support. Plan network changes, upgrades, maintenance windows and DC migrations. Collaborate with security, operations and infrastructure teams.",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_2",
+    "title": "VMware & Storage Technical Specialist",
+    "company": "Intertec Systems",
+    "location": "Dubai, UAE",
+    "domain": "Cloud & Infrastructure",
+    "email": "deepthi.karkera@intertecsys.com",
+    "description": "Hiring | VMware & Storage Technical Specialist Location: Dubai, UAE Email-deepthi.karkera@intertecsys.com Experience: 15+ Years in Enterprise Infrastructure   Key Responsibilities Manage and optimize enterprise VMware environments, including vSphere, ESXi, vCenter and vSAN. Administer VMware technologies such as VCF, DRS, HA, SRM and vMotion. Manage Horizon, Workspace ONE and enterprise storage solutions. Handle storage platforms such as Dell Isilon or equivalent NAS/enterprise storage solutions. Coordinate backup operations, preferably with Commvault. Drive capacity planning, performance optimization, VMware licensing and compliance. Oversee infrastructure operations across Windows, Linux, Backup, Storage and Networking. Lead L1/L2/L3 technical teams and manage complex escalations. Drive automation, service improvement initiatives, reporting and operational excellence.  📩 Interested candidates can share their updated profile at",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_3",
+    "title": "Senior Engineer – HPC Operations",
+    "company": "Raqmiyat",
+    "location": "UAE",
+    "domain": "Cloud & Infrastructure",
+    "email": "Vinodhini.Nagarajan@raqmiyat.com",
+    "description": "🚀 WE ARE HIRING | SENIOR ENGINEER – HPC OPERATIONS 🌟 Ready to work on cutting-edge HPC infrastructure and AI/ML workloads? We have an exciting opportunity for you!  📍 Location: UAE 💼 Experience: 5+ Years ⏳ Notice Period: Immediate to 30 Days Preferred  🔹 KEY TECHNICAL SKILLS: ✅ HPC Infrastructure: Configuration, optimisation and maintenance of complex HPC environments. ✅ Cluster Management: Hands-on experience with Slurm Clusters and/or Kubernetes. ✅ GPU & AI/ML: GPU resource management, workload scheduling and performance tuning. ✅ Monitoring Tools: Prometheus, Grafana and DCGM. ✅ Automation & Scripting: Python, Bash, Ansible and Terraform. ✅ Operating Systems: Linux (RHEL / CentOS / Ubuntu). ✅ Networking: RDMA, InfiniBand and RoCE. ✅ Storage Technologies: NFS, Lustre and Ceph. 🎯 Ideal Candidate: Professionals with strong hands-on experience in HPC Operations, Systems Engineering or DevOps environments.  📩 INTERESTED? LET'S CONNECT! Share your updated resume at: 📧 Vinodhini.Nagarajan@raqmiyat.com  📢 Know someone with the right expertise? Tag them or share this opportunity!  #Hiring #HPCOperations #HPCJobs #SeniorEngineer #UAEJobs #GPUComputing #Slurm #Kubernetes #AIML #DevOps #Linux #Raqmiyat",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_4",
+    "title": "Network Security Engineer (Prisma Access / Palo Alto)",
+    "company": "Ramtech Corp",
+    "location": "Dubai, UAE",
+    "domain": "Cybersecurity & Network Security",
+    "email": "jranjith@ramtech-corp.com",
+    "description": "We are looking for Network-security Engineer for Dubai Location  5+ years of relevant network-security experience, with hands-on Prisma Access and Palo Alto firewall administration. Strong TCP/IP, routing, DNS, IPsec, TLS, HA and identity-integration skills; experience with enterprise change control, SIEM troubleshooting and vendor escalation  interested candidates can share your resume to jranjith@ramtech-corp.com .  PaloAlto Soft PaloAlto and Company SIEM & SOC CyberSecurity Jobs Prisma AIRS by Palo Alto Networks Prisma by Palo Alto Networks",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_5",
+    "title": "Commissioning Engineer & Commissioning Manager (132 kV Substation)",
+    "company": "Connect Energy",
+    "location": "UAE",
+    "domain": "Engineering & Construction",
+    "email": "anwaar.ahmed@connect-energy.com",
+    "description": "Urgent Hiring | Commissioning Engineer & Commissioning Manager | UAE We are currently recruiting for a major 132 kV Substation Project in the UAE and are seeking experienced professionals for the following positions:  Commissioning Engineer ·       Bachelor's Degree in Electrical Engineering ·       Minimum 6-8 years of commissioning experience ·       Proven hands-on experience in 132 kV substation commissioning projects ·       Strong knowledge of testing, commissioning, protection systems, and energization activities  Commissioning Manager ·       Bachelor's Degree in Electrical Engineering ·       Minimum 12-15 years of commissioning experience ·       At least 3-4 years of experience in a Commissioning Manager capacity ·       Proven track record of successfully leading and delivering 132 kV substation commissioning projects ·       Strong leadership and stakeholder management skills  Preferred Requirements ·       Prior experience working on UAE-based power and substation projects. ·       Strong understanding of high-voltage substation testing, commissioning, and energization activities. ·       Candidates available to join at short notice will be preferred   If you have the relevant experience and are interested in exploring this opportunity, please send your updated CV to: anwaar.ahmed@connect-energy.com  Feel free to share this post within your network or tag suitable professionals.",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_6",
+    "title": "IT Support Engineer (Part-Time / Backfill)",
+    "company": "Sky Systems",
+    "location": "Al Khobar, Saudi Arabia",
+    "domain": "IT & Tech",
+    "email": "Sana.L@myskysys.com",
+    "description": "📢 We're Hiring: IT Support Engineer (Part-Time / Backfill) – Khobar, KSA Sky Systems (SkySys) is looking for an IT Support Engineer based in Khobar to provide backfill support whenever the primary engineer is on leave.  Requirements: 1+ years of experience in IT Support / Desktop Support. Basic knowledge and hands-on experience with networking. Experience working with any ITSM tool. Ability to provide onsite support as required. Must be currently based in Khobar, KSA.  Engagement Details: Part-time, on-call backfill arrangement. Independent Contractor engagement. Hourly compensation in USD. No visa sponsorship or additional employment benefits will be provided.  The selected candidate will provide coverage during the primary engineer's planned or unplanned leave, as per business requirements.  📩 Interested candidates: Please DM me with your updated CV or send your resume at Sana.L@myskysys.com . I will share the detailed Job Description.   Feel free to share this opportunity with anyone who might be a good fit!  #KSAJobs #ParttimeJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_7",
+    "title": "Senior Engineer – Cloud Infrastructure (Azure)",
+    "company": "Harjai Computers",
+    "location": "Remote (WFH)",
+    "domain": "Cloud & DevOps",
+    "email": "abbas.kagalwala@harjai.com",
+    "description": "🚀 WE’RE HIRING: SENIOR ENGINEER – CLOUD INFRASTRUCTURE (AZURE) 🏠 Work Mode: WFH 💼 Experience: 8+ Years (minimum 7 years in Azure Cloud administration)  Mandatory Skills: Infrastructure as Code: Strong hands-on experience with Terraform Azure Cloud: Infrastructure administration, configuration, deployment, and management Azure Hybrid / Intune / Windows: Hands-on experience with hybrid environments, Microsoft Intune, and Windows Server administration  Good to Have: AKS, Azure Virtual Desktop, Entra ID, VMware, Microsoft 365, PowerShell, on-prem to Azure migrations, and AZ-104 / AZ-305 / AZ-800 / SC-300 certifications.  🎓 Education: Bachelor’s degree in Computer Science, IT, or a related field.  📩 Share your updated CV at: abbas.kagalwala@harjai.com  Please mention “Senior Engineer – Cloud Infrastructure” in the subject line, along with your notice period.  Know someone who would be a great fit? Feel free to tag or share this opportunity!  #Hiring #AzureJobs #CloudInfrastructure #Terraform #Intune #WindowsServer #HybridCloud #MumbaiJobs #ITJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_8",
+    "title": "Service Delivery Manager (SDM)",
+    "company": "Skill Recruit",
+    "location": "Essen, Germany",
+    "domain": "IT & Tech",
+    "email": "guru.sharath@skillrecruit.com",
+    "description": "🚀 Hiring: Service Delivery Manager (SDM) 📍 Location: Essen, Germany ⏳ Duration: Contract 🏢 Work Mode: Hybrid 2–3 days/week to client locations within Germany  Key Requirements: 12+ years of Service Delivery experience. Fluent in German and English (mandatory). Must be based in Germany. Experience managing SAP (ECC, S/4HANA) and Salesforce application support and enhancements.  Key Skills: SLA management, service operations and customer/stakeholder management. Onsite and offshore team management. SAP FI/CO, SD and MM – high-level knowledge. ITIL and project management basics. ServiceNow – working knowledge. Strong communication, negotiation and executive reporting skills.  📩 Interested candidates, please share your updated CV to guru.sharath@skillrecruit.com.  #Hiring #SDM #SAP #Salesforce #GermanyJobs #ServiceDeliveryManager",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_9",
+    "title": "Linux System Administrator",
+    "company": "Raqmiyat",
+    "location": "UAE",
+    "domain": "Cloud & Infrastructure",
+    "email": "Vinodhini.Nagarajan@raqmiyat.com",
+    "description": "🚀 WE ARE HIRING | LINUX SYSTEM ADMINISTRATOR 📍 Location: UAE 💼 Experience: 4+ Years UAE-based candidates are highly preferred! Immediate Joiners are Highly Preferred!  🔹 Key Skills & Responsibilities: ▪️ Installation and deployment of Ubuntu/Linux on physical servers from scratch ▪️ Linux OS hardening and baseline configuration ▪️ NTP configuration and time synchronization ▪️ Physical server inventory management ▪️ Firmware upgrades – BIOS, RAID Controllers, iLO/iDRAC ▪️ User and group administration ▪️ Disk partitioning, LVM and storage management ▪️ APT/YUM package management and offline installations ▪️ Log monitoring and troubleshooting using journalctl/syslog ▪️ Boot troubleshooting and OS recovery procedures ▪️ SSH configuration and secure remote access ▪️ Local repository creation, configuration and synchronization ▪️ Ansible – Playbooks, Ad-hoc Commands, Automation & Scripting ▪️ OS patching, security updates and pre/post-patching validation  📩 Interested candidates, please share your updated CV to: ✉️ Vinodhini.Nagarajan@raqmiyat.com  #Hiring #LinuxAdministrator #LinuxJobs #Ubuntu #Ansible #SystemAdministration #UAEHiring #DubaiJobs #AbuDhabiJobs #Raqmiyat",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_10",
+    "title": "Lead Business Systems Engineer",
+    "company": "Cyber1Armor",
+    "location": "Remote (USA)",
+    "domain": "IT & Tech",
+    "email": "afrin@cyber1armor.com",
+    "description": "🚨 Hiring: Lead Business Systems Engineer 📍 Location: USA 🏠 Work Model: 100% Remote 💼 Opportunity: Contract  We are looking for a hands-on Lead Business Systems Engineer with strong experience in enterprise application administration, Windows Server environments, production support, and change management.  ✅ Must-Have Skills Deltek Costpoint – primary application experience IBM Cognos / BI Reporting Windows Server Administration and Maintenance Application Upgrades, Patching, Hotfixes, and Security Remediation Production Support and Application Monitoring IT Change Management and CAB Processes Implementation, Rollback Planning, and Post-Deployment Validation Application Security, Availability, and Lifecycle Management  ⭐ Highly Desired Sunflower Asset Management Hyland OnBase Oracle Database SQL-based and Cloud-hosted Databases Key Focus: Hands-on administration and support of on-premises Deltek Costpoint and IBM Cognos environments. 📩 Interested candidates, please share your updated resume at afrin@cyber1armor.com  Cyber1Armor #Hiring #LeadBusinessSystemsEngineer #DeltekCostpoint #IBMCognos #WindowsServer #HylandOnBase #Sunflower #OracleDB #SQL #ApplicationSupport #SystemAdministration #USAJobs #RemoteJobs #ContractJobs #ITJobs #HiringNow",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_11",
+    "title": "Network Engineer",
+    "company": "Capgemini",
+    "location": "USA (Hybrid)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "nehtakrishna@gmail.com",
+    "description": "🚨 Immediate Hiring – Network Engineer 🚨 Role: Network Engineer Client: Capgemini Location: Multiple Locations (Hybrid) Job Type: C2C / W2 Contract Duration: 12+ Months Experience: 10+ Years DOB Accepting: 1992 to 1993 (looking only OPT Candidates)  Job Description: We are looking for an experienced Network Engineer with strong expertise in designing, implementing, managing, and troubleshooting enterprise network infrastructure.  Key Responsibilities: Design, configure, and maintain LAN, WAN, WLAN, and enterprise network infrastructure. Configure and troubleshoot routers, switches, firewalls, and network devices. Work with Cisco routers, switches, Nexus, Catalyst, and wireless technologies. Implement and manage routing protocols such as BGP, OSPF, EIGRP, and MPLS. Manage network security, VPNs, VLANs, ACLs, and firewall configurations. Monitor network performance, identify issues, and ensure high availability. Perform network upgrades, migrations, and infrastructure deployments. Troubleshoot complex network connectivity and performance issues. Collaborate with security, infrastructure, and application teams. Maintain network documentation, diagrams, and configuration standards. Required Skills: Strong experience in Cisco networking technologies. Hands-on experience with LAN/WAN, TCP/IP, DNS, DHCP, and VLANs. Expertise in BGP, OSPF, EIGRP, and routing/switching. Experience with firewalls such as Palo Alto, Fortinet, or Cisco ASA. Knowledge of VPN, MPLS, SD-WAN, and network security. Experience with network monitoring and troubleshooting tools. Strong analytical, communication, and problem-solving skills. Preferred Certifications: CCNA / CCNP / CCIE Cisco Security Certifications CompTIA Network+ 📩 Interested candidates can share their updated resumes at: E-Mail: nehtakrishna@gmail.com Thanks & Regards, Krishna US IT Recruiter Consulting | Development | Staffing",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_12",
+    "title": "Senior Network Engineer",
+    "company": "Aumni Tech",
+    "location": "Remote (USA)",
+    "domain": "Networking / IT Infrastructure",
+    "email": "aditya.sharma@aumnitech.com",
+    "description": "#W2 Only We're Hiring: Senior Network Engineer (100% Remote - US)  Looking for your next challenge in large-scale enterprise networking? We are seeking a Senior Network Engineer with 7+ years of experience to design, support, and optimize a mission-critical, 24/7 infrastructure spanning 10,000+ nodes.  Key Responsibilities: *Design, maintain, and upgrade enterprise LAN/WAN environments. *Serve as the tier-3 escalation point for complex, high-severity network issues. *Lead capacity planning, network security enhancements, and disaster recovery architecture. *Guide and mentor technicians and network specialists across ongoing administration projects.  Key Qualifications: *7+ years of network engineering experience in large-scale environments (10,000+ nodes). *Hands-on proficiency with Cisco, Juniper, or Aruba equipment. *Strong command of routing protocols (EIGRP, RIP, SNMP) and monitoring suites (SolarWinds, WhatsUp Gold). *CCNA, CCNP, CCIE, or equivalent certifications preferred.   Interested or know someone who fits the role? Send your resume directly to aditya.sharma@aumnitech.com.   #Hiring #NetworkEngineer #Cisco #Juniper #RemoteJobs #CCNP #CCIE #ITRecruitment",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_13",
+    "title": "Active Directory Engineer",
+    "company": "Flexon Technologies",
+    "location": "Louisville, KY, USA",
+    "domain": "Cloud & Infrastructure",
+    "email": "pradeep.p@flexontechnologies.com",
+    "description": "Role: Active Directory Engineer Location: Louisville, KY (Dayone Onsite role.. Strictly Local consultants only) Duration: Long term Hourly rate: 35/hr C2C Number of Position: 1 . . Note: Must Local (KY) DL or State ID required . . Please send resume to pradeep.p@flexontechnologies.com . . #contract #requirements #jobs #recruitment #recruiting #jobsearch #hiring #c2c #corptocorp #corp2corp #talentacquisition #itrequirements #usrecruitment #h1bvisa #h1 #h1b #vendorlist #vendors #vendormanagement #3rdparties #thirdparty #thirdparties #greencard #recruiter #recruiters #itstaffing #staffing #usstaffing #itrecruitment #itrecruiters #itrecruiter #hotlist #hotlists #benchsales #benchsalesrecruiters #usrecruitment #vendorlist #vendorlists #benchrecruiter #corp #directclient #c2crequirements #corporaterecruiter #corptocorp #corp2corp #corps #talentsearch #vendorlist #vendors #thirdparty #careeropportunities #careersearch #careers #itstaffing #itcareers #itbenchmarking #itrecruitment #itrecruiting #itrecruiters #itrecruiter #itjobs #hotjobs #hotjob #hotlist #usrecruitment #usstaffing #usjobs #usitstaffing #usajobs #usitrecruiter #benchsales #benchmarking #Windowadmin #Windowadminjobs #Windowadminjob #Windowadminlead #Windowadminrole #Windowadminopportunities #SCCM #SCCMjobs #SCCMjob #SCCMadmin #SCCMENGINEER #SCCMLEAD #SCCMARCHITECT #Tanium #Taniumjobs #Taniumjob #Taniumadmin #Taniumconsultant #Taniumengineer #Taniumlead #systemadmin #systemadminjobs #systemadminjob #systemadminconsultant #systemadminenigneer #NetworkEngineer #NetworkEngineerjobs #NetworkEngineerjob #NetworkEngineerconsultant #NetworkEngineerlead #NetworkEngineerarchitect #Networkadmin #Networkadminjob #Networkadminjobs #Networkadminengineer #Networkadminconsultant #Networkadminlead #Networkadminarchitect #Cisco #Ciscojobs #Ciscojob #Ciscoenigneer #Ciscolead #Ciscoconsultant #Ciscoarchitect #Networkadmin #Networkadminjobs #Networkadminjob #Networkadminlead #Networkadminarchitect #CCNA #CCNP #CCIE #CyberSecurity #CyberSecurityjobs #CyberSecurityjob #CyberSecuritylead #CyberSecurityenigneer #CyberSecurityconsultant #CyberSecurityarchitect #IAM #IAMjob #IAMjobs #IAMengineer #IAMconsultant #IAMlead #IAMarchitect #IdentityandAccessManagement #IdentityandAccessManagementjobs #IdentityandAccessManagementjob #IdentityandAccessManagementconsultant #IdentityandAccessManagementlead #Linux #Linuxjobs #Linuxjob #Linuxengineer #Linuxconsultant #Linuxlead #Linuxarchitect #Unix #Unixjobs #Unixjob #Unixlead #Unixengineer #Unixconsultant #EntraID #EntraIDjobs #EntraIDjob #EntraIDlead #EntraIDengineer #EntraIDarchitect #EntraIDconsultant #EntraID #ActiveDirectory #ActiveDirectoryjob #ActiveDirectoryjobs #AzureActiveDirectory #AzureAD #AzureADjobs #AzureADjob #AzureADlead #AzureADconsultant",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_14",
+    "title": "Senior Entra ID Engineer",
+    "company": "Flexon Technologies",
+    "location": "Chicago, IL, USA",
+    "domain": "Cloud & Infrastructure",
+    "email": "pradeep.p@flexontechnologies.com",
+    "description": "Role: Sr Entra ID Engineer Location: Chicago, IL (Dayone Onsite role) Duration: Long term Hourly rate: C2C . . Responsibilities: 1.Design| implement| and manage Azure Active Directory solutions to ensure secure and efficient authentication and authorization processes aligned with industry best practices 2.Drive the onboarding of applications| app registration| enterprise application setup| and role-based access management (RBAC). 3.Lead the implementation of Multi-Factor Authentication (MFA) and Single Sign-On (SSO) for enhanced security. . . Please send resume to pradeep.p@flexontechnologies.com . . #contract #requirements #jobs #recruitment #recruiting #jobsearch #hiring #c2c #corptocorp #corp2corp #talentacquisition #itrequirements #usrecruitment #h1bvisa #h1 #h1b #vendorlist #vendors #vendormanagement #3rdparties #thirdparty #thirdparties #greencard #recruiter #recruiters #itstaffing #staffing #usstaffing #itrecruitment #itrecruiters #itrecruiter #hotlist #hotlists #benchsales #benchsalesrecruiters #usrecruitment #vendorlist #vendorlists #benchrecruiter #corp #directclient #c2crequirements #corporaterecruiter #corptocorp #corp2corp #corps #talentsearch #vendorlist #vendors #thirdparty #careeropportunities #careersearch #careers #itstaffing #itcareers #itbenchmarking #itrecruitment #itrecruiting #itrecruiters #itrecruiter #itjobs #hotjobs #hotjob #hotlist #usrecruitment #usstaffing #usjobs #usitstaffing #usajobs #usitrecruiter #benchsales #benchmarking #Windowadmin #Windowadminjobs #Windowadminjob #Windowadminlead #Windowadminrole #Windowadminopportunities #SCCM #SCCMjobs #SCCMjob #SCCMadmin #SCCMENGINEER #SCCMLEAD #systemadmin #systemadminjobs #systemadminjob #systemadminconsultant #systemadminenigneer #NetworkEngineer #NetworkEngineerjobs #NetworkEngineerjob #NetworkEngineerconsultant #NetworkEngineerlead #NetworkEngineerarchitect #Networkadmin #Networkadminjob #Networkadminjobs #Networkadminengineer #Networkadminconsultant #Networkadminlead #Networkadminarchitect #Cisco #Ciscojobs #Ciscojob #Ciscoenigneer #Ciscolead #Ciscoconsultant #Ciscoarchitect #Networkadmin #Networkadminjobs #Networkadminjob #Networkadminlead #Networkadminarchitect #CCNA #CCNP #CCIE #CyberSecurity #CyberSecurityjobs #CyberSecurityjob #CyberSecuritylead #CyberSecurityenigneer #CyberSecurityconsultant #CyberSecurityarchitect #IAM #IAMjob #IAMjobs #IAMengineer #IAMconsultant #IAMlead #IAMarchitect #IdentityandAccessManagement #IdentityandAccessManagementjobs #IdentityandAccessManagementjob #IdentityandAccessManagementconsultant #IdentityandAccessManagementlead #Linux #Linuxjobs #Linuxjob #Linuxengineer #Linuxconsultant #Linuxlead #Linuxarchitect #Unix #Unixjobs #Unixjob #Unixlead #Unixengineer #Unixconsultant #EntraID #EntraIDjobs #EntraIDjob #EntraIDlead #EntraIDengineer #EntraIDarchitect #EntraIDconsultant #EntraID #ActiveDirectory #ActiveDirectoryjob #ActiveDirectoryjobs #AzureActiveDirectory #AzureAD #AzureADjobs #AzureADjob #AzureADlead #AzureADconsultant",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_15",
+    "title": "Senior IDC Network Engineer – Routing & Switching",
+    "company": "BizTech Fusion",
+    "location": "Ashburn, VA, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "wjoseph@biztechfusion.com",
+    "description": "🚀 We're Hiring: Senior IDC Network Engineer – Routing & Switching 📍 Location: Ashburn, VA (100% Onsite) 📅 Duration: 12 Months Contract 📌 Work Authorization: U.S. Citizens | W2 / 1099 🔐 Clearance: Must be able to obtain and maintain Public Trust  Key Responsibilities: Configure, implement, and troubleshoot enterprise routers and switches in a production data center. Manage Layer 2/Layer 3 networking, VLANs, BGP, OSPF, and network redundancy. Perform hands-on network upgrades, migrations, maintenance, and incident resolution. Support physical data-center infrastructure, including rack installation, fiber/copper cabling, patch panels, and cross-connects. Maintain DCIM records, network diagrams, and configuration documentation. Coordinate with carriers, vendors, and engineering teams during network changes and maintenance.  Required Skills: 10+ years of hands-on Routing & Switching experience. 3+ consecutive years of IDC/Data Center experience. Strong BGP, OSPF, TCP/IP, VLAN, Layer 2, and Layer 3 expertise. Hands-on experience with DCIM, fiber connectivity, and physical network infrastructure. Must be local to the DMV area and available to work onsite Monday–Friday in Ashburn, VA. Preferred: CCNP Enterprise, CCIE Enterprise Infrastructure, CDCDP, Cisco Nexus/Catalyst experience.  #Hiring #NowHiring #NetworkEngineer #SeniorNetworkEngineer #DataCenterNetworkEngineer #DataCenterNetworking #IDCNetworkEngineer #NetworkEngineering #RoutingAndSwitching #Routing #Switching #BGP #OSPF #VLAN #VRF #L2Networking #L3Networking #Cisco #CiscoNetworking #CiscoNexus #CiscoCatalyst #CCNA #CCNP #CCIE #NetworkInfrastructure #NetworkArchitecture #NetworkOperations #NetworkTroubleshooting #NetworkSecurity #DCIM #DataCenterInfrastructure #DataCenterOperations #FiberOptics #FiberNetworking #Ethernet #NetworkConfiguration #NetworkAdministration #ITJobs #TechJobs #EngineeringJobs #ContractJobs #ContractHiring #W2Jobs #1099Jobs #AshburnVA #VirginiaJobs #DMVJobs #NorthernVirginiaJobs #PublicTrust #USCitizens #Telecommunications #InfrastructureJobs #DataCenter #RoutingAndSwitching  📩 Interested candidates can share your updated resumes at wjoseph@biztechfusion.com. or 👇Apply Here",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_16",
+    "title": "Senior Kubernetes & OpenShift Administrator",
+    "company": "Flexon Technologies",
+    "location": "Rosemead, CA, USA",
+    "domain": "Cloud & DevOps",
+    "email": "pradeep.p@flexontechnologies.com",
+    "description": "Role: Sr Kubernetes & OpenShift Administrator Location: Rosemead, CA (Dayone Onsite role) Duration: Long term Hourly rate: C2C . NOTE :Please don’t share resume without “Admin” work experience. . . Please send resume to pradeep.p@flexontechnologies.com . . #contract #requirements #jobs #recruitment #recruiting #jobsearch #hiring #c2c #corptocorp #corp2corp #talentacquisition #itrequirements #usrecruitment #h1bvisa #h1 #h1b #vendorlist #vendors #vendormanagement #3rdparties #thirdparty #thirdparties #greencard #recruiter #recruiters #itstaffing #staffing #usstaffing #itrecruitment #itrecruiters #itrecruiter #hotlist #hotlists #benchsales #benchsalesrecruiters #usrecruitment #vendorlist #vendorlists #benchrecruiter #corp #directclient #c2crequirements #corporaterecruiter #corptocorp #corp2corp #corps #talentsearch #vendorlist #vendors #thirdparty #careeropportunities #careersearch #careers #itstaffing #itcareers #itbenchmarking #itrecruitment #itrecruiting #itrecruiters #itrecruiter #itjobs #hotjobs #hotjob #hotlist #usrecruitment #usstaffing #usjobs #usitstaffing #usajobs #usitrecruiter #benchsales #benchmarking #Windowadmin #Windowadminjobs #Windowadminjob #Windowadminlead #Windowadminrole #Windowadminopportunities #SCCM #SCCMjobs #SCCMjob #SCCMadmin #SCCMENGINEER #Tanium #Taniumjobs #Taniumjob #Taniumadmin #Taniumconsultant #Taniumengineer #Taniumlead #systemadmin #systemadminjobs #systemadminjob #systemadminconsultant #systemadminenigneer #NetworkEngineer #NetworkEngineerjobs #NetworkEngineerjob #NetworkEngineerconsultant #NetworkEngineerlead #NetworkEngineerarchitect #Networkadmin #Networkadminjob #Networkadminjobs #Networkadminengineer #Networkadminconsultant #Networkadminlead #Networkadminarchitect #Cisco #Ciscojobs #Ciscojob #Ciscoenigneer #Ciscolead #Ciscoconsultant #Ciscoarchitect #Networkadmin #Networkadminjobs #Networkadminjob #Networkadminlead #Networkadminarchitect #CCNA #CCNP #CCIE #CyberSecurity #CyberSecurityjobs #CyberSecurityjob #CyberSecuritylead #CyberSecurityenigneer #Linux #Linuxjobs #Linuxjob #Linuxengineer #Linuxconsultant #Linuxlead #Linuxarchitect #Unix #Unixjobs #Unixjob #Unixlead #Unixengineer #Unixconsultant #OpenShift #OpenShiftjobs #OpenShiftjob #OpenShiftadmin #OpenShiftdeveloper #OpenShiftengineer #OpenShiftlead #OpenShiftarchitect #Kubernetes #Kubernetesjobs #Kubernetesjob #Kubernetesadmin #Kuberneteslead #Kubernetesarchitect #Kubernetesconsultant #Azure #Azurejobs #Azurejob #Azuredeveloper #Azureengineer #Azureconsultant #Azurelead #Azurecloud #Azurecloudengineer #Azurecloudjobs #Azurecloudjob #Azurecloudlead #AzureInfrastructure #AzureInfrastructurejobs #AzureInfrastructurejob #AzureInfrastructurelead #AzureInfrastructureconsultant #AzureInfrastructureengineer #Devops #Devopsjobs #Devopsjob #Devopslead #Devopsconsultant #Devopsenigneer #Devopsarchitect #AWS #AWSjobs #AWSjob #AWSlead #AWSconsultant #AWSengineer #AWSarchitect #awsCloud #awsCloudengineer #awsCloudlead #awsCloudjob #awsCloudjobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_17",
+    "title": "Senior Network Engineer",
+    "company": "Amvi Technologies",
+    "location": "USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "sai@amvitechnologies.com",
+    "description": "🚀 Hiring: Senior Network Engineer – USA Opportunities 🚀  We are currently connecting with experienced Senior Network Engineers for exciting opportunities across the USA.  💻 Technology: Senior Network Engineer 💼 Employment Type: W2 Only 💼 Experience: 7+ Years 🛂 Visa Status: Open to Any Visa 📍 Location: Open to Relocation Across the USA  🔑 Key Skills: ✔️ Strong experience in Enterprise Networking ✔️ Routing & Switching (Cisco, Juniper, Arista) ✔️ TCP/IP, DNS, DHCP, VLANs, VPNs ✔️ BGP, OSPF, EIGRP, MPLS ✔️ Firewalls, Network Security & ACLs ✔️ Cisco Routers, Switches & Wireless Technologies ✔️ LAN, WAN, SD-WAN & WLAN ✔️ Network Monitoring & Troubleshooting ✔️ Load Balancers and Network Performance Optimization ✔️ Network Automation (Python, Ansible) ✔️ Cloud Networking (AWS, Azure) ✔️ Experience designing scalable, secure and highly available network infrastructure ✔️ Strong analytical, troubleshooting and problem-solving skills 📩 Interested candidates can share their updated resume:  📧 sai@amvitechnologies.com  ✨ 7+ Years of Experience ✨ Open to Any Visa ✨ W2 Only ✨ Open to Relocation Across the USA ✨ Priority Profile Review #NetworkEngineer #SeniorNetworkEngineer #NetworkJobs #Cisco #Networking #RoutingAndSwitching #CCNA #CCNP #CCIE #BGP #OSPF #Firewall #NetworkSecurity #SDWAN #CloudNetworking #W2Jobs #USJobs #TechCareers #AnyVisa #OpenToRelocate",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_18",
+    "title": "Continuous Improvement Engineer & Manufacturing Roles",
+    "company": "Sri Tech Solutions",
+    "location": "USA",
+    "domain": "Engineering & Construction",
+    "email": "bgampa@sritechsolutions.com",
+    "description": "Good Morning LinkedIn People  We are actively looking for strong and genuine candidates for the below positions. If interested, or if you have suitable candidates in your network, please share resumes at bgampa@sritechsolutions.com  Position 1: Continuous Improvement Engineer - SAP S/4HANA Transformation Location : Remote Duration : Contract Valid Linkedin Profile Min 14+ years of experience A professional with 12–15 years of experience in Operational Excellence / Continuous Improvement, Lean Six Sigma certification, and hands-on involvement in at least one SAP S/4HANA transformation  Position 2: Board Level Test Engineer Location :Santa Clara, CA Duration : Contract Valid Linkedin Profile Min 8+ years of experience Any visa fine except CPT  A candidate with 8 years of general hardware experience is not automatically better than someone with 4–5 years of direct board-level testing, Python automation and GPU validation  Position 3:   Microsoft Dynamics 365 Contact Center Architect/Admin Location :Doral, FL (100% Onsite) Duration : Contract Valid Linkedin Profile Min 13+ years of experience Need actual Dynamics 365 Contact Center implementation experience, not candidates who only worked on Dynamics 365 CRM or Customer Service  Position 4: Network Engineer Location : Richmond, VA (100% Onsite) Duration : Contract Valid Linkedin Profile Min 12+ years of experience Cisco Network Engineer + CCNA/CCNP + Catalyst 9300/9500 + OSPF + VLAN + EtherChannel + greenfield deployment experience  Position 5: Network Data Engineer Lead Location : Richmond, VA (100% Onsite) Duration : Contract Valid Linkedin Profile Min 14+ years of experience Senior Cisco Network Architect with CCIE/CCNP, SD-WAN, Cisco ACI, BGP/OSPF, and enterprise network design experience  #Continuous #Improvement #SAP #S4 #Hana #Transformation #Leansixsigma #Remote #Boardlevel #Test #Hardware #Python #Script #CPU #GPU #Server #Validation #OPT #H1 #EAD #Santaclara #California #D365 #Dynamics #Microsoft #Contactcenter #Doral #Florida #Onsite #Network #Cisco #CCNA #CCNP #Catalyst #OSPF #VLAN #Richmod #Virgina #Onsite #Networklead #CCIE #SDWAN #ACI #BGP #OSPF #Design #Enterprise #Contract #C2Cjobs #Immediate #Hiring #Urgent #Sritechsolutions",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_19",
+    "title": "Customer Delivery Engineering Technical Leader (Japanese Speaking)",
+    "company": "Zentact Systems",
+    "location": "Kuala Lumpur, Malaysia",
+    "domain": "Networking / IT Infrastructure",
+    "email": "careers@zentactsystems.com",
+    "description": "#zentactsystems hiring #Customer Delivery Engineering Technical Leader (#Japanese Speaking) #kualalumpur Knowledge on #Routing and switching Technologies like IGP, #OSPF, EGP, BGP, STP,#RSTP, VTP, VSS, vPC, vDC, #MSTP, LACP, VLAN,  Strong Knowledge on #DataCenter, #Cloud and #Virtualization industry, ACI, Nexus products Experienced Knowledge on #LAN SW Technologies like STP, RSTP, VTP, VSS, vPC, vDC, MSTP, LACP, VLAN, VXLAN-EVPN, DCNM, OTV, Fex, Fabricpath, VXlan, LISP. Knowledge of Cisco switching Platforms like Cat 6500, 6800, 4500, 3850, Nexus 7K, #Nexus 5k, Nexus 3K and Nexus9k ( standalone and ACI) Experience in installation, configuration, testing and troubleshooting and/or Network solution designing of #Cisco routers and switch Excellent written and verbal communications skills, ability to communicate technology strategy and architecture approach to engineers, executives, and #Cisco customers. Strong consulting & client-facing skills to include cross-functional influence, external and internal consulting #CCNA is a must, #CCNP is a plus, CCIE (ENT/DC) is preferred #Japanese speaking  Work Location : Kuala Lumpur  Interested applicants- please send us resume at careers@zentactsystems.com  https://lnkd.in/gBw2_Vzi",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_20",
+    "title": "Infra Cloud Computing Architect / Azure AKS / Network Engineer",
+    "company": "TekisHub",
+    "location": "USA (Remote / Multi-Location)",
+    "domain": "Cloud & DevOps",
+    "email": "shubham.kumar@tekishub.com",
+    "description": "🚀 We’re Hiring | Multiple IT Opportunities – USA  Infra Cloud Computing Architect  📍 Tulsa, OK (Remote) 💼 Employment Type: Full-Time / Contract  Microsoft Azure AKS Engineer 📍 Milpitas, CA 💼 Employment Type: Full-Time / Contract  Network Engineer 📍 Richmond, VA 💼 Employment Type: Full-Time / Contract  Network Data Engineer Lead 📍 Richmond, VA 💼 Employment Type: Full-Time / Contract  HP OpenVMS Administrator 📍 Norristown, PA 💼 Employment Type: Full-Time / Contract  📩 Interested candidates, please share your updated resume at shubham.kumar@tekishub.com #Hiring #USJobs #ITJobs #CloudArchitect #AzureAKS #NetworkEngineer #NetworkDataEngineer #OpenVMS #FullTimeJobs #ContractJobs #USITRecruitment #HiringNow #ImmediateHiring #USRecruitment #USITJobs #TechJobs #ITCareers #TechnologyJobs #OpenPositions #CareerOpportunities #Recruitment #TalentAcquisition #Staffing #ITStaffing #C2CJobs #W2Jobs #CorpToCorp #ContractHiring #FullTimeHiring #CloudComputing #CloudInfrastructure #CloudArchitecture #MicrosoftAzure #AzureCloud #AzureArchitect #Kubernetes #AKS #GCP #GoogleCloud #Terraform #DevOps #PlatformEngineering #InfrastructureEngineering #NetworkInfrastructure #CiscoNetworking #CiscoCatalyst #CCNA #CCNP #CCIE #RoutingAndSwitching #SDWAN #CiscoACI #NetworkArchitecture #DataCenterNetworking #HPOpenVMS #OpenVMSAdministrator #LinuxAdministrator #SystemsAdministrator #EnterpriseIT #HybridCloud #InfrastructureJobs #PennsylvaniaJobs #VirginiaJobs #CaliforniaJobs #OklahomaJobs #USATechJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_21",
+    "title": "Data Center Network Administrator",
+    "company": "Digitran Tech",
+    "location": "San Jose, CA, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "vinod.veerisetty@digitrantech.com",
+    "description": "We're Hiring: Data Center Network Administrator Location: San Jose, CA Clearance: Secret Clearance Required We are seeking an experienced Data Center Network Administrator to support the operation, optimization, and maintenance of enterprise data center network infrastructure. Key Responsibilities: Operate and maintain data center network infrastructure. Configure and troubleshoot routers, switches, VLANs, and routing protocols. Perform rack-and-stack installations, structured cabling, and Layer 1 troubleshooting. Install and update Cisco IOS-XE and NX-OS software. Implement secure network configurations and DoD/DIA STIG compliance. Monitor network performance and resolve complex connectivity issues. Maintain network topology diagrams, documentation, and Wi-Fi heat maps. Support enterprise network deployments and operational activities. Required Qualifications: Bachelor's degree in Computer Science, IT, or a related field. 3+ years of data center network administration experience. Strong knowledge of TCP/IP, VLAN, BGP, OSPF, MPLS, and DNS. Hands-on experience with Cisco routers, switches, firewalls, and load balancers. Experience with Wireshark, SNMP, and packet analysis. Familiarity with DoD STIGs and security remediation. Active Secret Security Clearance. Preferred Certifications: Security+, CCNA, CCNP, or CCIE. 📩 Interested candidates are encouraged to share their updated resumes. #Hiring #DataCenter #NetworkAdministrator #NetworkEngineer #Cisco #CCNA #CCNP #SecretClearance #DoDJobs #SanJoseJobs  Please email me at vinod.veerisetty@digitrantech.com or call me @ 5713708365 Thank you and enjoy the rest of your day!",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_22",
+    "title": "Senior Network Engineer",
+    "company": "Cyan Technologies",
+    "location": "USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "suresh.b@cyantechnologies.com",
+    "description": "#HIRING | Senior Network Engineer | 10+ Years | USA  🔹 Experience: 10+ Years 🔹 Employment Type: W2 / C2C 🔹 Visa: H1B | H4 | Other Eligible Work Authorizations 🔹 Location: Onsite (as per client requirements)  🔑 Key Skills: Enterprise Networking, LAN/WAN, WLAN & SD-WAN Cisco Routers, Switches, Firewalls & Network Security TCP/IP, BGP, OSPF, VLAN, VPN & MPLS Cisco, Juniper, Palo Alto & Fortinet Network Monitoring, Troubleshooting & Optimization AWS / Azure Cloud Networking 🎓 Certifications Required: CCNA, CCNP, CCIE, JNCIS, JNCIP, PCNSA, PCNSE, Fortinet FCP/FCSS, or equivalent industry-recognized networking certifications.  📩 Interested? Send your updated resume to: suresh.b@cyantechnologies.com 📢 Qualified candidates and referrals are welcome",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_23",
+    "title": "Senior Network Engineer – IPv6",
+    "company": "GVR Infotek",
+    "location": "Herndon, VA, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "kartik.jindal@gvrinfotek.com",
+    "description": "🚨 Hiring: Senior Network Engineer – IPv6 🚨 📍 Location: Herndon, VA (Onsite – 5 Days/Week) ⏳ Duration: 6+ Months 🇺🇸 Visa: U.S. Citizens Only  🔄 Relocation: Available  Key Requirements: ✅ 7+ years of Network Engineering experience ✅ Strong IPv6 and IPv4/IPv6 Dual-Stack expertise ✅ Cisco Routing & Switching ✅ OSPFv2/v3, BGP, PIM-SM, IGMP & MLD ✅ IPv6 Network Design, Migration & Troubleshooting ✅ CCNA minimum; CCNP/CCIE preferred ✅ Public Trust or higher clearance may be required  📩 Interested candidates: Please DM me or share your updated resume.  📧 Email: kartik.jindal@gvrinfotek.com 📞 Phone: 469-959-7766  #Hiring #NetworkEngineer #IPv6 #CiscoNetworking #NetworkEngineering #CCNA #CCNP #CCIE #BGP #OSPF #ITJobs #TechCareers #USJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_24",
+    "title": "N&T Backbone Transmission Network (BTN) Designer",
+    "company": "Careernet",
+    "location": "India",
+    "domain": "Telecom",
+    "email": "viyon.pais@careernet.in",
+    "description": "🚀 WE'RE HIRING | N&T Backbone Transmission Network (BTN) Designer Join a leading Product-Based Company and contribute to the design and deployment of advanced network and transmission solutions for railway systems. 📌 Designation: N&T Backbone Transmission Network (BTN) Designer 💼 Experience: 5–8 Years 📍 Location: Bangalore 🏢 Work Mode: Hybrid – 3 Days Work From Office + 2 Days Work From Home 🎓 Qualification: B.Tech / B.E / M.Tech / M.E in Engineering or Science 🔹 Mandatory Technical Skills LAN/WAN Network Design and Engineering Gigabit Ethernet and IP-MPLS Solutions IP Routing, Network Design, and Addressing Plans Network Security and Cybersecurity Fundamentals QoS (Quality of Service) and RFC Protocols Network Monitoring Tools and IP Traffic Analysis End-to-End Network Testing and Troubleshooting 🔹 Key Responsibilities Develop preliminary and detailed BTN network design specifications. Design and deploy LAN/WAN, Gigabit Ethernet, and IP-MPLS solutions. Define network addressing plans, interfaces, and cybersecurity requirements. Prepare design documentation, Bills of Quantities (BoQ), and technical specifications. Support network installation, testing, commissioning, and troubleshooting activities. Coordinate with project engineering, installation, and cybersecurity teams. 🔹 Good to Have CCNA / CCNP / CCIE certifications or equivalent. Experience with fiber deployment and technical coordination. Knowledge of network equipment from Cisco, HP, Hirschmann, Huawei, Nokia, or Westermo. Exposure to wireless systems, railway signaling, or system architecture. 📩 Interested candidates can share their updated resumes at: viyon.pais@careernet.in Know someone with relevant LAN/WAN design and IP-MPLS experience? Please share this opportunity with your network! #Hiring #BTNDesigner #NetworkEngineer #LAN #WAN #IPMPLS #GigabitEthernet #NetworkDesign #NetworkSecurity #Cybersecurity #TelecomJobs #BangaloreJobs #HybridJobs #ProductBasedCompany #CareerNet",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_25",
+    "title": "Cyber Architect (SailPoint IIQ / ISC)",
+    "company": "Flexon Technologies",
+    "location": "Rosemead, CA, USA",
+    "domain": "Cybersecurity & Network Security",
+    "email": "pradeep.p@flexontechnologies.com",
+    "description": "Role: Cyber Architect (SailPoint IIQ/ Identity Security Cloud (ISC)) Location: Rosemead, CA (Dayone Onsite role) Duration: Long term Hourly rate: C2C . Mandatory Skills: Cyber Architect: Sailpoint IIQ/Identity Security Cloud (ISC), REST/SOAP APIs . . Please send resume to pradeep.p@flexontechnologies.com . . #contract #requirements #jobs #recruitment #recruiting #jobsearch #hiring #c2c #corptocorp #corp2corp #talentacquisition #itrequirements #usrecruitment #h1bvisa #h1 #h1b #vendorlist #vendors #vendormanagement #3rdparties #thirdparty #thirdparties #greencard #recruiter #recruiters #itstaffing #staffing #usstaffing #itrecruitment #itrecruiters #itrecruiter #hotlist #hotlists #benchsales #benchsalesrecruiters #usrecruitment #vendorlist #vendorlists #benchrecruiter #corp #directclient #c2crequirements #corporaterecruiter #corptocorp #corp2corp #corps #talentsearch #vendorlist #vendors #thirdparty #careeropportunities #careersearch #careers #itstaffing #itcareers #itbenchmarking #itrecruitment #itrecruiting #itrecruiters #itrecruiter #itjobs #hotjobs #hotjob #hotlist #usrecruitment #usstaffing #usjobs #usitstaffing #usajobs #usitrecruiter #benchsales #benchmarking #Windowadmin #Windowadminjobs #Windowadminjob #Windowadminlead #Windowadminrole #Windowadminopportunities #SCCM #SCCMjobs #SCCMjob #SCCMadmin #SCCMENGINEER #SCCMLEAD #SCCMARCHITECT #Tanium #Taniumjobs #Taniumjob #Taniumadmin #Taniumconsultant #Taniumengineer #Taniumlead #systemadmin #systemadminjobs #systemadminjob #systemadminconsultant #systemadminenigneer #NetworkEngineer #NetworkEngineerjobs #NetworkEngineerjob #NetworkEngineerconsultant #NetworkEngineerlead #NetworkEngineerarchitect #Networkadmin #Networkadminjob #Networkadminjobs #Networkadminengineer #Networkadminconsultant #Networkadminlead #Networkadminarchitect #Cisco #Ciscojobs #Ciscojob #Ciscoenigneer #Ciscolead #Ciscoconsultant #Ciscoarchitect #Networkadmin #Networkadminjobs #Networkadminjob #Networkadminlead #Networkadminarchitect #CCNA #CCNP #CCIE #CyberSecurity #CyberSecurityjobs #CyberSecurityjob #CyberSecuritylead #CyberSecurityenigneer #CyberSecurityconsultant #CyberSecurityarchitect #IAM #IAMjob #IAMjobs #IAMengineer #IAMconsultant #IAMlead #IAMarchitect #IdentityandAccessManagement #IdentityandAccessManagementjobs #IdentityandAccessManagementjob #IdentityandAccessManagementconsultant #IdentityandAccessManagementlead #Linux #Linuxjobs #Linuxjob #Linuxengineer #Linuxconsultant #Linuxlead #Linuxarchitect #Unix #Unixjobs #Unixjob #Unixlead #Unixengineer #Unixconsultant #Sailpoint #Sailpointjobs #Sailpointjob #Sailpointengineer #Sailpointlead #Sailpointarchitect #IdentitySecurityCloud #IdentitySecurityCloudjobs #IdentitySecurityCloudjob #IdentitySecurityCloudenigneer #IdentitySecurityCloudlead #IdentitySecurityCloudarchitect #ISC #ISCJOBS #ISCjob #ISCengineer #ISClead #ISCarchitect",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_26",
+    "title": "Senior Network Engineer",
+    "company": "Denken Solutions",
+    "location": "Alpharetta, GA, USA",
+    "domain": "Networking / IT Infrastructure",
+    "email": "krishna.k@denkensolutions.com",
+    "description": "🚀 Hiring: Senior Network Engineer 📍 Location: Alpharetta, GA - Onsite (Only local to GA preferred) 💼 Experience: Req min 12+ years of consultant  📅 Weekend Availability: Required (Saturday or Sunday each week) We are looking for an experienced Senior Network Engineer to join our Enterprise Network Services team and support critical network infrastructure in a high-availability, production environment.  Key Responsibilities: Implement and support enterprise networking across data centers, cloud, campus, and branch environments. Troubleshoot complex routing, switching, and network connectivity issues. Execute critical network security patching, firmware upgrades, and production infrastructure changes. Provide Tier-3 technical support for major incidents and escalations. Plan maintenance windows, rollback strategies, and pre/post-change validations. Collaborate with security, firewall, load balancer, infrastructure, and vendor teams.  Required Skills: 5+ years of enterprise network engineering experience. Strong hands-on knowledge of BGP, OSPF, Multicast, STP, and HSRP. Experience with Cisco/Arista networking and leaf-spine architecture. Proficiency in TCP/IP troubleshooting using Wireshark or tcpdump. Experience in production network upgrades, security patching, and change management. Strong understanding of network resiliency, high availability, and disaster recovery.  Preferred: CCNP/CCIE certification, Python, Ansible, and financial services experience. Candidates must be comfortable working in a 24/7 production environment and providing weekend support.  📩 Interested candidates can share their updated resume via DM or email at krishna.k@denkensolutions.com  #Hiring #SeniorNetworkEngineer #NetworkEngineering #Cisco #Arista #NetworkingJobs #DataCenterNetworking #NetworkSecurity #ITJobs #CCNP #CCNA #TCP #TCPIP #STP #OSPF #C2C #CorpToCorp #C2H #W2 #hotlist #dailyc2c #salesrecruiters #Benchrecruiters #Benchsalesmanager #BDMs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_27",
+    "title": "5G Packet Core Specialist (High-Touch Engineer)",
+    "company": "TechnoJobz",
+    "location": "India",
+    "domain": "Telecom",
+    "email": "sania.tabassum@technojobz.com",
+    "description": "🚀 We’re Hiring: 5G Packet Core Specialist (High-Touch Engineer) 🚀 Looking for experienced Telecom Core professionals to act as the primary technical interface for enterprise customers and drive 5G/4G core network excellence.  🔹 Primary Skill: 5G Packet Core (5+ Years Relevant Experience)  🔹 Total Experience: 9+ Years  🔹 Openings: 2 Positions  🔹 Location: PAN India (Hybrid)  🔹 Notice Period: Immediate / Short joiners preferred  🔹 Shift: Rotational shifts / flexible hours as per business needs  What You’ll Do: Manage, troubleshoot, and optimize 5G & 4G core nodes (AMF, MME, SMF, UPF) and interfaces (N1, N2, N8, N11, N14, N15, N26) per 3GPP standards. Work with cloud-native microservices architectures, Service-Based Interfaces (SBI), HTTP/2, and NGAP. Lead Root-Cause Analysis (RCA), handle critical customer escalations, and drive preventive action plans.  Interested? Share your resume at sania.tabassum@technojobz.com with \"5G Packet Core - [Your Location]\" in the subject line!  #Hiring #5G #PacketCore #TelecomJobs #5GCore #AMF #SMF #UPF #CloudNative #NetworkEngineer #PANIndiaJobs #HybridJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_28",
+    "title": "Telecom QA Engineer (4G EPC & 5G Core – L2/L3)",
+    "company": "HSN Tech Solutions",
+    "location": "Hyderabad, India",
+    "domain": "Telecom",
+    "email": "supriya.d@hsntechsolutions.com",
+    "description": "🚀 We are hiring: Telecom QA Engineer (Packet Core / 4G EPC & 5G Core) – L2/L3 | Hyderabad (Onsite) 📡  An exciting opportunity is open in Hyderabad for experienced Telecom QA Engineers (L2 & L3) with strong hands-on Packet Core expertise and Python automation skills to validate next-generation 4G, 5G, and IMS networks!  📍 Location: Hyderabad, India (Onsite) 💻 Interview Mode: Virtual  💼 Experience:  L2: 3–6 Years in Packet Core QA / Testing L3: 6+ Years in Packet Core QA (with ownership of test strategy, interoperability, and release readiness)  ⚠️ Important Note: Candidates must have direct hands-on Packet Core and Python automation experience. RAN-only profiles will not be considered.  🔍 Key Responsibilities:  Lead quality validation across Packet Core network functions (4G LTE EPC – MME, SGW, PGW; 5G Core – AMF, SMF, UPF, NRF, AUSF, UDM), alongside IMS, VoLTE, VoWiFi, and Private 5G.  Design, develop, and scale Python-based test automation and regression suites for cloud-native Packet Core deployments.  Execute feature, integration, system, regression, interoperability, and release qualification test suites.  Validate end-to-end 3GPP Packet Core call flows, subscriber registration, PDU session management, QoS, mobility, handovers, roaming, and voice/messaging services.  Perform deep packet inspection and protocol-level debugging using logs and packet captures to drive root cause analysis (RCA).  🛠️ Must-Have Packet Core & QA Skills:  Automation (Mandatory): Strong hands-on experience in test automation using Python.  Packet Core Domain (Mandatory): Proven hands-on testing experience in 4G EPC and 5G Core (SA/NSA) architectures, plus IMS / VoLTE / VoWiFi / Private 5G.  Core Protocols & Interfaces: Strong command over 3GPP specifications and protocols including GTP (GTP-C / GTP-U), PFCP, NGAP, NAS, Diameter, HTTP/2 (SBI), SIP, and SCTP.  Debugging & OS: Strong Linux troubleshooting skills and hands-on expertise in packet trace analysis using Wireshark and tcpdump.  QA Methodology: End-to-end ownership of test planning, execution, defect lifecycle management, and release qualification.  ✨ Good-to-Have / Preferred Skills:  Experience with Shell scripting or Robot Framework.  Experience testing cloud-native / containerized Packet Core on Kubernetes and Docker with CI/CD pipelines.  Exposure to AI/GenAI tools for test optimization and log analytics.  💡 Why Apply?  Solve complex Packet Core signaling challenges and play a key role in delivering carrier-grade 5G and cloud-native telecom solutions.  💰 Compensation / Budget:  L2 Role: Up to 6.5 LPA L3 Role: Up to 10 LPA  📩 How to Apply:  Send an updated resume to supriya.d@hsntechsolutions.com with the subject line \"Packet Core QA – [L2/L3] – Hyderabad\".  Know strong Packet Core QA engineers with Python automation experience looking for a change? Tag them below or share this post! 👇  #PacketCore #5GCore #4GEPC #TelecomQA #PythonAutomation #ProtocolTesting #3GPP #GTP #PFCP #NGAP #IMS #VoLTE #Private5G #HyderabadJobs #HiringInHyderabad #TelecomJobs #CloudNative",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_29",
+    "title": "5G Packet Core Integration & Validation Engineer",
+    "company": "Square Hiring",
+    "location": "Naperville, IL, USA",
+    "domain": "Telecom",
+    "email": "ruma@squarehiring.com",
+    "description": "🚀 We’re Hiring: 5G Packet Core Integration & Validation Engineer 📍 Location: Naperville, IL – Onsite ⏳ Duration: Contract Key Skills: Telecom, 5G Network Deployment & Evolved Packet Core (EPC) Packet Core Integration, System Testing & Customer Validation Strong knowledge of Linux, Networking & Telecom Protocols End-to-End Testing, Regression Testing & Interoperability Log Analysis, Troubleshooting & Defect Management Test Automation using Python, Shell or Robot Framework Good to Have: AWS, Kubernetes & OpenShift Mobile Core, IMS, Cloud-Native Network Functions (CNFs) Experience with Telecom Customer Labs and Acceptance Testing Key Responsibilities: Perform 5G Packet Core integration and end-to-end validation. Execute feature, regression, interoperability, upgrade and performance testing. Troubleshoot customer issues through log analysis and root-cause investigation. Automate test cases, health checks and reporting. Support onsite deployment, debugging, demonstrations and customer acceptance testing. 📩 Interested candidates can share their updated resumes at: ruma@squarehiring.com #Hiring #5G #TelecomJobs #PacketCore #5GNetwork #EPC #TelecomEngineering #NetworkIntegration #NetworkTesting #Linux #Python #Kubernetes #AWS #IMS #ContractJobs #IllinoisJobs #NapervilleIL",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_30",
+    "title": "Lead Engineer – 5G Signaling (Cloud-Native 5G SA Core)",
+    "company": "DISH Network Technologies (EchoStar)",
+    "location": "India",
+    "domain": "Telecom",
+    "email": "anupam.jindal@dish.com",
+    "description": "🚀 Looking to work on a LIVE, cloud-native Standalone (SA) 5G Core network on a public cloud?  Our team at 𝗗𝗜𝗦𝗛 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 𝗧𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝗶𝗲𝘀 𝗜𝗻𝗱𝗶𝗮 (𝗘𝗰𝗵𝗼𝗦𝘁𝗮𝗿) is expanding, and we are looking for a 𝗟𝗲𝗮𝗱 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 – 𝟱𝗚 𝗦𝗶𝗴𝗻𝗮𝗹𝗶𝗻𝗴 to join us!  If you are ready to go beyond legacy stacks and power the future of Boost Mobile, this is the role for you. You’ll deploy, optimize, and troubleshoot production signaling and packet core network functions alongside top vendor platforms like 𝗡𝗼𝗸𝗶𝗮, 𝗠𝗮𝘃𝗲𝗻𝗶𝗿, 𝗮𝗻𝗱 𝗢𝗿𝗮𝗰𝗹𝗲.  💡 𝗪𝗵𝗼 𝘄𝗶𝗹𝗹 𝘁𝗵𝗿𝗶𝘃𝗲 𝗵𝗲𝗿𝗲: 🔹 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲: 8–14 years in wireless core engineering on the carrier or vendor side. 🔹 𝗘𝘅𝗽𝗲𝗿𝘁𝗶𝘀𝗲: Deep hands-on experience with 5G signaling and packet core NFs (NRF, PCF, BSF, AMF, SMF). 🔹 𝗧𝗿𝗼𝘂𝗯𝗹𝗲𝘀𝗵𝗼𝗼𝘁𝗶𝗻𝗴: Strong skills with end-to-end call flow analysis and protocol analyzers (Wireshark, NetScout, RADCOM). 🔹 𝗖𝗹𝗼𝘂𝗱-𝗡𝗮𝘁𝗶𝘃𝗲: Practical familiarity with Kubernetes, Docker, and CI/CD production environments.  📍 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: Bengaluru | Noida  👉 𝗛𝗼𝘄 𝘁𝗼 𝗔𝗽𝗽𝗹𝘆: Check out the original job post below to apply, or send your resume directly to: 📩 anupam.jindal@dish.com | megha.sathyan@dish.com  💬 Know someone who'd be a great fit? Please tag them or repost to help spread the word!  #Hiring #5GCore #PacketCore #TelecomJobs #EchoStar #BoostMobile",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_31",
+    "title": "Senior Test Lead with OpenShift",
+    "company": "Inherent Tech",
+    "location": "Naperville, IL, USA (Remote)",
+    "domain": "Telecom",
+    "email": "bhanu@inherenttech.com",
+    "description": "Position- Senior Test Lead with OpenShift Location- Naperville, IL***Remote*** Duration- 1 Year VISA- Independent Please send me your resume to #bhanu@inherenttech.com #bench #sales #usajobs #usit #benchsales #jobs #usjobs #c2c #w2 #hiring #SeniorTestLead #OpenShift #Telecom #5G #5GNetworkDeployment #EPC #EvolvedPacketCore #PacketCore #MobileCore #IMS #Kubernetes #AWS #Linux #TelecomTesting #NetworkIntegration #SystemTesting #EndToEndTesting #RegressionTesting #InteroperabilityTesting #Python #ShellScripting #RobotFramework #TestAutomation #NetworkTroubleshooting #LogAnalysis #CNF #CloudNative #CloudNetworking #ReleaseValidation #DefectManagement #TelecomJobs #TestingJobs #ITJobs #TechJobs #Hiring",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_32",
+    "title": "4G / 5G Telecom Core & Cloud Engineers",
+    "company": "Skill2Hire Technologies",
+    "location": "India",
+    "domain": "Telecom",
+    "email": "hr@skill2hiretechnologies.com",
+    "description": "🚀 WE ARE HIRING | 3 EXCITING TELECOM OPPORTUNITIES | 4G / 5G  📡 Ready to build your career in Next-Generation Telecom Core & Cloud Technologies?  Skill2Hire Technologies Pvt. Ltd. is hiring experienced Telecom professionals for 3 full-time opportunities with a leading MNC client!  If you have hands-on experience in Telecom Core, IMS, SDM, Nokia technologies and Telco Cloud deployments, this is an opportunity worth exploring!  🔥 OPEN POSITIONS  1️⃣ Project Technical Lead / Technical Project Manager – 4G/5G Packet Core  - Experience: 10+ Years - Minimum 4+ years in Technical Project Leadership / Management - Key Skills: SDM, 4G/5G Call Flows, Packet Core, VoLTE, VoWiFi, AUSF, UDM, SDL, HSS/HLR.  2️⃣ Deployment Engineer – System Integration (IMS / NTAS)  - Experience: 7–15 Years - Minimum 4+ years in IMS Implementation / Upgrades - Key Skills: Nokia NTAS, IMS, 4G/5G, VoLTE, VoWiFi, Telco Cloud, VNF/CNF, OpenStack, VMware, Docker, OpenShift and Kubernetes.  3️⃣ Solution Engineer / Deployment Engineer – SDM  - Experience: 5–10 Years - Minimum 2+ years in SDL Implementation / Upgrades - Key Skills: SDM, SDL, PGW, SDLA, AUSF, UDM, Linux, VMware, Docker, Kubernetes, OpenStack and OpenShift.  📍 COMMON JOB DETAILS  - Client: Leading MNC - Employment: Full-Time / Permanent - Work Mode: Hybrid - Locations: Bengaluru, Chennai, Hyderabad, NCR and PAN India (depending on the role)  🎯 WHO SHOULD APPLY?  Telecom professionals with strong hands-on experience in 4G/5G technologies, Packet Core, IMS, Subscriber Data Management, system integration and cloud-native deployments.  📩 APPLY NOW!  Share your updated resume at:  📧 hr@skill2hiretechnologies.com  Please mention the position title and total experience in your email subject.  🔁 Know someone with Telecom Core / IMS / SDM expertise? Tag them in the comments and share this opportunity with your professional network.  💙💚 Follow Skill2Hire Technologies Pvt. Ltd. for more exciting IT and Telecom career opportunities.  Connecting Talent with Opportunity.  #Hiring #TelecomJobs #4G #5G #PacketCore #IMS #SDM #NTAS #Nokia #TelecomEngineering #DeploymentEngineer #SystemIntegration #TechnicalProjectManager #SolutionEngineer #VoLTE #VoWiFi #TelcoCloud #Kubernetes #OpenStack #OpenShift #MNCJobs #PermanentJobs #HybridJobs #Skill2Hire",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_33",
+    "title": "Project Technical Lead / Technical Project Manager – 4G/5G Packet Core",
+    "company": "Skill2Hire Technologies",
+    "location": "India",
+    "domain": "Telecom",
+    "email": "hr@skill2hiretechnologies.com",
+    "description": "🚀 WE ARE HIRING | 4G / 5G TELECOM CORE EXPERTS! 📡 Are you a Telecom Technical Leader ready to lead next-generation 4G/5G Packet Core projects? Skill2Hire Technologies Pvt. Ltd. is looking for an experienced Project Technical Lead / Technical Project Manager – Packet Core (SDM) for a prestigious MNC client. 🔥 JOB OPPORTUNITY 🔹 Role: Project Technical Lead / Technical Project Manager 🔹 Domain: Telecom – 4G/5G Packet Core 🔹 Experience: 10+ Years 🔹 Leadership Experience: Minimum 4+ Years 🔹 Employment: Full-Time / Permanent 🔹 Client: Leading MNC 🔹 Work Mode: Hybrid 📍 Work Locations: Bengaluru | Chennai | Hyderabad | NCR 💻 KEY TECHNICAL SKILLS ✅ Subscriber Data Management (SDM) – Core Solution ✅ Deep understanding of 4G & 5G Call Flows ✅ Packet Core, VoLTE, VoWiFi and IoT ✅ Installation, Upgrade and Integration of SDM Core Nodes ✅ Troubleshooting SDM Solutions and Nodes ✅ AUSF, UDM, SDL, HSS/HLR, EIR and MNP ✅ Project Estimation, Sizing and Milestone Management ✅ End-to-End Technical Delivery & Stakeholder Management 🎯 WHAT WE ARE LOOKING FOR Professionals who can independently lead telecom core project delivery, manage timelines, guide engineering teams, resolve technical challenges and coordinate with customers and stakeholders. 📩 INTERESTED? LET'S CONNECT! Share your updated resume at: 📧 hr@skill2hiretechnologies.com 💬 Are you a 4G/5G Packet Core professional? Comment \"INTERESTED\" or tag someone who could be a perfect fit! 🔁 Share this opportunity with your telecom network. Your share could help someone find their next career opportunity! 💙💚 Follow Skill2Hire Technologies Pvt. Ltd. for the latest IT and Telecom career opportunities. Connecting Talent with Opportunity. #Hiring #TelecomJobs #5GJobs #4GJobs #PacketCore #TelecomEngineering #SDM #SubscriberDataManagement #UDM #HSS #AUSF #VoLTE #VoWiFi #TelecomCareers #TechnicalProjectManager #ProjectTechnicalLead #TelecomLead #EngineeringJobs #BangaloreJobs #ChennaiJobs #HyderabadJobs #NCRJobs #HybridJobs #MNCJobs #Skill2Hire",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_34",
+    "title": "Telecom Core Network Engineers (4G/5G IMS & Packet Core)",
+    "company": "DKR Solution",
+    "location": "Remote (USA)",
+    "domain": "Telecom",
+    "email": "hr@dkrsolution.com",
+    "description": "🚀 Hiring Across the USA (Remote): Telecom Core Network Engineers | 4G/5G | IMS • Packet Core • SDM • Charging • Cloud Deployment 📍 100% Remote  🎯 Skill Combinations We’re Looking For 🔹 IMS + Voice Call Flows + Signaling CSCF / HSS / MRF / TAS | VoLTE, VoWiFi, VoNR | SIP, SDP, RTP, RTCP, Diameter Roles: Core Network Integration Engineer, IMS MRF Engineer 🔹 Packet Core + 5G SA + Protocols Mobility management and gateway functions, AMF, SMF, UPF, PCF | GTPv2, GTP-U, HTTP/2 (SBI), Diameter | Network slicing and QoS Role: Packet Core Engineer 🔹 SDM + Directory Protocols + Kubernetes UDM, AUSF, HSS/HLR, EIR | Network directory and shared data layer | LDAP, Diameter | Database replication and data migration Role: SDM Engineer 🔹 Convergent Charging + 5G SA CHF / CCS, rating and balance management | Gy, Gz, Ro, Rf, Nchf | Billing, mediation and CRM integration Role: Core Network Integration Engineer (Charging track) 🔹 Hardware + OS + Fabric + Orchestration Dell / HPE servers (RAID, firmware, BIOS) | RHEL installation | OOB, Leaf, Spine fabric | NFV and container orchestration tool deployment Role: Hardware and Cloud Deployment Engineer  🧩 Skills Common Across Roles ✔ HLD, LLD, CIQ and MOP authoring and execution ✔ Bare-metal, VNF and CNF deployments (OpenStack, Kubernetes, Docker, VMware) ✔ ATP, pre/post-checks and end-to-end service validation ✔ Troubleshooting with Wireshark and log analysis ✔ Python, Bash and Ansible automation ✔ Clear communication and status reporting to customers ✔ Willingness to support maintenance windows as needed  📩 Interested? Comment “Interested”, DM me, or send your resume with your preferred role. Please share this with anyone in your network who fits! Email: hr@dkrsolution.com   #RemoteJobs #RemoteWork #TelecomJobs #5GCore #IMS #PacketCore #SDM #VoLTE #VoNR #CoreNetwork #NetworkIntegration #Kubernetes #5G #TelecomHiring #Hiring #NowHiring #USAJobs #SynstackTechnologies #Diameter #SIP #C2C #Fulltime #W2 #w2 #ContractJobs #Nokia",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_35",
+    "title": "SMF Test Engineer (5G Core / 4G EPC)",
+    "company": "Mavenir",
+    "location": "Bengaluru, India",
+    "domain": "Telecom",
+    "email": "Bentleykumar9@gmail.com",
+    "description": "Position: SMF Test position  - 5G Core: SMF, 4G EPC: PGW, SAEGW, SGW Location: Bangalore  Experience: 5 to 10 years #5GCore #4GEPC #PacketCore #SMF #PGW #SAEGW #SGW #5GNetworkTesting #TelecomTesting #SystemTesting #3GPP #5GSA #5GNSA #LTE #Kubernetes #Containerization #PFCP #GTPv2C #Diameter #SCTP #HTTP2 #RESTAPI #Wireshark #Tcpdump #NetworkFunctionTesting #TelecomProtocols #PacketCoreTesting #TestAutomation #AutomationTesting #AIinTesting #TelecomEngineering #Mavenir #BangaloreJobs #TelecomJobs #5GJobs #ImmediateJoiners Strong working knowledge of 4G EPC and 5G Core Packet Core networks. Hands-on system testing experience on one or more of the following products: 5G Core:-SMF4G EPC:-PGW, SAEGW, SGW • Proven experience deploying, configuring, troubleshooting, and validating packet core network functions in lab or production environments. • Working experience in Kubernetes-based containerized environments. • Strong understanding of end-to-end call flows, session establishment, mobility procedures, charging, policy control and subscriber management across LTE, NSA and SA networks. • Thorough understanding of 3GPP specifications covering: 5G Core Architecture and Procedures (TS 23.501, TS 23.502,EPC Architecture and Procedures (TS 23.401, TS 23.402) • Good understanding of the following protocols: Protocols: PFCP, GTPv2-C, Diameter, SCTP, HTTP/2 and REST APIs • Experience with packet analysis tools such as Wireshark/tcpdump and telecom test tools for network function validation.  • Ability to analyze logs, troubleshoot failures, and drive issues through resolution with R&D teams.  • Strong focus on test automation from Day 1.  • Ability to effectively leverage AI tools to improve quality and productivity.  • Willingness to work from the Mavenir Bangalore office. Please share resume: Bentleykumar9@gmail.com",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_36",
+    "title": "Telecom Core Network Engineers (4G/5G IMS & Packet Core)",
+    "company": "Synstack Technologies",
+    "location": "Remote (USA & Canada)",
+    "domain": "Telecom",
+    "email": "sstusa.rec3@synstacktech.com",
+    "description": "🚀 Hiring Across the USA (Remote): Multiple Roles Telecom Core Network Engineers | 4G/5G | IMS • Packet Core • SDM • Charging • Cloud Deployment  📍 100% Remote | Open to engineers anywhere in the USA and Canada  Synstack Technologies is hiring engineers who combine deep core network knowledge with hands-on cloud and deployment skills. If your profile matches one of the combinations below, we want to hear from you.  🎯 Skill Combinations We’re Looking For 🔹 IMS + Voice Call Flows + Signaling CSCF / HSS / MRF / TAS | VoLTE, VoWiFi, VoNR | SIP, SDP, RTP, RTCP, Diameter Roles: Core Network Integration Engineer, IMS MRF Engineer 🔹 Packet Core + 5G SA + Protocols Mobility management and gateway functions, AMF, SMF, UPF, PCF | GTPv2, GTP-U, HTTP/2 (SBI), Diameter | Network slicing and QoS Role: Packet Core Engineer 🔹 SDM + Directory Protocols + Kubernetes UDM, AUSF, HSS/HLR, EIR | Network directory and shared data layer | LDAP, Diameter | Database replication and data migration Role: SDM Engineer 🔹 Convergent Charging + 5G SA CHF / CCS, rating and balance management | Gy, Gz, Ro, Rf, Nchf | Billing, mediation and CRM integration Role: Core Network Integration Engineer (Charging track) 🔹 Hardware + OS + Fabric + Orchestration Dell / HPE servers (RAID, firmware, BIOS) | RHEL installation | OOB, Leaf, Spine fabric | NFV and container orchestration tool deployment Role: Hardware and Cloud Deployment Engineer  🧩 Skills Common Across Roles ✔ HLD, LLD, CIQ and MOP authoring and execution ✔ Bare-metal, VNF and CNF deployments (OpenStack, Kubernetes, Docker, VMware) ✔ ATP, pre/post-checks and end-to-end service validation ✔ Troubleshooting with Wireshark and log analysis ✔ Python, Bash and Ansible automation ✔ Clear communication and status reporting to customers ✔ Willingness to support maintenance windows as needed  📩 Interested? Comment “Interested”, DM me, or send your resume to sstusa.rec3@synstacktech.com  #RemoteJobs #RemoteWork #TelecomJobs #5GCore #IMS #PacketCore #SDM #VoLTE #VoNR #CoreNetwork #NetworkIntegration #Kubernetes #5G #TelecomHiring #Hiring #NowHiring #USAJobs #SynstackTechnologies #Diameter #SIP #c2c #w2 #contract #fulltime #contractjobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_37",
+    "title": "SMF Test Engineer (5G/4G Packet Core)",
+    "company": "CompNova",
+    "location": "Bengaluru, India",
+    "domain": "Telecom",
+    "email": "jagan.a@compnova.ai",
+    "description": "🚨 Hiring: SMF Test Engineer – 5G/4G Packet Core We are hiring SMF Test Engineers for a leading telecom software company. 🔹 Experience: 6–10 Years 🔹 5G Core: SMF 🔹 4G EPC: PGW, SAEGW, SGW 🔹 Strong 4G EPC & 5G Core knowledge 🔹 📍 F2F Interview - Bengaluru ⚡ Immediate Joiners Preferred 📩 Share your updated resume: jagan.a@compnova.ai  #Hiring #TelecomJobs #5GJobs #4GJobs #5GCore #4GEPC #SMF #SMFTesting #PGW #SAEGW #SGW #PacketCore #Telecom #NetworkingJobs #NetworkTesting #TelecomTesting #Kubernetes #LTE #NSA #SA #5G #ImmediateJoiners #JobOpening #TechJobs #IndiaJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_38",
+    "title": "SMF Test Engineer (5G Core / 4G EPC)",
+    "company": "Skalburg Soft",
+    "location": "Bengaluru, India",
+    "domain": "Telecom",
+    "email": "lokeshn@skalburgsoft.com",
+    "description": "🚀 WE ARE HIRING | SMF TEST ENGINEER – 5G CORE / 4G EPC 📍 Location: Bangalore 🏢 Work Mode: Work from Office (Hybrid) 💼 Experience: 6–10 Years 🔢 Open Positions: 10 ⏳ Preference: Immediate Joiners (30 Days NP) 🎓 Qualification: B.E. / B.Tech About the Role We are looking for experienced Telecom Test Engineers with strong hands-on expertise in 5G Core and 4G EPC system testing. The ideal candidate should have practical experience validating SMF and/or packet-core gateway functions, end-to-end call flows, protocol analysis, and test automation. Key Responsibilities Perform system, integration, functional, regression and end-to-end testing of 5G Core SMF and/or 4G EPC components such as PGW, SGW and SAEGW. Deploy, configure, troubleshoot and validate packet-core network functions in lab environments. Validate 5G SA/NSA and LTE call flows, PDU session establishment, mobility, charging, policy control and subscriber management. Analyze protocol traces, logs and failures using Wireshark, tcpdump and related debugging tools. Work with Kubernetes-based containerized environments. Develop and execute automated test scripts using Python, Robot Framework or similar tools. Collaborate with R&D teams on defect investigation, root-cause analysis and resolution. Apply relevant 3GPP specifications, particularly TS 23.501, 23.502, 23.401 and 23.402. Required Technical Skills ✅ Strong 4G EPC and/or 5G Core testing experience ✅ Hands-on exposure to SMF, PGW, SGW or SAEGW ✅ Knowledge of PFCP, GTPv2-C, Diameter, SCTP and HTTP/2 ✅ Experience in end-to-end packet-core validation and protocol troubleshooting ✅ Test automation skills using Python or similar scripting languages ✅ Exposure to Linux and Kubernetes/containerized environments Preferred Profile Experience in telecom product development or packet-core network testing. Strong debugging, analytical and problem-solving skills. Ability to join immediately or within a short notice period. Willingness to work from the Bangalore office. 📩 Interested candidates: Please share your updated resume at lokeshn@skalburgsoft.com Subject: Application – SMF Test Engineer – Bangalore Know someone who would be a good fit? Please share this opportunity with your network! #Hiring #TelecomJobs #5GCore #SMF #EPC #PacketCore #TelecomTesting #SystemTesting #TestAutomation #Python #Kubernetes #BangaloreJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_39",
+    "title": "Senior Test Lead – OpenShift (5G / EPC)",
+    "company": "Square Hiring",
+    "location": "Naperville, IL, USA (Remote)",
+    "domain": "Telecom",
+    "email": "akshay@squarehiring.com",
+    "description": "🚨 Hiring: Senior Test Lead – OpenShift 🚨  📍 Location: Naperville, IL (Remote OK)  🔑 Must-Have Skills: ▪️ Telecom, 5G Network Deployment & EPC ▪️ Packet Core Integration & System Testing ▪️ Linux, Networking & Telecom Protocols ▪️ Test Automation: Python / Shell / Robot Framework ▪️ Troubleshooting, Defect Management & Release Validation  ⭐ Good to Have: AWS, Kubernetes, OpenShift, IMS & Cloud-Native Network Functions (CNFs).  📩 Interested candidates, please share your updated resume at akshay@squarehiring.com  #Hiring #OpenShift #Telecom #5G #EPC #PacketCore #SystemTesting #Kubernetes #AWS #ITJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_40",
+    "title": "Project Technical Lead / Technical Project Manager – 4G/5G Packet Core",
+    "company": "Global Skills",
+    "location": "PAN India",
+    "domain": "Telecom",
+    "email": "Tarun.kuttappan@globalskills.net",
+    "description": "We’re Hiring Project Technical Lead / Technical Project Manager – 4G/5G  Core Domain: Packet Core Experience: 10+ Years Leadership Experience: Minimum 4+ years in a Technical Lead / Project Manager role Location: PAN India  🔹 Key Skills & Expertise ✅ Strong knowledge of SDM (Subscriber Data Management) core solutions. ✅ Expertise in 4G/5G call flows, Packet Core, VoLTE, VoWiFi, and IoT. ✅ Experience in SDM node installation, upgrades, integration, and troubleshooting. ✅ Knowledge of AUSF, UDM, SDL, HSS/HLR, EIR, and MNP. ✅ Experience in project estimation, sizing, milestone tracking, and technical delivery. ✅ Strong team leadership and customer stakeholder management skills.  💼 Roles & Responsibilities Lead end-to-end technical delivery of telecom core projects. Manage project timelines, milestones, and technical deliverables. Guide engineers and support day-to-day technical activities. Coordinate SDM solution implementation, integration, and upgrades. Resolve technical issues and manage project dependencies. Collaborate with customers and stakeholders to ensure successful project delivery.  Send your updated resume to: 📧 Tarun.kuttappan@globalskills.net 📧 Revathi.Tadikonda@globalskills.net  #GlobalSkills #WeAreRecruiting #TechnicalProjectManager #ProjectTechnicalLead #PacketCore #SDM #TelecomJobs #4G #5G #TelecomEngineering #ProjectDelivery #Hiring #ITJobs",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_41",
+    "title": "Packet Core Engineer (CMM / CMG / AMF)",
+    "company": "Lorven Tech",
+    "location": "Remote (USA & Canada)",
+    "domain": "Telecom",
+    "email": "Ganesh.ra@lorventech.com",
+    "description": "🚀 We’re Hiring: Packet Core Engineer | Contract 📍 Location: Remote – USA / Canada 💼 Employment Type: Contract We are looking for an experienced Packet Core Engineer for a Professional Services role focused on deployment, integration, and verification of CMM/CMG and AMF network functions. 🔹 Key Responsibilities: Serve as an SME for specific Packet Core Network Functions, including instantiation, deployment, and integration. Perform vertical and horizontal integration of network functions. Work closely with Packet Core Design and Solution Architecture (SA) SMEs to validate and implement end-to-end solutions. Execute deployments using approved Methods of Procedure (MOPs) developed during FOA/FSA or support greenfield deployments. Perform horizontal, vertical, and end-to-end verification testing. Conduct network health checks and Acceptance Test Procedure (ATP) testing. Support maintenance windows for the introduction of new Network Functions (NFs). Troubleshoot deployment and integration issues to ensure successful implementation. 🔹 Required Skills & Experience: Strong experience in Packet Core network deployment and integration. Expertise in CMM/CMG and/or AMF network functions. Hands-on experience with network function instantiation, verification, and testing. Knowledge of MOP execution, greenfield deployments, and end-to-end integration. Ability to collaborate with design and solution architecture teams. Flexibility to support scheduled maintenance windows. 📩 Interested candidates? Please share your updated resume via LinkedIn DM # Ganesh.ra@lorventech.com 🔄 Know someone who fits this opportunity? Tag them or share this post! #Hiring #PacketCore #PacketCoreEngineer #TelecomJobs #Telecommunications #5GCore #AMF #CMM #CMG #NetworkIntegration #DeploymentEngineer #ProfessionalServices #W2Contract #ContractJobs #RemoteJobs #USAJobs #CanadaJobs #TelecomCareers",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_42",
+    "title": "Packet Core Engineer (CMM / CMG / AMF)",
+    "company": "Synstack Technologies",
+    "location": "Remote (USA & Canada)",
+    "domain": "Telecom",
+    "email": "sstusa.rec3@synstacktech.com",
+    "description": "🚨 HIRING: Packet Core Engineer | Remote – USA & Canada 🚨  We are looking for an experienced Packet Core Engineer to support deployment, integration, and verification testing of telecom packet core network functions, including CMM/CMG and AMF.  📍 Location: Remote – USA & Canada  💼 Role: Deployment / Integration Engineer  📡 Domain: Telecom – Packet Core / 4G / 5G   Preference: US or Canadian citizens, if available  🔑 Key Skills & Requirements Strong experience with Packet Core network functionsKnowledge of CMM/CMG and AMF productsSME-level expertise in one or more Network Functions (NFs)Network Function instantiation, deployment, and verificationHorizontal and vertical integration of network functionsEnd-to-end network verification and testingHealth checks and Acceptance Test Procedure (ATP) executionExperience with Method of Procedure (MOP)-based deploymentsGreenfield deployment and integration experienceUnderstanding of 4G/5G core network architecture and deployment processes  📋 Key Responsibilities Deploy and integrate packet core network functionsPerform horizontal, vertical, and end-to-end verification testingExecute health checks, ATP, and deployment validation activitiesWork closely with Packet Core Design and Solution Architect SMEsFollow established MOPs or support greenfield deploymentsParticipate in maintenance windows for the introduction of new Network FunctionsTroubleshoot deployment and integration issues to ensure successful implementationIf you have strong Packet Core, CMM/CMG, AMF, and 4G/5G deployment and integration experience, we would love to connect with you!  📩 Interested candidates: Please send your updated resume and LinkedIn profile Url to  Email : sstusa.rec3@synstacktech.com  #Hiring #PacketCoreEngineer #PacketCore #CMM #CMG #AMF #5G #4G #TelecomJobs #NetworkIntegration #DeploymentEngineer #CoreNetwork #ProfessionalServices #RemoteJobs #USAJobs #CanadaJobs #fulltime #contractjobs #w2 #c2c #W2 #C2C",
+    "posted_date": "2026-11-13"
+  },
+  {
+    "id": "job_43",
+    "title": "Core Network Integration Engineer",
+    "company": "Katalyst HLS",
+    "location": "Plano, TX, USA",
+    "domain": "Telecom",
+    "email": "Careers@KatalystHLS.com",
+    "description": "🚨 Hiring: Core Network Integration Engineer 📍 Location: #Plano, TX, Katalyst Pro.  We are seeking an experienced Core Network Integration Engineer to lead the deployment, configuration, commissioning, and integration of telecom core network elements across bare-metal, virtualized, and cloud-native environments. Candidates must have expertise in at least one of the following areas: IMS, Packet Core, Subscriber Data Management (SDM), or Charging and Business Support Systems (BSS). Hands-on Nokia Cloud Core experience is a major advantage.  🔍 Key Responsibilities: ✅ Configure, commission, and integrate core network elements across bare-metal, #NFV, and cloud-native telecom environments. ✅ Develop, review, and execute Methods of Procedure (#MOPs) for software upgrades, network expansion, and service migrations. ✅ Perform pre-checks, post-checks, and end-to-end service validation. ✅ Prepare and maintain technical documentation, including #HLD, #LLD, and #CIQ. ✅ Troubleshoot complex configuration, signaling, and protocol-level issues during integration and stabilization.  🎯 Requirements: ✅ 3+ years of technical experience in telecom core network delivery or integration. ✅ Strong knowledge of #IP networking, routing and switching, #OSPF, #BGP, and network security. ✅ Experience with Wireshark for hexadecimal trace analysis and troubleshooting. ✅ Familiarity with telecom cloud and virtualization technologies, including #CBAM, OpenStack, Kubernetes, VMware, and #NFV. ✅ Strong technical documentation, troubleshooting, communication, and cross-functional collaboration skills.   ✅ Bachelor's degree in Telecommunications, Electronic Engineering, Computer Science, or a related field.  📩 Interested? Connect with us or send your resume to Careers@KatalystHLS.com.  #Hiring #CoreNetworkIntegration #TelecomJobs #Nokia #5GCore #IMS #PacketCore #SubscriberDataManagement #BSS #VoLTE #Kubernetes #Telecommunications #PlanoTX.  FDA The National Institutes of Health Centers for Disease Control and Prevention ISO - International Organization for Standardization  🔗 Apply at https://lnkd.in/ggnVCiNT",
+    "posted_date": "2026-11-13"
+  }
+]
