@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Job Portal | Single-File Loader</title>
+    <title>Global Job Portal | External Fetch</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-54TCD9X2"></script>
     <script>
@@ -18,8 +16,9 @@
 
     <!-- Header -->
     <header class="relative bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
+        <!-- Top Right Action Button with Icon -->
         <div class="absolute top-4 right-4">
-            <button type="button" onclick="copyCurrentFileJobs()" title="Copy Job Titles & Locations in Current File"
+            <button type="button" onclick="copyAllJobs()" title="Copy All Job Titles & Locations"
                 class="bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-xl backdrop-blur-sm transition-colors border border-white/20 flex items-center justify-center cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -29,40 +28,16 @@
             </button>
         </div>
         <h1 id="headerTitle" class="text-xl sm:text-2xl font-bold tracking-tight mb-1">Global Job Portal</h1>
-        <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">
-            “So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5
-        </p>
+        <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">Fetching daily inspiration and jobs...</p>
     </header>
 
     <!-- Main Container -->
     <main class="max-w-4xl mx-auto px-4 py-6">
 
-        <!-- Single-File Selector Bar (One File at a Time) -->
-        <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="flex flex-col sm:flex-row sm:items-center gap-2 flex-1">
-                <label for="fileSelector" class="text-xs font-semibold text-gray-600 shrink-0">Active Job File:</label>
-                <select id="fileSelector" onchange="switchToFile(this.value)"
-                    class="px-3 py-2 bg-gray-50 border border-gray-200 rounded-xl text-xs sm:text-sm font-medium text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                    <option value="jobs_2026-11-23.json">jobs_2026-11-23.json (Built-in / Ready)</option>
-                </select>
-                <label class="px-3 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold rounded-xl cursor-pointer transition-colors text-center shrink-0">
-                    Load Local JSON
-                    <input type="file" id="localJsonInput" accept=".json,application/json" class="hidden" onchange="handleLocalJsonFile(event)">
-                </label>
-            </div>
-            <div id="activeFileInfo" class="text-xs text-gray-500 font-medium"></div>
-        </div>
-
-        <!-- Search & Filter Bar (Debounced + Search Button) -->
-        <div class="flex flex-col md:flex-row gap-3 mb-5">
-            <div class="flex flex-1 gap-2">
-                <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
-                    class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
-                <button type="button" id="searchBtn" onclick="applySearchAndFilter()"
-                    class="px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-sm transition-colors text-sm shrink-0 cursor-pointer">
-                    Search
-                </button>
-            </div>
+        <!-- Search & Filter Bar -->
+        <div class="flex flex-col md:flex-row gap-3 mb-6">
+            <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
+                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
 
             <select id="domainFilter"
                 class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
@@ -70,47 +45,18 @@
             </select>
         </div>
 
-        <!-- Job Cards List (All jobs in the single active file, no pagination) -->
+        <!-- Job Cards List -->
         <div id="jobListings" class="space-y-4">
-            <p class="text-center text-gray-500 py-8">Loading job file...</p>
-        </div>
-
-        <!-- Next File Prompt (Shown when user finishes reviewing the current file) -->
-        <div id="nextFilePrompt" class="mt-8 bg-indigo-50 border border-indigo-200 rounded-2xl p-5 text-center hidden">
-            <p id="nextFilePromptTitle" class="text-sm sm:text-base font-bold text-indigo-950 mb-1">
-                Finished reviewing this file!
-            </p>
-            <p id="nextFilePromptDesc" class="text-xs sm:text-sm text-indigo-700 mb-4">
-                Ready to load the next job file when you are.
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-3">
-                <button type="button" id="loadNextFileBtn" onclick="loadNextAvailableFile()"
-                    class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold rounded-xl shadow-sm transition-colors cursor-pointer">
-                    Load Next File →
-                </button>
-                <label class="px-5 py-2.5 bg-white hover:bg-gray-100 text-indigo-700 border border-indigo-200 text-xs sm:text-sm font-semibold rounded-xl cursor-pointer transition-colors">
-                    Choose Another JSON File
-                    <input type="file" accept=".json,application/json" class="hidden" onchange="handleLocalJsonFile(event)">
-                </label>
-            </div>
+            <p class="text-center text-gray-500 py-8">Loading job listings from server...</p>
         </div>
 
     </main>
 
     <script>
-        const SEARCH_DEBOUNCE_MS = 450;
+        const SEARCH_DELAY_MS = 450; // Delay search execution so typing doesn't freeze the page
 
-        // Built-in fallback for jobs_2026-11-23.json so it loads immediately even without a server
-        const EMBEDDED_JOBS = [{"id": "JOB-001", "title": "Chief Technology Officer (CTO)", "company": "Socium", "location": "Dubai, UAE (Hybrid)", "domain": "Executive & IT Leadership", "email": "ross@socium.team", "description": "Established tech business in Dubai seeking a hands-on Chief Technology Officer (CTO) to lead a 100-person tech organization, own technology strategy, scale platforms/teams, and drive enterprise AI transformation from concept to production. Requires 5+ years as a CTO (or equivalent) in an established business (regulated industries such as financial services, healthcare, payments, or insurance preferred), track record of scaling teams/platforms, and practical AI adoption experience. Hybrid (2 days/week in Dubai office); full relocation to UAE required.", "posted_date": "2026-11-23"}, {"id": "JOB-002", "title": "Senior Manager – Healthcare Business Analyst", "company": "SIS Global", "location": "Saudi Arabia", "domain": "Healthcare & Business Analysis", "email": "MElTahawy@sisglobal.net", "description": "Experienced leader to drive business analysis and digital transformation initiatives across the healthcare sector in Saudi Arabia. Requires 8+ years of relevant experience in healthcare business analysis, consulting, strategy, or transformation, strong Return on Investment (ROI) analysis expertise, and familiarity with AI tools.", "posted_date": "2026-11-23"}, {"id": "JOB-003", "title": "Key Account Manager – Mid Market (Enterprise Vertical)", "company": "Reliance Jio", "location": "Chennai, India", "domain": "Telecom & B2B Sales", "email": "vinodh1.s@ril.com", "description": "Key Account Manager for Mid Market Enterprise Vertical in Chennai handling 75 mid-market logos across Internet, Voice, and Cloud telecom solutions. Requires B2B field sales background in the telecom industry, experience in both farming and new business (National Account Managers handling large logos preferred), 3–4 daily client meetings (physical & virtual), multi-hierarchy/multi-function account engagement, age under 40, 6-day work week, and immediate availability.", "posted_date": "2026-11-23"}, {"id": "JOB-004", "title": "Senior Integration Engineer", "company": "Beetleware", "location": "Remote", "domain": "Software & Integration Engineering", "email": "careers@beetleware.com", "description": "1-year extendable remote contract for a Senior Integration Engineer on an enterprise project. Requires 5+ years of experience in Integration Engineering, designing and implementing integration solutions, hands-on expertise with APIs, middleware, system integration, integration patterns, REST/SOAP APIs, microservices, and troubleshooting/optimizing integration workflows.", "posted_date": "2026-11-23"}, {"id": "JOB-005", "title": "Telecom Electrician", "company": "MLR Associates", "location": "Nationwide, UK", "domain": "Telecom & Electrical Infrastructure", "email": "mike.glover@mlr-associates.com", "description": "12+ month Outside IR35 contract (£300/day, 5 days/week) for UK-based Telecom Electricians. Requires Gold Card standard with L3 Test & Inspect, 18th Edition, C&G 5357-03 or AM2, TEL001 DC Electrical Safety, EFAW, Manual Handling, Ladder Safety, and Asbestos Awareness. Experience in rack/infrastructure installation, DC power up to 95mm CSA, minor AC installs, router/server/Cat6/fibre installation, basic commissioning, transmission testing (BERT, RFC, Y1564), power surveys, and VMO2 Data Centres / BT Exchanges.", "posted_date": "2026-11-23"}, {"id": "JOB-006", "title": "Project Manager – Substation Projects", "company": "Reliance Recruiters", "location": "Dubai, UAE", "domain": "Power & Electrical Infrastructure", "email": "likitha@reliancerecruiters.com", "description": "Project Manager for 132/11kV, 220/11kV, and 400/132kV substation projects in Dubai, UAE (Salary: AED 22,000 – 28,000 + family benefits). Requires Bachelor's in Electrical Engineering, 15–20 years overall industry experience (5–7 years in substation project management), Project/Site Manager approval from DEWA, TAQA, TRANSCO, ETIHADWE, FEWA, AADC, ADDC, or SEWA, and immediate to 30-day availability.", "posted_date": "2026-11-23"}, {"id": "JOB-007", "title": "Construction Quality Manager (Renewable Energy)", "company": "ERSG Global", "location": "Ireland (Hybrid)", "domain": "Construction & Renewable Energy", "email": "Klaidas.rudis@ersg-global.com", "description": "Hands-on Construction Quality Manager in Ireland (hybrid, 3–4 days/week on site across Ireland; Irish or EU citizens only). Oversee QA/QC across EPC construction sites from construction through handover. Requires 3+ years QA/QC experience in EPC projects (renewable energy / solar PV desirable), strong knowledge of construction quality standards, inspections, ITPs, NCR management, and an Engineering or Construction Management degree.", "posted_date": "2026-11-23"}, {"id": "JOB-008", "title": "Client Engagement Manager", "company": "Jade Business Services", "location": "Pune, India (Hybrid)", "domain": "IT Services & Account Management", "email": "asha.rangaswamy@jade-biz.com", "description": "Client Engagement Manager in Pune (Hybrid, 3:00 PM – 12:00 AM shift) with 6+ years of experience as an Account Manager exclusively within IT services companies, focusing on client relationship management, customer success, account growth, and stakeholder management.", "posted_date": "2026-11-23"}, {"id": "JOB-009", "title": "Data Engineer & AI Platforms Solutions Specialist", "company": "Aventus Global", "location": "UAE", "domain": "Data & AI Engineering", "email": "suneeta@aventusglobal.com", "description": "Permanent roles in the UAE (UAE-based candidates prioritized): (1) Data Engineer (5–8 years) with Databricks (Spark, Delta Lake, Unity Catalog, Workflows), Azure (ADLS Gen2, Data Factory, Key Vault), Python, SQL, data governance, PII controls, IaC, and CI/CD; (2) AI Platforms & Solutions Specialist (10+ years in data/ML/software engineering, 2+ years production GenAI/agentic AI) with Databricks Mosaic AI, Vector Search, Azure AI Foundry, LLMs, RAG, MCP tool use, and AI governance.", "posted_date": "2026-11-23"}, {"id": "JOB-010", "title": "Electrical Engineer (LV & MV)", "company": "JAZ Contracting Company (JAZCO)", "location": "Jeddah, Saudi Arabia", "domain": "Power & Electrical Infrastructure", "email": "recruitment@jazsolution.com", "description": "Electrical Engineer for an Annual Maintenance Contract (AMC) project in Jeddah, Saudi Arabia (immediate joiners preferred). Requires Bachelor's in Electrical Engineering, minimum 5 years of relevant experience in Saudi Arabia, strong hands-on expertise in Low Voltage (LV) and Medium Voltage (MV) systems, preventive/corrective maintenance, electrical panels, transformers, switchgear, and site operations.", "posted_date": "2026-11-23"}, {"id": "JOB-011", "title": "Service Delivery Manager (SDM)", "company": "Skill Recruit", "location": "Essen, Germany (Hybrid)", "domain": "IT Service Management", "email": "guru.sharath@skillrecruit.com", "description": "Contract Service Delivery Manager in Essen, Germany (hybrid, 2–3 days/week onsite; must be based in Germany). Requires 12+ years of Service Delivery experience, fluency in German and English, experience managing SAP (ECC, S/4HANA) and Salesforce application support/enhancements, SLA management, ITIL, ServiceNow working knowledge, and onsite/offshore team leadership.", "posted_date": "2026-11-23"}, {"id": "JOB-012", "title": "Agile Project Manager / Scrum Master", "company": "TekisHub", "location": "Hoboken, NJ, USA (Hybrid)", "domain": "Project Management", "email": "vaibhav.chaudhary@tekishub.com", "description": "W2 Contract Agile Project Manager / Scrum Master in Hoboken, NJ (local candidates only, hybrid). Requires expertise in Agile project management, IT project delivery, Scrum and SAFe methodologies, sprint management, Agile team coaching, product backlog management/prioritization, risk management, and cross-functional stakeholder collaboration.", "posted_date": "2026-11-23"}, {"id": "JOB-013", "title": "Senior Cyber Security Architect", "company": "Arita Solutions", "location": "Qatar", "domain": "Cybersecurity", "email": "abhijith@aritasolutions.com", "description": "Long-term contract Senior Cyber Security Architect in Qatar with 10+ years of experience in enterprise security architecture within Banking/Financial Services or regulated environments. Core skills: hybrid & multi-cloud security, Zero Trust, IAM/PAM, application & API security, threat modelling, cryptography/key management, network security, and AI/ML security. Mandatory CISSP or CISM certification; Arabic is an advantage.", "posted_date": "2026-11-23"}, {"id": "JOB-014", "title": "Head of Venue Technology Delivery", "company": "Workwavez", "location": "Doha, Qatar", "domain": "ICT & Telecom Infrastructure", "email": "hr@workwavez.com", "description": "Lead large-scale ICT and AV/ELV delivery for sports venues, smart stadiums, and major events in Doha, Qatar. Requires 10+ years in IT, 7+ years in a similar leadership role, at least 4 years in sports venue technology, and mandatory PMP or PRINCE2 certification.", "posted_date": "2026-11-23"}, {"id": "JOB-015", "title": "Chief Financial Officer / Chief Operating Officer (CFO/COO)", "company": "Mackenzie Jones", "location": "Dubai, UAE", "domain": "Executive & Finance", "email": "poonammccann@mackenziejones.com", "description": "Senior C-level leader (CFO/COO) for a growing services business in Dubai (Budget up to AED 70,000/month). Requires 17+ years of finance experience, minimum 5 years in C-level roles, M&A experience, financial reporting, strong technology/automation expertise, and current residence in the UAE.", "posted_date": "2026-11-23"}, {"id": "JOB-016", "title": "Business Analyst – Airline Domain", "company": "KaashTech", "location": "Calgary, AB, Canada (Onsite)", "domain": "Business Analysis & Aviation", "email": "Krishna@kaashtech.com", "description": "Onsite Business Analyst in Calgary, Canada with strong domain expertise in the Airline and Aviation sector to support enterprise business requirements, process analysis, and project delivery.", "posted_date": "2026-11-23"}, {"id": "JOB-017", "title": "Planner (SPIR) – Oil & Gas Turnaround", "company": "Steadfast Qatar", "location": "Qatar", "domain": "Oil & Gas / Engineering", "email": "hiba@steadfastqatar.com", "description": "Urgent Qatar local hiring for an experienced SPIR Planner for a Turnaround (TA) planning assignment in the Oil & Gas / Petrochemical sector. Requires minimum Diploma, 6–8 years overall experience, at least 5 years in petrochemical/O&G turnaround planning, proficiency in MS Project/Primavera, mandatory SAP PM module experience, and English fluency.", "posted_date": "2026-11-23"}, {"id": "JOB-018", "title": "Group Procurement Manager", "company": "Tawzif", "location": "Abu Dhabi, UAE", "domain": "Procurement & Supply Chain", "email": "pritesh@tawzif.ae", "description": "Group Procurement Manager for an established construction and contracting group in Abu Dhabi, UAE. Requires 15+ years of overall procurement experience (preferably in the UAE), strong construction/contracting industry background, current senior procurement management experience, group-level strategic sourcing, vendor management, subcontractor negotiations, and current UAE residency.", "posted_date": "2026-11-23"}, {"id": "JOB-019", "title": "AEM Content Lead", "company": "KaashTech", "location": "Calgary, AB, Canada (Onsite)", "domain": "Digital & Content Management", "email": "Krishna@kaashtech.com", "description": "Onsite AEM Content Lead in Calgary, Canada experienced in Adobe Experience Manager (AEM) content authoring, digital asset governance, content strategy, and enterprise web publishing workflows.", "posted_date": "2026-11-23"}, {"id": "JOB-020", "title": "Senior AI & Computer Vision Engineer", "company": "Quantum Talent Group", "location": "Abu Dhabi, UAE (Onsite)", "domain": "AI & Autonomous Systems", "email": "jonathan.nolasco@quantumtalentgroup.com", "description": "12-month onsite contract in Abu Dhabi, UAE for autonomous systems projects. Requires strong expertise in Computer Vision, Deep Learning, CNNs, Vision Transformers, Python, C++, PyTorch/TensorFlow, image processing, and visual localization (UAV, infrared imaging, or embedded AI experience is an advantage).", "posted_date": "2026-11-23"}, {"id": "JOB-021", "title": "Senior SAR Systems Engineer", "company": "Quantum Talent Group", "location": "Abu Dhabi, UAE (Onsite)", "domain": "Aerospace & RF Systems", "email": "jonathan.nolasco@quantumtalentgroup.com", "description": "Permanent onsite role in Abu Dhabi, UAE. Requires 5+ years of Synthetic Aperture Radar (SAR) system design and performance engineering, deep knowledge of SAR imaging modes, resolution, swath width, radar performance modelling, SAR architecture, RF systems, and signal processing (satellite payload integration/testing preferred).", "posted_date": "2026-11-23"}, {"id": "JOB-022", "title": "Senior Robotics Software Engineer – Multi-Robot Systems & Simulation", "company": "Quantum Talent Group", "location": "Abu Dhabi, UAE (Onsite)", "domain": "Robotics & Autonomous Systems", "email": "jonathan.nolasco@quantumtalentgroup.com", "description": "Permanent onsite role in Abu Dhabi, UAE. Requires strong expertise in ROS2, C++, Python, Multi-Robot Systems (MRS), robotics simulation (Gazebo or similar), Sim-to-Real development, multi-robot coordination, distributed autonomy, and deploying robotic software onto physical hardware.", "posted_date": "2026-11-23"}, {"id": "JOB-023", "title": "Senior Manager – Applications Engineering (Data Centre Power)", "company": "Clearer", "location": "Cluj-Napoca, Romania", "domain": "Data Center & Power Infrastructure", "email": "will.hennessy@clear-er.com", "description": "Global critical power business hiring a Senior Manager of Applications Engineering in Cluj-Napoca, Romania to lead a team of 10–15 Application Engineers and drive technical quality, productivity, and engineering process improvements across international data center operations. Requires engineering leadership background in critical power, UPS, switchgear, or power distribution.", "posted_date": "2026-11-23"}, {"id": "JOB-024", "title": "IBM ECM Subject Matter Expert (SME)", "company": "CloudIngest", "location": "Remote, India", "domain": "Enterprise Content Management", "email": "sohini@cloudingest.com", "description": "Remote contract IBM ECM SME in India with strong expertise in IBM FileNet P8, IBM Content Manager OnDemand (CMOD), and IBM Content Manager v8 (CM8), responsible for supporting, administering, and enhancing document management, workflow, archiving, records management, and content migration solutions.", "posted_date": "2026-11-23"}, {"id": "JOB-025", "title": "PostgreSQL Database Administrator", "company": "Royal Cyber", "location": "Saudi Arabia", "domain": "Database Administration", "email": "syed.nemathullah@royalcyber.com", "description": "Database Administrator role for Saudi Nationals or native Arabic speakers with hands-on PostgreSQL administration, database replication, backup/recovery, and High Availability (HA) architecture experience.", "posted_date": "2026-11-23"}, {"id": "JOB-026", "title": "MEG Operator (Oil & Gas)", "company": "Right Advisors", "location": "Qatar", "domain": "Oil & Gas / Engineering", "email": "jobs@rightadvisors.com", "description": "MEG Operator in Qatar for Oil & Gas / Petroleum operations. Requires B.Tech/B.E. or Diploma in Mechanical Engineering with 3–10 years of experience in MEG operations, DCS, P&ID, plant operations, and Nitrogen & Instrument Air packages.", "posted_date": "2026-11-23"}, {"id": "JOB-027", "title": "Validation Engineering Manager (Semiconductor)", "company": "Ansa People", "location": "Edinburgh, UK", "domain": "Semiconductor & Hardware Engineering", "email": "anna@ansapeople.co.uk", "description": "Permanent Validation Engineering Manager leading a 30+ person semiconductor engineering team in Edinburgh, UK (global search with visa sponsorship and relocation support, plus RSUs and discretionary bonus). Requires hands-on silicon validation and characterization experience, mixed-signal background (audio/power analysis valued), technical or team leadership experience, debugging skills, and Python-based test automation.", "posted_date": "2026-11-23"}];
-
-        const fileDatasets = {
-            "jobs_2026-11-23.json": EMBEDDED_JOBS
-        };
-
-        let manifestFiles = ["jobs_2026-11-23.json"];
-        let currentFileName = "jobs_2026-11-23.json";
-        let currentFileJobs = [];
-        let searchDebounceTimer = null;
+        let allJobs = [];
+        let searchTimeout = null;
 
         function escapeHtml(str) {
             return String(str || '')
@@ -123,206 +69,90 @@
 
         function escapeJsSingleQuote(str) {
             return String(str || '')
-                .replace(/\/g, '\\')
+                .replace(/\\/g, '\\\\')
                 .replace(/'/g, "\'")
-                .replace(/
-?
-/g, ' ');
+                .replace(/\r?\n/g, ' ');
         }
 
-        function normalizeJobs(rawData, fileName) {
-            const list = Array.isArray(rawData) ? rawData : (Array.isArray(rawData.jobs) ? rawData.jobs : []);
-            const dateMatch = String(fileName || '').match(/\d{4}-\d{2}-\d{2}/);
-            const fileDate = dateMatch ? dateMatch[0] : 'Recently';
-
-            return list.map((job, idx) => ({
-                ...job,
-                unique_id: `${fileName}_${idx}`,
-                posted_date: job.posted_date || fileDate
-            }));
-        }
-
-        async function initPortal() {
-            // Load the first/active file immediately so nothing is blocked by fetch errors
-            activateFile("jobs_2026-11-23.json");
-
-            // Optionally discover additional files from manifest.json without breaking if missing
+        async function loadJobsFromFiles() {
             try {
-                const manifestRes = await fetch("manifest.json?v=" + Date.now());
-                if (manifestRes.ok) {
-                    const list = await manifestRes.json();
-                    if (Array.isArray(list) && list.length > 0) {
-                        const merged = Array.from(new Set([...list, "jobs_2026-11-23.json"]));
-                        manifestFiles = merged;
-                        rebuildFileSelector();
-                        updateNextFilePrompt();
+                // 1. Fetch manifest file
+                const manifestRes = await fetch('manifest.json');
+                if (!manifestRes.ok) throw new Error('Could not load manifest.json');
+                const fileList = await manifestRes.json();
+
+                let combinedJobs = [];
+
+                // 2. Fetch each JSON file listed in the manifest concurrently
+                const fetchPromises = fileList.map(async (fileName) => {
+                    try {
+                        const res = await fetch(fileName);
+                        if (!res.ok) return [];
+                        const data = await res.json();
+
+                        // Extract date from filename if not present in job object
+                        const dateMatch = fileName.match(/\d{4}-\d{2}-\d{2}/);
+                        const fileDate = dateMatch ? dateMatch[0] : 'Recently';
+
+                        return data.map((job, idx) => ({
+                            ...job,
+                            unique_id: `${fileName}_${idx}`,
+                            posted_date: job.posted_date || fileDate
+                        }));
+                    } catch (err) {
+                        console.error(`Error loading ${fileName}:`, err);
+                        return [];
                     }
-                }
-            } catch (_) {
-                // Local/offline mode fallback: built-in file + Load Local JSON button work directly
-            }
+                });
 
-            try {
-                const cfgRes = await fetch("config.json?v=" + Date.now());
-                if (cfgRes.ok) {
-                    const cfg = await cfgRes.json();
-                    if (cfg.header_title && document.getElementById("headerTitle")) {
-                        document.getElementById("headerTitle").textContent = cfg.header_title;
-                    }
-                    if (Array.isArray(cfg.motivational_lines) && cfg.motivational_lines.length > 0) {
-                        const idx = Math.floor(Math.random() * cfg.motivational_lines.length);
-                        document.getElementById("headerSubtitle").textContent = cfg.motivational_lines[idx];
-                    }
-                }
-            } catch (_) {}
-        }
+                const results = await Promise.all(fetchPromises);
+                results.forEach(jobArray => combinedJobs.push(...jobArray));
 
-        function rebuildFileSelector() {
-            const selector = document.getElementById("fileSelector");
-            selector.innerHTML = "";
-            manifestFiles.forEach((fname) => {
-                const opt = document.createElement("option");
-                opt.value = fname;
-                opt.textContent = fname === "jobs_2026-11-23.json" ? `${fname} (Built-in)` : fname;
-                if (fname === currentFileName) opt.selected = true;
-                selector.appendChild(opt);
-            });
-        }
+                // Sort by Newest Posted Date
+                combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
 
-        // Loads ONLY ONE file at a time into view
-        async function activateFile(fileName) {
-            currentFileName = fileName;
-            document.getElementById("fileSelector").value = fileName;
-            document.getElementById("searchInput").value = "";
-            document.getElementById("domainFilter").value = "";
+                allJobs = combinedJobs;
+                populateDomainFilter(allJobs);
+                displayJobs(allJobs);
 
-            if (fileDatasets[fileName]) {
-                currentFileJobs = normalizeJobs(fileDatasets[fileName], fileName);
-                finishLoadingCurrentFile();
-                return;
-            }
-
-            document.getElementById("jobListings").innerHTML = `<p class="text-center text-gray-500 py-8">Loading ${escapeHtml(fileName)}...</p>`;
-
-            try {
-                const res = await fetch(fileName + "?v=" + Date.now());
-                if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                const data = await res.json();
-                fileDatasets[fileName] = data;
-                currentFileJobs = normalizeJobs(data, fileName);
-                finishLoadingCurrentFile();
-            } catch (err) {
-                document.getElementById("jobListings").innerHTML = `
-                    <div class="bg-amber-50 border border-amber-200 text-amber-800 p-4 rounded-xl text-center text-sm">
-                        <p class="font-bold mb-1">Could not fetch "${escapeHtml(fileName)}" automatically.</p>
-                        <p>Click <strong>Load Local JSON</strong> above to select your next file, or switch back to <strong>jobs_2026-11-23.json</strong>.</p>
+            } catch (error) {
+                console.error('Fetch error:', error);
+                document.getElementById('jobListings').innerHTML = `
+                    <div class="bg-red-50 border border-red-200 text-red-700 p-4 rounded-xl text-center text-sm">
+                        <p class="font-bold mb-1">Failed to fetch job files.</p>
+                        <p>Make sure you are running this via a local server (like VS Code Live Server) or hosted on GitHub Pages so browser CORS permits external fetching.</p>
                     </div>`;
-                updateNextFilePrompt();
             }
         }
 
-        function finishLoadingCurrentFile() {
-            populateDomainFilter(currentFileJobs);
-            renderJobs(currentFileJobs);
-            document.getElementById("activeFileInfo").textContent = `${currentFileJobs.length} jobs in ${currentFileName}`;
-            updateNextFilePrompt();
-        }
-
-        function switchToFile(fileName) {
-            activateFile(fileName);
-        }
-
-        function handleLocalJsonFile(event) {
-            const file = event.target.files && event.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                try {
-                    const parsed = JSON.parse(e.target.result);
-                    fileDatasets[file.name] = parsed;
-                    if (!manifestFiles.includes(file.name)) {
-                        manifestFiles.push(file.name);
-                        rebuildFileSelector();
-                    }
-                    activateFile(file.name);
-                } catch (err) {
-                    alert("Invalid JSON file: " + err.message);
-                }
-            };
-            reader.readAsText(file);
-            event.target.value = "";
-        }
-
-        function getNextFileName() {
-            const idx = manifestFiles.indexOf(currentFileName);
-            if (idx >= 0 && idx + 1 < manifestFiles.length) {
-                return manifestFiles[idx + 1];
-            }
-            return null;
-        }
-
-        function updateNextFilePrompt() {
-            const promptEl = document.getElementById("nextFilePrompt");
-            const titleEl = document.getElementById("nextFilePromptTitle");
-            const descEl = document.getElementById("nextFilePromptDesc");
-            const nextBtn = document.getElementById("loadNextFileBtn");
-
-            if (!currentFileJobs || currentFileJobs.length === 0) {
-                promptEl.classList.add("hidden");
-                return;
-            }
-
-            promptEl.classList.remove("hidden");
-            const nextFile = getNextFileName();
-            if (nextFile) {
-                titleEl.textContent = `Finished "${currentFileName}" (${currentFileJobs.length} jobs).`;
-                descEl.textContent = `Ready to load the next file: ${nextFile}?`;
-                nextBtn.classList.remove("hidden");
-                nextBtn.textContent = `Load Next File (${nextFile}) →`;
-            } else {
-                titleEl.textContent = `Finished "${currentFileName}" (${currentFileJobs.length} jobs).`;
-                descEl.textContent = "No more files queued—choose another JSON file whenever you're ready for the next one.";
-                nextBtn.classList.add("hidden");
-            }
-        }
-
-        function loadNextAvailableFile() {
-            const nextFile = getNextFileName();
-            if (nextFile) {
-                activateFile(nextFile);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            }
-        }
-
-        function renderJobs(jobArray) {
-            const container = document.getElementById("jobListings");
-            container.innerHTML = "";
+        function displayJobs(jobArray) {
+            const container = document.getElementById('jobListings');
+            container.innerHTML = '';
 
             if (!jobArray || jobArray.length === 0) {
-                container.innerHTML = `<p class="text-center text-gray-500 py-8">No matching jobs found in this file.</p>`;
+                container.innerHTML = `<p class="text-center text-gray-500 py-8">No matching jobs found.</p>`;
                 return;
             }
 
             const fragment = document.createDocumentFragment();
 
             jobArray.forEach((job) => {
-                const title = job.title || "Job Opportunity";
-                const company = job.company || "Direct Hiring";
-                const domain = job.domain || "General";
-                const location = job.location || "Not Specified";
-                const description = job.description || job.full_post_content || "";
-                const email = job.email || "No email provided";
-                const postedDate = job.posted_date || "Recently";
-                const cardId = String(job.unique_id || "").replace(/[^a-zA-Z0-9]/g, "_");
+                const title = job.title || 'Job Opportunity';
+                const company = job.company || 'Direct Hiring';
+                const domain = job.domain || 'General';
+                const location = job.location || 'Not Specified';
+                const description = job.description || job.full_post_content || '';
+                const email = job.email || 'No email provided';
+                const postedDate = job.posted_date || 'Recently';
+                const cardId = String(job.unique_id || '').replace(/[^a-zA-Z0-9]/g, '_');
 
-                const emailLink = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent("Application for " + title)}&body=${encodeURIComponent("Hi,
+                const emailLink = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,
 
-I would like to apply for the " + title + " position.
+I would like to apply for the ' + title + ' position.
 
-Best regards,")}`;
+Best regards,')}`;
 
-                const wrapper = document.createElement("div");
+                const wrapper = document.createElement('div');
                 wrapper.innerHTML = `
                     <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                         <div class="flex justify-between items-start gap-2 mb-2">
@@ -332,7 +162,7 @@ Best regards,")}`;
                             </div>
                             <div class="flex flex-col items-end gap-1 shrink-0">
                                 <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${escapeHtml(domain)}</span>
-                                <span class="text-[11px] text-gray-400 font-medium cursor-pointer hover:text-indigo-600" title="Click to copy job post"
+                                <span class="text-[11px] text-gray-400 font-medium cursor-pointer hover:text-indigo-600"
                                     onclick="copyJobPost('${escapeJsSingleQuote(title)}', '${escapeJsSingleQuote(company)}', '${escapeJsSingleQuote(location)}', '${escapeJsSingleQuote(domain)}', '${escapeJsSingleQuote(email)}', '${escapeJsSingleQuote(description)}')">📅 ${escapeHtml(postedDate)}</span>
                             </div>
                         </div>
@@ -341,6 +171,7 @@ Best regards,")}`;
                             <span>✉️ ${escapeHtml(email)}</span>
                         </div>
 
+                        <!-- Description with Read More / Read Less Toggle -->
                         <div>
                             <p id="desc_${cardId}" class="text-sm text-gray-600 mb-3 line-clamp-3 transition-all duration-300">
                                 ${escapeHtml(description)}
@@ -365,119 +196,159 @@ Best regards,")}`;
             container.appendChild(fragment);
         }
 
+        // Toggle Expand / Collapse Full Description
         function toggleReadMore(cardId) {
             const descElem = document.getElementById(`desc_${cardId}`);
             const btnElem = document.getElementById(`btn_${cardId}`);
-            if (descElem.classList.contains("line-clamp-3")) {
-                descElem.classList.remove("line-clamp-3");
-                btnElem.textContent = "Read Less ↑";
+
+            if (descElem.classList.contains('line-clamp-3')) {
+                descElem.classList.remove('line-clamp-3');
+                btnElem.textContent = 'Read Less ↑';
             } else {
-                descElem.classList.add("line-clamp-3");
-                btnElem.textContent = "Read More ↓";
+                descElem.classList.add('line-clamp-3');
+                btnElem.textContent = 'Read More ↓';
             }
         }
 
-        const searchInputEl = document.getElementById("searchInput");
-        const domainFilterEl = document.getElementById("domainFilter");
+        // Delayed (debounced) Search & Filter Logic
+        const searchInput = document.getElementById('searchInput');
+        const domainFilter = document.getElementById('domainFilter');
 
-        searchInputEl.addEventListener("input", () => {
-            clearTimeout(searchDebounceTimer);
-            searchDebounceTimer = setTimeout(applySearchAndFilter, SEARCH_DEBOUNCE_MS);
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(filterJobs, SEARCH_DELAY_MS);
         });
 
-        searchInputEl.addEventListener("keydown", (e) => {
-            if (e.key === "Enter") {
-                clearTimeout(searchDebounceTimer);
-                applySearchAndFilter();
+        // Allow pressing Enter to run search immediately without waiting for the timer
+        searchInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                clearTimeout(searchTimeout);
+                filterJobs();
             }
         });
 
-        domainFilterEl.addEventListener("change", () => {
-            clearTimeout(searchDebounceTimer);
-            applySearchAndFilter();
+        domainFilter.addEventListener('change', () => {
+            clearTimeout(searchTimeout);
+            filterJobs();
         });
 
-        function applySearchAndFilter() {
-            const query = searchInputEl.value.trim().toLowerCase();
-            const domain = domainFilterEl.value;
+        function filterJobs() {
+            const query = searchInput.value.trim().toLowerCase();
+            const domain = domainFilter.value;
 
-            const filtered = currentFileJobs.filter((job) => {
+            const filtered = allJobs.filter(job => {
                 const matchesQuery = !query ||
-                    (job.title || "").toLowerCase().includes(query) ||
-                    (job.location || "").toLowerCase().includes(query) ||
-                    (job.description || "").toLowerCase().includes(query) ||
-                    (job.company || "").toLowerCase().includes(query);
-                const matchesDomain = domain === "" || (job.domain || "").trim() === domain;
+                    (job.title || '').toLowerCase().includes(query) ||
+                    (job.location || '').toLowerCase().includes(query) ||
+                    (job.description || '').toLowerCase().includes(query) ||
+                    (job.company || '').toLowerCase().includes(query);
+                const matchesDomain = domain === "" || (job.domain || '').trim() === domain;
                 return matchesQuery && matchesDomain;
             });
 
-            renderJobs(filtered);
+            displayJobs(filtered);
         }
 
+        // Run fetch on load
+        loadJobsFromFiles();
+        loadHeaderConfig();
+
+        // Copy Job Post to Clipboard
         function copyJobPost(title, company, location, domain, email, description) {
-            const textToCopy = `Title: ${title}
-Company: ${company}
-Location: ${location}
+            const textToCopy = `Location: ${location}
 Domain: ${domain}
 Email: ${email}
 
 Description:
 ${description}`;
             navigator.clipboard.writeText(textToCopy).then(() => {
-                alert("Job post copied to clipboard!");
-            }).catch((err) => {
-                console.error("Failed to copy text: ", err);
+                alert('Job post copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
             });
         }
 
-        function copyCurrentFileJobs() {
+        async function loadHeaderConfig() {
+            try {
+                const res = await fetch('config.json?v=' + Date.now());
+                if (!res.ok) return;
+                const config = await res.json();
+
+                const titleElem = document.getElementById('headerTitle');
+                const subtitleElem = document.getElementById('headerSubtitle');
+
+                if (config.header_title && titleElem) {
+                    titleElem.textContent = config.header_title;
+                }
+
+                if (config.motivational_lines && config.motivational_lines.length > 0 && subtitleElem) {
+                    const randomIndex = Math.floor(Math.random() * config.motivational_lines.length);
+                    subtitleElem.textContent = config.motivational_lines[randomIndex];
+                }
+            } catch (err) {
+                const subtitleElem = document.getElementById('headerSubtitle');
+                if (subtitleElem) {
+                    subtitleElem.textContent = "“So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5";
+                }
+            }
+        }
+
+        // Copy all job titles and locations from the already loaded jobs (top to bottom)
+        function copyAllJobs() {
             const currentUrl = window.location.href;
-            if (!currentFileJobs || currentFileJobs.length === 0) {
-                alert("No jobs loaded in the current file!");
+
+            if (!allJobs || allJobs.length === 0) {
+                alert('No jobs loaded yet!');
                 return;
             }
 
-            let textToCopy = `Jobs (${currentFileName}) : @ ${currentUrl}
+            const recentJobs = allJobs.slice(0, 20);
+            let textToCopy = `Recent Jobs : @ ${currentUrl}
 
 `;
-            currentFileJobs.forEach((job, index) => {
-                const title = job.title || "Job Opportunity";
-                const location = job.location || "Not Specified";
-                textToCopy += location && location.toLowerCase() !== "not specified"
-                    ? `${index + 1}. ${title} — ${location}
-`
-                    : `${index + 1}. ${title}
+
+            recentJobs.forEach((job, index) => {
+                const title = job.title || 'Job Opportunity';
+                const location = job.location || 'Not Specified';
+
+                if (location && location.toLowerCase() !== 'not specified') {
+                    textToCopy += `${index + 1}. ${title} — ${location}
 `;
+                } else {
+                    textToCopy += `${index + 1}. ${title}
+`;
+                }
             });
+
             textToCopy += `
 🔗 Apply & Browse More: ${currentUrl}`;
 
             navigator.clipboard.writeText(textToCopy).then(() => {
-                alert("Jobs from current file copied to clipboard!");
-            }).catch((err) => {
-                console.error("Failed to copy text: ", err);
+                alert('Top job titles and locations copied to clipboard successfully!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                alert('Failed to copy jobs. Check console for details.');
             });
         }
 
+        // Dynamically populate the domain dropdown from loaded jobs
         function populateDomainFilter(jobs) {
-            const domainSelect = document.getElementById("domainFilter");
+            const domainSelect = document.getElementById('domainFilter');
             domainSelect.innerHTML = '<option value="">All Domains</option>';
 
             const uniqueDomains = [...new Set(
                 jobs
-                    .map((job) => (job.domain || "").trim())
-                    .filter((d) => d !== "")
+                    .map(job => (job.domain || '').trim())
+                    .filter(domain => domain !== '')
             )].sort((a, b) => a.localeCompare(b));
 
-            uniqueDomains.forEach((domain) => {
-                const option = document.createElement("option");
+            uniqueDomains.forEach(domain => {
+                const option = document.createElement('option');
                 option.value = domain;
                 option.textContent = domain;
                 domainSelect.appendChild(option);
             });
         }
-
-        initPortal();
     </script>
 </body>
 
