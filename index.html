@@ -8,21 +8,21 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-54TCD9X2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
     <!-- Header -->
-    <header class="bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
+    <header class="relative bg-indigo-600 text-white py-8 px-4 shadow-md text-center">
         <!-- Top Right Action Button with Icon -->
         <div class="absolute top-4 right-4">
             <button onclick="copyAllJobs()" title="Copy All Job Titles & Locations"
-                class="bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-xl backdrop-blur-sm transition-colors border border-white/20 flex items-center justify-center">
+                class="bg-white/10 hover:bg-white/20 text-white p-2.5 rounded-xl backdrop-blur-sm transition-colors border border-white/20 flex items-center justify-center cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -30,35 +30,78 @@
                 </svg>
             </button>
         </div>
-        <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">Fetching daily inspiration and jobs...
-        </p>
+        <h1 id="headerTitle" class="text-xl sm:text-2xl font-bold tracking-tight mb-1">Global Job Portal</h1>
+        <p id="headerSubtitle" class="text-indigo-100 max-w-xl mx-auto text-sm">Fetching daily inspiration and jobs...</p>
     </header>
 
     <!-- Main Container -->
     <main class="max-w-4xl mx-auto px-4 py-6">
 
         <!-- Search & Filter Bar -->
-        <div class="flex flex-col md:flex-row gap-3 mb-6">
-            <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
-                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+        <div class="flex flex-col md:flex-row gap-3 mb-4">
+            <div class="flex flex-1 gap-2">
+                <input type="text" id="searchInput" placeholder="Search title, skills, location, company..."
+                    class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                <button type="button" id="searchBtn" onclick="applySearchAndFilter()"
+                    class="px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-sm transition-colors text-sm shrink-0 cursor-pointer">
+                    Search
+                </button>
+            </div>
 
-         
             <select id="domainFilter"
-    class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
-    <option value="">All Domains</option>
-</select>
+                class="px-4 py-3 bg-white border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                <option value="">All Domains</option>
+            </select>
         </div>
-        
+
+        <!-- Pagination Status Bar -->
+        <div id="paginationStatus" class="flex items-center justify-between text-xs text-gray-500 mb-4 px-1 hidden">
+            <span id="statusCountText"></span>
+            <span id="statusPageText"></span>
+        </div>
 
         <!-- Job Cards List -->
         <div id="jobListings" class="space-y-4">
             <p class="text-center text-gray-500 py-8">Loading job listings from server...</p>
         </div>
 
+        <!-- Pagination Controls (Load Next 20 + Page Selector) -->
+        <div id="paginationControls" class="mt-6 flex flex-col items-center gap-3 hidden">
+            <button type="button" id="loadMoreBtn" onclick="loadNextBatch()"
+                class="w-full sm:w-auto px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm rounded-xl shadow-sm transition-colors cursor-pointer">
+                Load Next 20 Jobs ↓
+            </button>
+            <div id="pageNumbers" class="flex flex-wrap items-center justify-center gap-1.5"></div>
+        </div>
+
     </main>
 
     <script>
+        const PAGE_SIZE = 20;
+        const SEARCH_DEBOUNCE_MS = 450;
+
         let allJobs = [];
+        let filteredJobs = [];
+        let visibleCount = PAGE_SIZE;
+        let searchDebounceTimer = null;
+
+        function escapeHtml(str) {
+            return String(str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function escapeJsSingleQuote(str) {
+            return String(str || '')
+                .replace(/\/g, '\\')
+                .replace(/'/g, "\'")
+                .replace(/
+?
+/g, ' ');
+        }
 
         async function loadJobsFromFiles() {
             try {
@@ -98,8 +141,11 @@
                 combinedJobs.sort((a, b) => new Date(b.posted_date) - new Date(a.posted_date));
 
                 allJobs = combinedJobs;
-                populateDomainFilter(allJobs); // <-- Populate dropdown dynamically
-                displayJobs(allJobs);
+                filteredJobs = allJobs;
+                visibleCount = PAGE_SIZE;
+
+                populateDomainFilter(allJobs);
+                renderCurrentPage();
 
             } catch (error) {
                 console.error('Fetch error:', error);
@@ -111,6 +157,105 @@
             }
         }
 
+        // Renders only up to `visibleCount` (20 initially, then +20 on demand)
+        function renderCurrentPage() {
+            const totalFiltered = filteredJobs.length;
+            const currentLimit = Math.min(visibleCount, totalFiltered);
+            const sliceToRender = filteredJobs.slice(0, currentLimit);
+
+            displayJobs(sliceToRender);
+            updatePaginationUI(currentLimit, totalFiltered);
+        }
+
+        function updatePaginationUI(shownCount, totalCount) {
+            const statusBar = document.getElementById('paginationStatus');
+            const statusCountText = document.getElementById('statusCountText');
+            const statusPageText = document.getElementById('statusPageText');
+            const controls = document.getElementById('paginationControls');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const pageNumbersDiv = document.getElementById('pageNumbers');
+
+            if (totalCount === 0) {
+                statusBar.classList.add('hidden');
+                controls.classList.add('hidden');
+                return;
+            }
+
+            statusBar.classList.remove('hidden');
+            statusCountText.textContent = `Showing ${shownCount} of ${totalCount} jobs`;
+
+            const totalPages = Math.ceil(totalCount / PAGE_SIZE);
+            const currentPagesShown = Math.ceil(shownCount / PAGE_SIZE);
+            statusPageText.textContent = `Batch ${currentPagesShown} of ${totalPages} (${PAGE_SIZE}/batch)`;
+
+            if (totalCount <= PAGE_SIZE) {
+                controls.classList.add('hidden');
+                return;
+            }
+
+            controls.classList.remove('hidden');
+
+            const remaining = totalCount - shownCount;
+            if (remaining > 0) {
+                loadMoreBtn.classList.remove('hidden');
+                const nextBatchSize = Math.min(PAGE_SIZE, remaining);
+                loadMoreBtn.textContent = `Load Next ${nextBatchSize} Jobs (${remaining} remaining) ↓`;
+            } else {
+                loadMoreBtn.classList.add('hidden');
+            }
+
+            // Build quick batch/page jump buttons (each jumps to that 20-job batch)
+            pageNumbersDiv.innerHTML = '';
+            for (let p = 1; p <= totalPages; p++) {
+                const targetVisible = Math.min(p * PAGE_SIZE, totalCount);
+                const isActive = shownCount === targetVisible;
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.textContent = `${p}`;
+                btn.title = `Show up to ${targetVisible} jobs`;
+                btn.className = isActive
+                    ? 'w-8 h-8 rounded-lg text-xs font-bold bg-indigo-600 text-white cursor-pointer'
+                    : 'w-8 h-8 rounded-lg text-xs font-semibold bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 cursor-pointer';
+                btn.onclick = () => {
+                    visibleCount = p * PAGE_SIZE;
+                    renderCurrentPage();
+                };
+                pageNumbersDiv.appendChild(btn);
+            }
+        }
+
+        function loadNextBatch() {
+            visibleCount += PAGE_SIZE;
+            renderCurrentPage();
+        }
+
+        // Scroll watcher: when user reaches near the bottom (~15 of 20 / bottom of current batch), auto-load next 20 if desired
+        // Let's trigger smoothly when scrolled past ~80% of the list or clicked via "Load Next 20 Jobs"
+        let scrollAutoLoadCooldown = false;
+        window.addEventListener('scroll', () => {
+            if (scrollAutoLoadCooldown) return;
+            if (visibleCount >= filteredJobs.length) return;
+
+            const container = document.getElementById('jobListings');
+            if (!container || container.children.length === 0) return;
+
+            const rect = container.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            // Trigger when user has scrolled through ~85% of the current 20-job container
+            const containerBottomRelative = rect.bottom;
+            const threshold = windowHeight + (rect.height * 0.15);
+
+            if (containerBottomRelative <= threshold && window.scrollY > 150) {
+                scrollAutoLoadCooldown = true;
+                visibleCount += PAGE_SIZE;
+                renderCurrentPage();
+                setTimeout(() => {
+                    scrollAutoLoadCooldown = false;
+                }, 600);
+            }
+        }, { passive: true });
+
         function displayJobs(jobArray) {
             const container = document.getElementById('jobListings');
             container.innerHTML = '';
@@ -120,6 +265,8 @@
                 return;
             }
 
+            const fragment = document.createDocumentFragment();
+
             jobArray.forEach((job) => {
                 const title = job.title || 'Job Opportunity';
                 const company = job.company || 'Direct Hiring';
@@ -128,44 +275,56 @@
                 const description = job.description || job.full_post_content || '';
                 const email = job.email || 'No email provided';
                 const postedDate = job.posted_date || 'Recently';
-                const cardId = job.unique_id.replace(/[^a-zA-Z0-9]/g, '_');
+                const cardId = String(job.unique_id || '').replace(/[^a-zA-Z0-9]/g, '_');
 
-                const emailLink = `mailto:${email}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,\n\nI would like to apply for the ' + title + ' position.\n\nBest regards,')}`;
+                const emailLink = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent('Application for ' + title)}&body=${encodeURIComponent('Hi,
 
-                const card = `
+I would like to apply for the ' + title + ' position.
+
+Best regards,')}`;
+
+                const wrapper = document.createElement('div');
+                wrapper.innerHTML = `
                     <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                         <div class="flex justify-between items-start gap-2 mb-2">
                             <div>
-                                <h2 class="text-lg font-bold text-gray-900">${title}</h2>
+                                <h2 class="text-lg font-bold text-gray-900">${escapeHtml(title)}</h2>
+                                <p class="text-xs text-gray-500 mt-0.5">${escapeHtml(company)}</p>
                             </div>
-                            <div class="flex flex-col items-end gap-1">
-                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${domain}</span>
-                                <span class="text-[11px] text-gray-400 font-medium" onclick="copyJobPost('${title.replace(/'/g, "\\'")}', '${company.replace(/'/g, "\\'")}', '${location.replace(/'/g, "\\'")}', '${domain}', '${email}', '${description.replace(/'/g, "\\'").replace(/\n/g, ' ')}')" >📅 ${postedDate}</span>
+                            <div class="flex flex-col items-end gap-1 shrink-0">
+                                <span class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full">${escapeHtml(domain)}</span>
+                                <span class="text-[11px] text-gray-400 font-medium cursor-pointer hover:text-indigo-600" title="Click to copy job post"
+                                    onclick="copyJobPost('${escapeJsSingleQuote(title)}', '${escapeJsSingleQuote(company)}', '${escapeJsSingleQuote(location)}', '${escapeJsSingleQuote(domain)}', '${escapeJsSingleQuote(email)}', '${escapeJsSingleQuote(description)}')">📅 ${escapeHtml(postedDate)}</span>
                             </div>
                         </div>
-                        <div class="flex items-center gap-4 text-xs text-gray-500 mb-3">
-                            <span>📍 ${location}</span>
-                            <span>✉️ ${email}</span>
+                        <div class="flex flex-wrap items-center gap-4 text-xs text-gray-500 mb-3">
+                            <span>📍 ${escapeHtml(location)}</span>
+                            <span>✉️ ${escapeHtml(email)}</span>
                         </div>
-                        
+
                         <!-- Description with Read More / Read Less Toggle -->
-                        <div class="relative">
-                            <p id="desc_${cardId}" class="text-sm text-gray-600 mb-2 line-clamp-3 transition-all duration-300" flex items-center justify-between gap-2">
-                                ${description}
+                        <div>
+                            <p id="desc_${cardId}" class="text-sm text-gray-600 mb-3 line-clamp-3 transition-all duration-300">
+                                ${escapeHtml(description)}
                             </p>
-                            <button onclick="toggleReadMore('${cardId}')" id="btn_${cardId}" class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 mb-4 focus:outline-none">
-                                Read More ↓
-                            </button>
-                          
-                            <a href="${emailLink}" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2.5 px-6 rounded-xl transition-colors">
-                                Apply via Email
-                            </a>
-                        </div> 
-                       
+                            <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-gray-100">
+                                <button type="button" onclick="toggleReadMore('${cardId}')" id="btn_${cardId}"
+                                    class="text-xs font-semibold text-indigo-600 hover:text-indigo-800 focus:outline-none cursor-pointer">
+                                    Read More ↓
+                                </button>
+
+                                <a href="${emailLink}"
+                                    class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold py-2 px-5 rounded-xl transition-colors">
+                                    Apply via Email
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 `;
-                container.innerHTML += card;
+                fragment.appendChild(wrapper.firstElementChild);
             });
+
+            container.appendChild(fragment);
         }
 
         // Toggle Expand / Collapse Full Description
@@ -182,42 +341,71 @@
             }
         }
 
-        // Live Search & Filter Logic
-        document.getElementById('searchInput').addEventListener('input', filterJobs);
-        document.getElementById('domainFilter').addEventListener('change', filterJobs);
+        // Delayed (debounced) typing + explicit Search button + domain filter
+        const searchInputEl = document.getElementById('searchInput');
+        const domainFilterEl = document.getElementById('domainFilter');
 
-        function filterJobs() {
-    const query = document.getElementById('searchInput').value.toLowerCase();
-    const domain = document.getElementById('domainFilter').value;
+        searchInputEl.addEventListener('input', () => {
+            clearTimeout(searchDebounceTimer);
+            searchDebounceTimer = setTimeout(() => {
+                applySearchAndFilter();
+            }, SEARCH_DEBOUNCE_MS);
+        });
 
-    const filtered = allJobs.filter(job => {
-        const matchesQuery = (job.title || '').toLowerCase().includes(query) ||
-            (job.location || '').toLowerCase().includes(query) ||
-            (job.description || '').toLowerCase().includes(query) ||
-            (job.company || '').toLowerCase().includes(query);
-        const matchesDomain = domain === "" || (job.domain || '').trim() === domain;
-        return matchesQuery && matchesDomain;
-    });
+        searchInputEl.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                clearTimeout(searchDebounceTimer);
+                applySearchAndFilter();
+            }
+        });
 
-    displayJobs(filtered);
-}
+        domainFilterEl.addEventListener('change', () => {
+            clearTimeout(searchDebounceTimer);
+            applySearchAndFilter();
+        });
+
+        function applySearchAndFilter() {
+            const query = searchInputEl.value.trim().toLowerCase();
+            const domain = domainFilterEl.value;
+
+            filteredJobs = allJobs.filter(job => {
+                const matchesQuery = !query ||
+                    (job.title || '').toLowerCase().includes(query) ||
+                    (job.location || '').toLowerCase().includes(query) ||
+                    (job.description || '').toLowerCase().includes(query) ||
+                    (job.company || '').toLowerCase().includes(query);
+                const matchesDomain = domain === "" || (job.domain || '').trim() === domain;
+                return matchesQuery && matchesDomain;
+            });
+
+            // Reset to first 20 matching jobs on new search/filter
+            visibleCount = PAGE_SIZE;
+            renderCurrentPage();
+        }
 
         // Run fetch on load
         loadJobsFromFiles();
-        // Call on page load
         loadHeaderConfig();
+
         // Copy Job Post to Clipboard
         function copyJobPost(title, company, location, domain, email, description) {
-            const textToCopy = `Location: ${location}\nDomain: ${domain}\nEmail: ${email}\n\nDescription:\n${description}`;
+            const textToCopy = `Title: ${title}
+Company: ${company}
+Location: ${location}
+Domain: ${domain}
+Email: ${email}
+
+Description:
+${description}`;
             navigator.clipboard.writeText(textToCopy).then(() => {
                 alert('Job post copied to clipboard!');
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
             });
         }
+
         async function loadHeaderConfig() {
             try {
-                // Add timestamp query parameter to prevent browser caching
                 const res = await fetch('config.json?v=' + Date.now());
                 if (!res.ok) return;
                 const config = await res.json();
@@ -229,78 +417,74 @@
                     titleElem.textContent = config.header_title;
                 }
 
-                // Randomly select a fresh line from the array on each load
                 if (config.motivational_lines && config.motivational_lines.length > 0 && subtitleElem) {
                     const randomIndex = Math.floor(Math.random() * config.motivational_lines.length);
                     subtitleElem.textContent = config.motivational_lines[randomIndex];
                 }
             } catch (err) {
-                // Fallback text if config.json is not found
                 const subtitleElem = document.getElementById('headerSubtitle');
                 if (subtitleElem) {
                     subtitleElem.textContent = "“So truly where there is hardship there is also ease.” — Surah Ash-Sharh 94:5";
                 }
             }
         }
-        
-        // Copy all job titles and locations from the latest JSON file with website URL
-// Copy all job titles and locations from the already loaded jobs (top to bottom)
-function copyAllJobs() {
-    const currentUrl = window.location.href;
-    
-    if (!allJobs || allJobs.length === 0) {
-        alert('No jobs loaded yet!');
-        return;
-    }
 
-    // Get the most recent 20 jobs from the top of the array (or all if fewer than 20)
-    const recentJobs = allJobs.slice(0, 20);
-    let textToCopy = `Recent Jobs : @ ${currentUrl}\n\n`;
-    
-    recentJobs.forEach((job, index) => {
-        const title = job.title || 'Job Opportunity';
-        const location = job.location || 'Not Specified';
-        
-        if (location && location.toLowerCase() !== 'not specified') {
-            textToCopy += `${index + 1}. ${title} — ${location}\n`;
-        } else {
-            textToCopy += `${index + 1}. ${title}\n`;
+        // Copy all job titles and locations from the already loaded jobs (top to bottom)
+        function copyAllJobs() {
+            const currentUrl = window.location.href;
+
+            if (!allJobs || allJobs.length === 0) {
+                alert('No jobs loaded yet!');
+                return;
+            }
+
+            const recentJobs = allJobs.slice(0, 20);
+            let textToCopy = `Recent Jobs : @ ${currentUrl}
+
+`;
+
+            recentJobs.forEach((job, index) => {
+                const title = job.title || 'Job Opportunity';
+                const location = job.location || 'Not Specified';
+
+                if (location && location.toLowerCase() !== 'not specified') {
+                    textToCopy += `${index + 1}. ${title} — ${location}
+`;
+                } else {
+                    textToCopy += `${index + 1}. ${title}
+`;
+                }
+            });
+
+            textToCopy += `
+🔗 Apply & Browse More: ${currentUrl}`;
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('Top job titles and locations copied to clipboard successfully!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                alert('Failed to copy jobs. Check console for details.');
+            });
         }
-    });
 
-    // Append current website URL at the end
-    textToCopy += `\n🔗 Apply & Browse More: ${currentUrl}`;
-
-    // Copy to clipboard
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        alert('Top job titles and locations copied to clipboard successfully!');
-    }).catch(err => {
-        console.error('Failed to copy text: ', err);
-        alert('Failed to copy jobs. Check console for details.');
-    });
-}
         // Dynamically populate the domain dropdown from loaded jobs
-function populateDomainFilter(jobs) {
-    const domainSelect = document.getElementById('domainFilter');
-    
-    // Reset to default option
-    domainSelect.innerHTML = '<option value="">All Domains</option>';
+        function populateDomainFilter(jobs) {
+            const domainSelect = document.getElementById('domainFilter');
+            domainSelect.innerHTML = '<option value="">All Domains</option>';
 
-    // Extract unique, non-empty domains and sort alphabetically
-    const uniqueDomains = [...new Set(
-        jobs
-            .map(job => (job.domain || '').trim())
-            .filter(domain => domain !== '')
-    )].sort((a, b) => a.localeCompare(b));
+            const uniqueDomains = [...new Set(
+                jobs
+                    .map(job => (job.domain || '').trim())
+                    .filter(domain => domain !== '')
+            )].sort((a, b) => a.localeCompare(b));
 
-    // Create and append <option> elements
-    uniqueDomains.forEach(domain => {
-        const option = document.createElement('option');
-        option.value = domain;
-        option.textContent = domain;
-        domainSelect.appendChild(option);
-    });
-}
+            uniqueDomains.forEach(domain => {
+                const option = document.createElement('option');
+                option.value = domain;
+                option.textContent = domain;
+                domainSelect.appendChild(option);
+            });
+        }
     </script>
 </body>
 
