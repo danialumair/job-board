@@ -1,0 +1,712 @@
+[
+  {
+    "id": "JOB-001",
+    "title": "Graduate Engineer Trainee (Telecom Networks)",
+    "company": "Reliance Jio",
+    "location": "Mumbai, India",
+    "domain": "Telecom & Network Engineering",
+    "email": "vermayamini5252@gmail.com",
+    "description": "Entry-level Graduate Engineer Trainee opportunity in Mumbai for fresh B.E./B.Tech graduates looking to build a career in telecom networks and core technologies (Job ID: 87566562).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-002",
+    "title": "Infrastructure & Security Senior / Manager",
+    "company": "Eminds Infosystems",
+    "location": "Singapore (Onsite)",
+    "domain": "IT Infrastructure & Cybersecurity",
+    "email": "Angad.singh@emindsinfosystems.com",
+    "description": "Senior/Manager role overseeing regional IT infrastructure operations, system upgrades/migrations, cybersecurity governance, vulnerability management, security audits/compliance, and telecom/IT vendor SLAs across multiple sites in Singapore. Requires 15+ years of IT Infrastructure/Cybersecurity experience; Singapore Citizens or Permanent Residents (PR) only (CISSP, CCNA, ITIL, or MCSA preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-003",
+    "title": "Project Manager – Network & Telecom Delivery",
+    "company": "Aarniksha Solutions",
+    "location": "Pan India (Remote)",
+    "domain": "Telecom & Network Project Management",
+    "email": "info@aarnikshasolutions.com",
+    "description": "100% remote delivery leadership role across Pan India (Budget: ₹34 LPA) leading network and telecom migration workstreams (SD-WAN, LAN/WLAN, Microsoft Teams Phone) for a global carve-out program. Requires experience in multi-country cutover and wave planning, RAID/change management, prime contractor PMO governance, and subcontractor management (PMP/PRINCE2 and ITIL v4 strongly preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-004",
+    "title": "ServiceNow Developer & Architect – TSM & Agentic AI",
+    "company": "Velion IT Consulting",
+    "location": "Pune, India (Onsite)",
+    "domain": "ServiceNow & Agentic AI",
+    "email": "velionitpvtltd@gmail.com",
+    "description": "Onsite ServiceNow Developer (2 positions) and ServiceNow Architect (1 position) in Pune (Pune local candidates only; budget up to ₹24 LPA; immediate joiners or serving notice). Requires 7+ years of experience with ServiceNow Telecom Service Management (TSM), Agentic AI / Generative AI configuration, Scripted REST APIs, JavaScript, and mandatory CAD, CIS-ITSM, TSM/MESM Implementer, and AI Agents Essentials certifications.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-005",
+    "title": "Python Automation Test Engineer – Networking",
+    "company": "Velion IT Consulting",
+    "location": "Bangalore / Chennai, India (Onsite)",
+    "domain": "Network QA & Test Automation",
+    "email": "velionitpvtltd@gmail.com",
+    "description": "1-year onsite project in Bangalore or Chennai (local candidates only; budget up to ₹20 LPA; join within 15 days). Requires 9+ years of experience in network testing, routing/connectivity troubleshooting, Cisco networking, Python test automation, Cypress E2E/UI automation, Postman/REST Assured API testing, and CI/CD tools (Telecom or OSS/BSS background preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-006",
+    "title": "Project Manager – Network & Telecom Delivery",
+    "company": "Big Sky Global (via ArandaTech)",
+    "location": "Pan India (Remote)",
+    "domain": "Telecom & Network Project Management",
+    "email": "Anthony@arandatech.com",
+    "description": "100% remote Project Manager – Network & Telecom Delivery opportunity across Pan India with Big Sky Global.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-007",
+    "title": "Microsoft 365 Client Success Specialist",
+    "company": "Salescom Services",
+    "location": "Kolkata, India (Onsite)",
+    "domain": "Cloud & Client Success",
+    "email": "talentfind@v4one.co.uk",
+    "description": "Full-time onsite Microsoft 365 Client Success Specialist in Kolkata working UK shift hours (salary up to ₹12 LPA). Requires 3+ years of hands-on M365 tenant administration (Teams, SharePoint Online, OneDrive, Exchange Online, Entra ID), licensing optimization, Power Platform familiarity, advanced Excel, and client onboarding/SLA management for UK business clients.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-008",
+    "title": "C++ / JavaScript Embedded Wi-Fi & Router Engineer",
+    "company": "ConglomerateIT",
+    "location": "Texas, USA (W2/C2C)",
+    "domain": "Embedded & Wireless Firmware",
+    "email": "aasim@conglomerateit.com",
+    "description": "W2/C2C C++ and JavaScript Engineer in Texas working on telecom router firmware, Wi-Fi automation, JavaScript-based Web UI, IoT integration, and network troubleshooting. Experience with Embedded Linux, OpenWrt, RDK-B, Python, and Wireshark is an added advantage.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-009",
+    "title": "Client Retention Executive – US Telecom",
+    "company": "Corvox Global",
+    "location": "Karachi, Pakistan",
+    "domain": "Telecom Sales & Customer Retention",
+    "email": "hr@corvoxglobal.com",
+    "description": "Client Retention Executive in Gulshan-e-Iqbal, Karachi with proven experience in US telecommunications campaigns, customer retention, objection handling, and negotiation.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-010",
+    "title": "International Telecom Voice Process Associate",
+    "company": "Vibgyor Recruiters",
+    "location": "Airoli, Navi Mumbai, India",
+    "domain": "Telecom Customer Support & BPO",
+    "email": "vibgyorcareers10@gmail.com",
+    "description": "International Telecom Voice Process role in Airoli, Navi Mumbai (salary up to ₹28,000; 1-round interview). Open to HSC (12th Pass) candidates with strong English communication skills.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-011",
+    "title": "Mobile Device & Telecom Operations Specialist",
+    "company": "TekStaff",
+    "location": "New Jersey, USA",
+    "domain": "Telecom Operations & Mobility",
+    "email": "saba@tekstaff.ca",
+    "description": "Telecom Operations Specialist in New Jersey managing enterprise Android/iOS Mobile Device Management (MDM), executive eSIM provisioning, carrier coordination, mobile app deployment, billing inventory reconciliation, and Microsoft 365/Excel reporting.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-012",
+    "title": "Java Full Stack AI/ML Developer",
+    "company": "ITUS Recruitments",
+    "location": "Bedminster, NJ (Onsite)",
+    "domain": "Software Engineering & AI/ML",
+    "email": "itusrecruitments@gmail.com",
+    "description": "5-day onsite Java Full Stack AI/ML Developer in Bedminster, NJ. Requires a Master's degree in CS/AI/ML, strong Java/Spring Boot backend, Angular/React frontend, and hands-on Machine Learning experience (GenAI, AWS/Azure, and telecom/wireless background preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-013",
+    "title": "Senior Java Developer – GCP & Telecom (BSS/OSS)",
+    "company": "Longfinch",
+    "location": "Richardson, TX (W2)",
+    "domain": "Software Engineering & Telecom OSS/BSS",
+    "email": "amit.verma@longfinch.com",
+    "description": "6-month W2 contract in Richardson, TX 75082 requiring 8–10 years of Java, Spring Boot, Microservices, GCP (GKE, Cloud Run, Pub/Sub, BigQuery), Apache Kafka, Docker, and Kubernetes experience with mandatory Telecom BSS/OSS background (Order Management, Provisioning, Billing, Inventory).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-014",
+    "title": "Senior Agentic AI Developer (Telecom Domain)",
+    "company": "Vaspire Technologies",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "Mohit.kumar@vaspiretech.com",
+    "description": "Onsite (5 days WFO) Senior Agentic AI Developer in Seattle, WA (max rate $70/hr; no GC; mandatory telecom experience). Build multi-agent systems (LangGraph, AutoGen, Semantic Kernel, CrewAI), RAG/Context Engineering pipelines, Vector DBs/Knowledge Graphs, and simulation/World Models (NVIDIA Sionna, Omniverse, Digital Twins) on Azure and Kubernetes.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-015",
+    "title": "Java Developer – GCP & Telecom",
+    "company": "Bravens Inc",
+    "location": "Richardson, TX (Onsite)",
+    "domain": "Software Engineering & Telecom OSS/BSS",
+    "email": "gunjan.lachhwani@bravensinc.com",
+    "description": "6-month contract in Richardson, TX (face-to-face client interview required) for a Java Developer with 8–10 years of experience in Java, Spring Boot, Microservices, GCP (GKE, Cloud Run, Pub/Sub, BigQuery, Cloud SQL), Kafka, Docker, Kubernetes, and mandatory Telecom BSS/OSS integration experience.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-016",
+    "title": "Program Manager – Retail Execution & Field Operations",
+    "company": "CPM India",
+    "location": "Delhi / Mumbai / Bangalore, India",
+    "domain": "Program Management & Retail Operations",
+    "email": "naved.heram@cpmindia.com",
+    "description": "Manager / Senior Manager level Program Manager across Delhi, Mumbai, and Bangalore leading merchandising, visibility, and promoter-led Modern Trade retail execution programs. Requires 4–8 years of retail operations, promoter management, and client servicing experience in FMCG, Telecom, Cosmetics, or Consumer Durables.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-017",
+    "title": "Network Architect (Enterprise & OT Segmentation)",
+    "company": "vBeyond",
+    "location": "Avon Lake, OH (Onsite)",
+    "domain": "Network & Infrastructure Architecture",
+    "email": "CharanjeetS@vbeyond.com",
+    "description": "100% onsite C2C/W2 Network Architect in Avon Lake, OH (~10 years experience; manufacturing/industrial background preferred). Establish global WAN/SD-WAN/Wi-Fi/ExpressRoute standards, IT/OT network segmentation, and security (Prisma, FortiManager) across Arista, Juniper, HP, and Genesys Contact Center environments.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-018",
+    "title": "Product Design Lead – Mechanical Engineering",
+    "company": "Oaktree Cloud",
+    "location": "Valley Green, PA (Onsite)",
+    "domain": "Mechanical & Hardware Engineering",
+    "email": "anil.verma@oaktreecloud.com",
+    "description": "6-month W2 onsite contract ($45–$55/hr all-in) in Valley Green, PA leading mechanical design and development of high-speed interconnect products for telecom, networking, data center, and industrial applications, including tolerance stack-up analysis, DFM, prototyping, tooling, and high-volume manufacturing qualification.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-019",
+    "title": "Project Manager – Network & Telecom Delivery",
+    "company": "ScrumScale Talent Solutions",
+    "location": "Pan India (Remote)",
+    "domain": "Telecom & Network Project Management",
+    "email": "recruitment@scrumscale.in",
+    "description": "100% remote Pan India Project Manager (Budget: ₹34–36 LPA) leading enterprise network migration and infrastructure transformation (SD-WAN, LAN/WLAN, Microsoft Teams Phone) for a global carve-out initiative, owning wave planning, site cutovers, RAID/change control, and PMO governance.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-020",
+    "title": "API Test Automation Engineer",
+    "company": "MaxPepSoft",
+    "location": "Denver, CO (Onsite)",
+    "domain": "QA & Test Automation",
+    "email": "pranay@maxpepsoft.com",
+    "description": "12-month day-one onsite contract in Denver, CO requiring 8+ years of experience building API and UI test automation frameworks using Java/JavaScript/TypeScript, REST Assured, Postman, Bruno, Playwright/Selenium, Cucumber/BDD, and GitLab CI/CD (Telecom/Broadband/Media domain preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-021",
+    "title": "Network Technician (Cisco & Fiber Optics)",
+    "company": "Apptad Inc",
+    "location": "Minot, ND (Onsite)",
+    "domain": "Network & Telecom Field Operations",
+    "email": "jamuna.singh@apptadinc.com",
+    "description": "6+ month onsite W2 contract in Minot, ND 58701 (USC/GC only) requiring 6+ years of network infrastructure support experience, Cisco routing/switching, firewalls, Wi-Fi, IP telephony, fiber installation/troubleshooting, and rack-and-stack cabling.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-022",
+    "title": "Senior Java/J2EE Engineer – Telecom Billing & API",
+    "company": "MenzoTech",
+    "location": "Denver, CO (Onsite)",
+    "domain": "Software Engineering & Telecom Billing",
+    "email": "Prathyusha@menzotech.com",
+    "description": "5-day onsite Senior Java/J2EE Engineer in Denver, CO (10+ years experience; H1B, H4EAD, L2EAD, GCEAD, TN & USC) building REST APIs (OpenAPI/Swagger, Apigee) and microservices with Java, Spring Boot, Kafka, AWS, Docker, Kubernetes, and Telecom Billing/Pricing logic.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-023",
+    "title": "Senior Agentic AI Developer (Telecom Domain)",
+    "company": "Mentour Corp",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "aasheet.s@mentourcorp.com",
+    "description": "Long-term day-one onsite C2C contract in Seattle, WA designing Agentic AI and Multi-Agent platforms (Python, LangGraph, AutoGen, CrewAI, Semantic Kernel, RAG, Vector DBs, Knowledge Graphs, Azure, Kubernetes). Mandatory telecommunication domain experience.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-024",
+    "title": "Java Developer – Telecom & Azure",
+    "company": "MenzoTech",
+    "location": "Denver, CO (C2C)",
+    "domain": "Software Engineering & Cloud",
+    "email": "lakshmi@menzotech.com",
+    "description": "C2C Java Developer in Denver, CO (10+ years experience; H1B, H4 EAD) with mandatory telecom domain background and hands-on expertise in Microsoft Azure, microservices, REST APIs, and scalable enterprise applications.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-025",
+    "title": "Senior Software Engineer (.NET Core)",
+    "company": "AKSA-SDS",
+    "location": "Islamabad, Pakistan (Onsite)",
+    "domain": "Software Engineering & FinTech/Telecom",
+    "email": "jobs@aksa-sds.com",
+    "description": "Onsite Senior Software Engineer (.NET Core) in Islamabad requiring 4+ years of experience with .NET Core, RESTful APIs, microservices architecture, RabbitMQ, MySQL, Redis, ELK, Docker, Kubernetes, and CI/CD (BS in CS/SE/IT).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-026",
+    "title": "Relationship Development Associate",
+    "company": "Granite Telecommunications",
+    "location": "Lincoln, RI",
+    "domain": "Telecom Account Management & Sales",
+    "email": "JCarlow@granitenet.com",
+    "description": "Account management and relationship development role at Granite Telecommunications in Lincoln, RI focused on customer check-ins, quarterly business reviews, and strategic account planning with business decision-makers.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-027",
+    "title": "E2E Network Performance Test Engineer",
+    "company": "Business Intelli",
+    "location": "Texas / Florida (Onsite)",
+    "domain": "Telecom QA & Performance Engineering",
+    "email": "Nazumbhanu.v@businessintelli.com",
+    "description": "Onsite E2E Network Performance Test Engineer in Texas/Florida requiring 5–8+ years of telecom network capacity, load, stress, and scalability testing across RAN, Core, Transport/IP, and OSS/BSS using Spirent, IXIA/IxNetwork, Wireshark, JMeter/LoadRunner, Python/Shell, Grafana, Prometheus, and Splunk.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-028",
+    "title": "ServiceNow SPMT Solution Architect & Engineering Lead",
+    "company": "Nityo Infotech",
+    "location": "Seattle, WA / Richardson, TX / Hartford, CT / Raleigh, NC (Onsite)",
+    "domain": "ServiceNow & Enterprise Architecture",
+    "email": "utkarsh.sharma@nityo.com",
+    "description": "Long-term contract ServiceNow SPMT Solution Architect & Engineering Lead across Seattle, Richardson, Hartford, or Raleigh (relocation to nearest Infosys/client office). Requires 12+ years overall experience, 8+ years ServiceNow, 7–8+ SPM/SPMT implementations, JavaScript, Glide APIs, Flow Designer, IntegrationHub, React/BYOUI, Cursor AI, GitLab, and mandatory CSA & CAD certifications.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-029",
+    "title": "Data Scientist / Data Engineer – Customer 360 & Identity Resolution",
+    "company": "Tuppl",
+    "location": "Tampa, FL / Basking Ridge, NJ / Dallas, TX (W2)",
+    "domain": "Data Engineering & Data Science",
+    "email": "nitesh@tuppl.com",
+    "description": "W2 contract (visa-independent candidates only) in Tampa, Basking Ridge, or Dallas requiring 7+ years of experience in entity resolution, record linkage/deduplication, Python, SQL, Apache Spark/PySpark, GCP (BigQuery, Dataflow, Dataproc), Vertex AI, MDM pipelines, and Splink/Dedupe (telecom/Customer 360 experience is a plus).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-030",
+    "title": "Full-Stack AI Engineer (Telecom Domain)",
+    "company": "Hire-In",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "drishti.gupta@hire-in.com",
+    "description": "5-day onsite Full-Stack AI Engineer in Seattle, WA with mandatory telecom domain experience. Build multi-agent systems and Agentic AI platforms using Python, Semantic Kernel, Microsoft Agent Framework, LangGraph, Azure AI Foundry, OpenAI, Azure AI Search, MCP Servers, Snowflake, Databricks, and Spark ML.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-031",
+    "title": "Senior Front-End Developer (Angular / Micro Frontends)",
+    "company": "Infinity Solutions",
+    "location": "Brampton, ON, Canada",
+    "domain": "Frontend & Web Engineering",
+    "email": "arunk@infinitysolutions.ca",
+    "description": "Full-time or contract Senior Front-End Developer in Brampton, ON requiring strong Angular 15–19, TypeScript, RxJS, Micro Frontends (Module Federation), REST APIs, GraphQL, Azure DevOps, Docker, Kubernetes, and OAuth 2.0/OIDC/SSO (Telecom or Digital Commerce domain preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-032",
+    "title": "Nokia Corteca Technical Specialist",
+    "company": "Fiddleleaf Solutions",
+    "location": "India (Contract)",
+    "domain": "Telecom Platforms & Cloud-Native Support",
+    "email": "resume@fiddleleafsolutions.com",
+    "description": "6-month extendable contract in India (immediate joiners; 24/7 critical incident support) requiring 10+ years of experience in Nokia Corteca platform architecture and troubleshooting, Red Hat OpenShift, Kubernetes, VerneMQ/RabbitMQ, MongoDB/PostgreSQL/MariaDB, Grafana/CloudWatch, and packet-level RCA.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-033",
+    "title": "Solution / Deployment Engineer – Subscriber Data Management (SDM)",
+    "company": "GK HR Consulting",
+    "location": "Pan India",
+    "domain": "Telecom Core & Telco Cloud",
+    "email": "jeniferrockyd@gkhrconsulting.com",
+    "description": "Telecom Solution / Deployment Engineer across Pan India requiring 5–10 years of experience (2+ years in Shared Data Layer / SDL implementation and upgrades) across SDM nodes (SDL, PGW, SDLA, AUSF, UDM), 4G/5G call flows, VoLTE/VoWiFi, VNF/CNF deployments, OpenStack, OpenShift, Kubernetes, Diameter/SS7, and Wireshark debugging.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-034",
+    "title": "Test Lead Engineer – 5G Telecom & Packet Core",
+    "company": "Laiba Technology",
+    "location": "Remote, USA",
+    "domain": "5G Telecom & Packet Core QA",
+    "email": "Sahin@laibatechnology.com",
+    "description": "Remote Test Lead Engineer (USC/GC only) with strong 5G network deployment, EPC, Packet Core integration, end-to-end telecom testing, Linux, Python/Shell/Robot Framework automation, Kubernetes, OpenShift, AWS, and Cloud-Native Network Functions (CNFs).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-035",
+    "title": "Senior Agentic AI Developer / Staff Engineer (Telecom)",
+    "company": "Excelon Solutions",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "suryansh.s@excelonsolutions.com",
+    "description": "Long-term onsite contract (5 days WFO; local WA candidates only) requiring mandatory telecommunication experience to build Agentic SDLC frameworks, multi-agent systems (LangGraph, AutoGen, Semantic Kernel, CrewAI), RAG/Context Engineering, Vector DBs, and NVIDIA Sionna/Omniverse Digital Twins on Azure and Kubernetes.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-036",
+    "title": "Territory Sales Manager (TSM)",
+    "company": "Bharti Airtel",
+    "location": "Bihar, India",
+    "domain": "Telecom Sales & Distribution",
+    "email": "nitin.Srivastava@airtel.com",
+    "description": "Territory Sales Manager with Bharti Airtel in Bihar driving 4G/5G, FWA, MNP, and Gross Adds growth, expanding distribution channels, managing General Trade/retailer engagement, and leading frontline sales teams.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-037",
+    "title": "Cutover Lead – GIS Modernization",
+    "company": "BayOne Solutions",
+    "location": "Bay Area, CA (Hybrid)",
+    "domain": "GIS & Utility Program Management",
+    "email": "npatel@bayone.com",
+    "description": "Hybrid contract Cutover Lead in the Bay Area, CA for a Gas, Electric, and Telecom utility modernizing GIS with Esri Utility Network. Requires 7+ years in IT project/program management, 3+ years leading enterprise cutovers, mock dress rehearsals, go/no-go governance, and MS Project/Jira proficiency.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-038",
+    "title": "Enterprise Tech Roles (System Architect / DBA / VAPT / Network / OSS-BSS)",
+    "company": "QuadGen Wireless Solutions",
+    "location": "Vijayawada / Visakhapatnam / Hybrid / Remote, India",
+    "domain": "Telecom, Network & Enterprise IT",
+    "email": "pnaveenmanikantasai_ctr@Quadgenwireless.com",
+    "description": "Multiple 5+ year engineering openings at QuadGen Wireless Solutions across Vijayawada, Vizag, Hybrid, and Remote: System Architect, Database Administrator, Cybersecurity/VAPT Specialist, Network Engineer, IT Support Engineer, and OSS/BSS Expert.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-039",
+    "title": "Senior Test Lead – OpenShift & 5G Telecom",
+    "company": "Laiba Technology",
+    "location": "Naperville, IL (Remote)",
+    "domain": "5G Telecom & Packet Core QA",
+    "email": "zehra@laibatechnology.com",
+    "description": "Remote contract Senior Test Lead (Naperville, IL) with mandatory Telecom, 5G Deployment, EPC, Packet Core, Linux, and Networking expertise (Kubernetes, OpenShift, and AWS are strong pluses).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-040",
+    "title": "Full-Stack AI Engineer (Telecom Operations)",
+    "company": "Pacer Staffing",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "Prashant.tripathi@pacerstaffing.com",
+    "description": "Day-one onsite (5 days WFO) Full-Stack AI Engineer in Seattle, WA with mandatory telecom experience (mobile networks and IMS systems). Requires Python, MLOps, Semantic Kernel, Microsoft Agent Framework, LangGraph/Azure AI Foundry, OpenAI, Azure AI Search, MCP servers, Snowflake, Databricks, and Spark ML.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-041",
+    "title": "Backend Developer – Telecom OSS",
+    "company": "TekNinjas",
+    "location": "Middletown, NJ (Hybrid)",
+    "domain": "Software Engineering & Telecom OSS/BSS",
+    "email": "ananya.r@tekninjas.com",
+    "description": "12-month hybrid contract in Middletown, NJ 07748 requiring 14+ years of experience with Telecom/Network OSS platforms, Java and/or Python, REST APIs (OpenAPI/Swagger), Microservices, Kubernetes/OpenShift, and Kafka (TM Forum Open APIs, Netcracker, Nokia NSP, Amdocs, or Ericsson preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-042",
+    "title": "Business Operations Analyst – Telecom OSS",
+    "company": "TekNinjas",
+    "location": "Middletown, NJ (Hybrid)",
+    "domain": "Telecom OSS & Data Analysis",
+    "email": "ananya.r@tekninjas.com",
+    "description": "12-month hybrid contract in Middletown, NJ 07748 requiring 14+ years of Telecom/Network OSS data analytics, profiling, SQL schema/log analysis, Python/Shell scripting, legacy/mainframe modernization analysis, and API/batch interface dependency mapping.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-043",
+    "title": "Technology Architect / Lead – Pega Smart Investigate",
+    "company": "TekNinjas",
+    "location": "Pittsburgh, PA (Hybrid)",
+    "domain": "Banking & Pega Architecture",
+    "email": "ananya.r@tekninjas.com",
+    "description": "12-month hybrid contract in Pittsburgh, PA 15262 requiring 5+ years of Pega experience (14+ years overall), mandatory Pega CLSA/CSSA certification, and recent Banking/Payments implementation experience with Pega Smart Investigate.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-044",
+    "title": "Java Full-Stack Developer (Angular)",
+    "company": "Susan C2C Hiring",
+    "location": "Denver, CO (Onsite)",
+    "domain": "Software Engineering & Full Stack",
+    "email": "susanc2chiring@gmail.com",
+    "description": "Java Full-Stack Developer in Denver, CO (face-to-face interview required) with strong Angular expertise and preferred telecom domain experience.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-045",
+    "title": "GIS Developer – Telecom / Fiber Network",
+    "company": "Business Intelli",
+    "location": "USA",
+    "domain": "GIS & Telecom Fiber Engineering",
+    "email": "tharakanath.ch@businessintelli.com",
+    "description": "GIS Developer requiring 4–7+ years of experience with Esri ArcGIS (ArcGIS Pro, Enterprise/Server, Online, ArcPy), Python, JavaScript/TypeScript, ArcGIS REST APIs, PostgreSQL/PostGIS or Oracle Spatial, and telecom fiber network topology/inventory integration.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-046",
+    "title": "ServiceNow SPMT Solution Architect & Engineering Lead",
+    "company": "Nityo Infotech",
+    "location": "Seattle, WA / Richardson, TX / Hartford, CT / Raleigh, NC",
+    "domain": "ServiceNow & Enterprise Architecture",
+    "email": "dilshadul.k@nityo.com",
+    "description": "Long-term contract Senior/Principal ServiceNow SPMT Solution Architect & Engineering Lead across Seattle, Richardson, Hartford, or Raleigh. Requires 12+ years enterprise tech experience, 8+ years ServiceNow, 7–8+ SPM/SPMT implementations, JavaScript, Glide APIs, Flow Designer, IntegrationHub, React/BYOUI, GitLab, Jira, Cursor AI, and mandatory CSA & CAD certifications.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-047",
+    "title": "Agentic AI Engineer (Telecom Domain)",
+    "company": "Talent Groups",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "Priyanka.p@talentgroups.com",
+    "description": "Urgent onsite C2C Agentic AI Engineer in Seattle, WA (H1B & H4EAD; passport number and LinkedIn URL required) requiring 12+ years of experience and strong telecommunication domain background.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-048",
+    "title": "Agentic AI Engineer (Telecom Domain)",
+    "company": "Exlneo",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "AI/ML & Telecom Operations",
+    "email": "kuldeep.singh@exlneo.com",
+    "description": "Onsite (5 days WFO) contract Agentic AI Engineer in Seattle, WA (H1B; 10+ years experience; mandatory telecom domain). Requires Python, Agentic AI / Multi-Agent Systems (LangGraph, AutoGen, Semantic Kernel, CrewAI), RAG, Context Engineering, Vector DBs, Knowledge Graphs, Azure, and Kubernetes.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-049",
+    "title": "Lead C++ Developer – Telecom Service Assurance",
+    "company": "Spruce Infotech",
+    "location": "Texas / Florida (Hybrid)",
+    "domain": "Software Engineering & Telecom OSS",
+    "email": "suneetha@spruceinfotech.com",
+    "description": "Hybrid W2 Lead C++ Developer in TX/FL requiring 10+ years of experience in C++11/14/17, STL, Linux/Unix, multithreading, TCP/IP/UDP socket programming, IPC, and Telecom OSS/NMS/EMS Service Assurance, Fault Management, and Alarm/Event RCA.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-050",
+    "title": "Inside Sales Account Representative",
+    "company": "Randstad Canada",
+    "location": "St. Catharines, ON, Canada",
+    "domain": "Sales & Digital Account Management",
+    "email": "brittany.thomas@randstad.ca",
+    "description": "Full-time 12-month contract in St. Catharines, ON (starts January 27, 2027) managing a portfolio of SMB digital advertisers, optimizing ad campaign performance, and driving quota-based revenue growth. Requires 3+ years total work experience and 1+ year of sales experience (telecom, ad sales, or relationship sales).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-051",
+    "title": "Network Specialist (Spirent Landslide & Python Automation)",
+    "company": "Vigna Solutions",
+    "location": "Irving, TX (Hybrid)",
+    "domain": "5G Telecom & Network QA",
+    "email": "gyandeep.s@vignasolutions.com",
+    "description": "Hybrid C2C/Full-Time Network Specialist in Irving, TX (DFW locals only) requiring 8–10+ years of experience, 3+ years configuring Spirent Landslide test environments, 5+ years Python automation (PyTest, Paramiko), 4G/LTE & 5G Core/EPC/IMS/VoLTE architecture, Diameter/SIP/GTP/NGAP protocols, and CI/CD pipelines.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-052",
+    "title": "Project Manager – Telecom Domain",
+    "company": "CareerSoft USA",
+    "location": "USA (Onsite / Hybrid)",
+    "domain": "Telecom & Network Project Management",
+    "email": "sara.oliva@careersoftusa.com",
+    "description": "W2-only contract across the USA (all visa types eligible for W2) for a Telecom Project Manager with 7+ years of experience in telecom network infrastructure, mid-market service delivery, provisioning, Agile/Waterfall, MS Project, JIRA, and Amdocs/Orion platforms (PMP preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-053",
+    "title": "Senior OpenShift Engineer",
+    "company": "Boston Technology",
+    "location": "Remote, USA",
+    "domain": "Cloud, DevOps & Containers",
+    "email": "dollyg@boston-technology.com",
+    "description": "Urgent remote Senior OpenShift Engineer opportunity (US Citizens only; W2/C2C/Full-Time) supporting telecom/cloud container infrastructure.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-054",
+    "title": "Manufacturing, Plant Operations & Sales Managers (Pipes & Telecom Structures)",
+    "company": "Vishal Pipes Ltd",
+    "location": "Sikandrabad, Bulandshahr, UP & Pan India",
+    "domain": "Manufacturing, Operations & Industrial Sales",
+    "email": "gmmktg@vplgroup.org",
+    "description": "Multiple experienced management openings at Vishal Pipes Ltd in Sikandrabad (Bulandshahr, UP) and Pan-India sales territories: HR, Admin, Purchase, Finance & Accounts, Tube Mill & Pole Production Managers, Powder Coating/Galvanisation/Dispatch Unit Managers, QC/QA Managers (Kaizen/5S), Safety/Security Auditors, and Regional Sales Managers (Solar, Crash Barriers, GI/HDPE Pipes, Telecom Towers).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-055",
+    "title": "Technical Support Engineer L2 (Dialer & Linux)",
+    "company": "Deepija Telecom",
+    "location": "Hyderabad, India",
+    "domain": "Telecom Technical Support",
+    "email": "swati@deepijatel.com",
+    "description": "Technical Support Engineer L2 in Hyderabad requiring 3+ years of experience in telecom dialer support, Linux administration, hardware troubleshooting, and networking concepts.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-056",
+    "title": "SPMT Solution Architect & Engineering Lead – ServiceNow",
+    "company": "Zenthor IT",
+    "location": "USA",
+    "domain": "ServiceNow & Enterprise Architecture",
+    "email": "seshu@zenthorit.com",
+    "description": "Senior Principal ServiceNow SPMT Solution Architect & Engineering Lead requiring 15+ years overall experience, 8+ years ServiceNow, 7–8+ SPM/SPMT implementations, JavaScript, Glide APIs, Flow Designer, IntegrationHub, React/BYOUI, Cursor AI, GitLab, Jira, and mandatory CSA & CAD certifications (telecom domain preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-057",
+    "title": "Lead Data Scientist – Databricks & Predictive Analytics",
+    "company": "LanceSoft",
+    "location": "Seattle, WA (Onsite)",
+    "domain": "Data Science & Analytics",
+    "email": "manisha.soy@lancesoft.com",
+    "description": "5-day onsite Lead Data Scientist in Seattle, WA (USA-based candidates only) requiring Python, PySpark, Advanced SQL, Databricks performance tuning, applied statistics, churn prediction/scoring models, and production Git workflows (WoE/IV, Telecom/Wireless, and Snowflake are pluses).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-058",
+    "title": "AI Technical Delivery Manager (AI Governance)",
+    "company": "American Unit",
+    "location": "Bellevue, WA (Onsite)",
+    "domain": "AI Governance & Technical Delivery",
+    "email": "rachel@americanunit.com",
+    "description": "Onsite (4 days/week; W2/C2C) AI Technical Delivery Manager in Bellevue, WA requiring 8+ years of IT delivery experience and 5+ years in AI, AI Governance, Responsible AI, Model Risk Management, LLMs, Agentic AI, RAG, and cloud security (telecom or Salesforce Agentforce experience preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-059",
+    "title": "Project Manager – Telecom Service Delivery (Ex-Comcast)",
+    "company": "Neni Tech Systems",
+    "location": "Remote, USA",
+    "domain": "Telecom & Network Project Management",
+    "email": "srmishra@nenitechsystems.com",
+    "description": "Remote H1B Project Manager role requiring prior Comcast experience and strong background in telecom/network service delivery, business requirements gathering, process optimization, Agile/Waterfall, JIRA, MS Project, and Orion/Amdocs (PMP preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-060",
+    "title": "Sales Specialist – Enterprise Network Services",
+    "company": "Leadership Tilt",
+    "location": "USA (North America)",
+    "domain": "Enterprise Network & Telecom Sales",
+    "email": "vishakha@leadershiptilt.com",
+    "description": "Enterprise Network Services Sales Specialist across North America (up to 30% travel) originating and closing multi-year deals in Managed Network Services, NaaS, SD-WAN, SASE, cloud networking, and private wireless. Requires 10+ years of enterprise network/telecom sales or pre-sales experience engaging CIO/CISO/CTO stakeholders.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-061",
+    "title": "Project Manager – Telecom / Service Delivery (Comcast)",
+    "company": "Wipro (via Sphere Cloud Systems)",
+    "location": "Remote, USA",
+    "domain": "Telecom & Network Project Management",
+    "email": "Nagarjunamangala@spherecloudsystems.com",
+    "description": "Remote H1B Project Manager opportunity supporting Wipro on global telecom mid-market service delivery and network product initiatives. Prior Comcast experience is highly preferred along with Orion/Amdocs, Agile/Waterfall, MS Project, JIRA, and stakeholder management.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-062",
+    "title": "Cybersecurity Defense Engineer (Banking)",
+    "company": "JSM",
+    "location": "Thanlyin Township, Yangon, Myanmar",
+    "domain": "Cybersecurity & SOC Operations",
+    "email": "khinethazin.jsm@gmail.com",
+    "description": "Cybersecurity Defense Engineer for the banking sector in Thanlyin Township, Yangon (Mon–Fri, 9:00 AM–5:00 PM) handling infrastructure/platform hardening, cloud and EDR/XDR security monitoring, vulnerability management, SIEM alert triage, and incident response. Requires 1–2 years of IT/security experience and Myanmar & English communication skills.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-063",
+    "title": "Network Services Specialist",
+    "company": "Publicis Re:Sources",
+    "location": "Gurgaon, India",
+    "domain": "Network & Infrastructure Operations",
+    "email": "karthika.v@publicisresources.com",
+    "description": "Network Services Specialist in Gurgaon requiring 12–15 years of experience in Cisco Enterprise Networking (Catalyst, Nexus, ISR/ASR, ACI, ISE), BGP, OSPF, MPLS, SD-WAN, Cisco Wireless (9800 WLC, Wi-Fi 6/6E), AWS/Azure/GCP networking, and enterprise incident/RCA leadership (CCNP/CCIE Wireless and ITIL preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-064",
+    "title": "Infrastructure & Security Senior / Manager",
+    "company": "Eminds Infosystems",
+    "location": "Singapore (Onsite)",
+    "domain": "IT Infrastructure & Cybersecurity",
+    "email": "riya.dutta@emindsinfosystems.com",
+    "description": "Urgent Singapore-based Infrastructure & Security Senior/Manager role (immediate joining; Singapore Citizens and PRs only) requiring 15+ years of experience leading multi-site IT infrastructure, servers, networks, Microsoft/cloud technologies, cybersecurity governance, audits, and telecom/IT vendor SLAs.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-065",
+    "title": "Application Security Engineer / Project Manager",
+    "company": "MegThink",
+    "location": "Remote, India",
+    "domain": "Application Security & VAPT",
+    "email": "joel.g@megthink.com",
+    "description": "Remote Application Security Engineer / Project Manager requiring 4–7 years of experience in application security concepts, black-box penetration testing, VAPT, bug bounty triage, compliance reporting, and security project coordination.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-066",
+    "title": "Senior Network Architect – Enterprise & Data Centre Networking",
+    "company": "Aarniksha Solutions",
+    "location": "Pan India (Remote)",
+    "domain": "Network & Data Center Architecture",
+    "email": "info@aarnikshasolutions.com",
+    "description": "100% remote Senior Network Architect across Pan India (Budget: ₹30 LPA) requiring 15–20+ years of experience designing and migrating Enterprise and Data Centre networks using Cisco Nexus, Arista, Aruba, Leaf-Spine architectures, BGP, OSPF, and HLD/LLD documentation (CCNP mandatory, CCIE preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-067",
+    "title": "Project Manager (Security & Low-Voltage)",
+    "company": "Integrity Technical Services",
+    "location": "Cleveland, OH (Hybrid)",
+    "domain": "Physical Security & Low-Voltage Project Management",
+    "email": "resumes@integrityjobs.com",
+    "description": "Full-time hybrid Project Manager in Cleveland, OH 44114 ($70k–$90k/year; Job ID: 26-00837) overseeing low-voltage/physical security design and quoting (CCTV, access control, intrusion, IP networking), ConnectWise project administration, material logistics, and client QBRs (1–3 years relevant experience required).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-068",
+    "title": "Pre-Sales Engineer L1 (ICT & Network Infrastructure)",
+    "company": "Accpro International",
+    "location": "Valenzuela City, Philippines (Onsite)",
+    "domain": "Pre-Sales & ICT Infrastructure",
+    "email": "emylou@accprointernational.com",
+    "description": "Onsite Pre-Sales Engineer L1 in Valenzuela City (Mon–Fri, 9:00 AM–6:00 PM) preparing itemized Bills of Materials (BOMs), vendor pricing/deal registrations, RFP/RFQ technical compliance documents, and POC demo environments. Requires 1–3 years of ICT pre-sales or systems engineering experience (CCNA, Fortinet NSE, or Aruba ACA preferred).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-069",
+    "title": "ICT / Solutions Engineer (Pre-Sales)",
+    "company": "Airswift",
+    "location": "Perth, Australia",
+    "domain": "Pre-Sales & Secure Communications",
+    "email": "alan.chua@airswift.com",
+    "description": "Permanent full-time ICT / Solutions Engineer in Perth, Australia (2 openings) supporting a technology company's market entry. Requires proven customer-facing pre-sales/solutions engineering experience in enterprise communications, IP networking, encrypted/secure networking technologies, and RFP/tender technical designs.",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-070",
+    "title": "Systems Engineer – L3 (Enterprise Networking & Collaboration)",
+    "company": "Accpro International",
+    "location": "Valenzuela City, Philippines (Onsite)",
+    "domain": "Network & Systems Engineering",
+    "email": "maolin@accprointernational.com",
+    "description": "Full-time onsite Systems Engineer L3 in Valenzuela City leading multi-site deployments across Cisco/Meraki routing & switching, Meraki MR/Aruba wireless RF tuning, Yealink/Microsoft Teams Rooms/SIP UC, and AV integration, while acting as final P1/P2 escalation point and mentoring L1/L2 engineers (5–8+ years experience; Cisco CCNP or higher).",
+    "posted_date": "2026-11-25"
+  },
+  {
+    "id": "JOB-071",
+    "title": "Systems Engineer – L2 (Enterprise Network & Security)",
+    "company": "Accpro International",
+    "location": "Valenzuela City, Philippines (Onsite)",
+    "domain": "Network & Systems Engineering",
+    "email": "maolin@accprointernational.com",
+    "description": "Full-time onsite Systems Engineer L2 in Valenzuela City implementing and troubleshooting Cisco, Fortinet, Meraki, and HPE Aruba network/security infrastructure, leading client cutovers/migrations with MOPs, and producing as-built documentation (2–5 years experience; CCNP/NSE 4+/ACP preferred).",
+    "posted_date": "2026-11-25"
+  }
+]
